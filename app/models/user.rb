@@ -8,3 +8,5 @@ class User < ActiveRecord::Base
           :omniauthable
   include DeviseTokenAuth::Concerns::User
 end
+
+#comment unnecessary
