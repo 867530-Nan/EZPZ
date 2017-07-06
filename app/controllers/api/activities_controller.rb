@@ -10,7 +10,7 @@ class Api::ActivitiesController < ApplicationController
     if activity.save
       render json: activity
     else
-      render json: { errors: activities.errors.full_messges }, status: :bad_request
+      render json: { errors: activity.errors.full_messages }, status: :bad_request
     end
   end
 
