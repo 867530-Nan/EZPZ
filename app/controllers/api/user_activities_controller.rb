@@ -1,4 +1,5 @@
 class Api::UserActivitiesController < ApplicationController
+  before_action :set_user_activities, only: :destroy
   def index
     render json: current_user.user_activities.all
   end
