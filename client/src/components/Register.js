@@ -4,14 +4,19 @@ import { connect } from 'react-redux';
 import { registerUser } from '../actions/auth';
 
 class Register extends Component {
-  state = { email: '', password: '', passwordConfirmation: '' };
+  state = { email: '', password: '', passwordConfirmation: '',
+            name: '', nickname: '', zipcode: '', street_address: '',
+            city: '', state: ''
+          };
 
   handleSubmit = (e) => {
     e.preventDefault();
-    const { email, password, passwordConfirmation } = this.state;
+    const { email, password, passwordConfirmation, name,
+            nickname, zipcode, street_address, city, state } = this.state;
     const { dispatch, history } = this.props;
     if(password === passwordConfirmation)
-      dispatch(registerUser(email, password, passwordConfirmation, history));
+      dispatch(registerUser(email, password, passwordConfirmation, name,
+              nickname, zipcode, street_address, city, state, history));
     else
       alert('Passwords do NOT match!');
   }
@@ -25,12 +30,72 @@ class Register extends Component {
   }
 
   render() {
-    const { email, password, passwordConfirmation } = this.state;
+    const { email, password, passwordConfirmation, name,
+            nickname, zipcode, street_address, city, state } = this.state;
 
     return(
       <Segment basic>
         <Header as='h1' textAlign='center'>Register Component</Header>
         <Form onSubmit={this.handleSubmit}>
+          <Form.Field>
+            <label>Name</label>
+            <input
+              id='name'
+              placeholder='Name'
+              required
+              value={name}
+              onChange={this.handleChange}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Nickname</label>
+            <input
+              id='nickname'
+              placeholder='Nickname'
+              value={nickname}
+              onChange={this.handleChange}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Street Address</label>
+            <input
+              id='street_address'
+              placeholder='Street Address'
+              required
+              value={street_address}
+              onChange={this.handleChange}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>City</label>
+            <input
+              id='city'
+              placeholder='City'
+              required
+              value={city}
+              onChange={this.handleChange}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>State</label>
+            <input
+              id='state'
+              placeholder='State'
+              required
+              value={state}
+              onChange={this.handleChange}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Zipcode</label>
+            <input
+              id='zipcode'
+              placeholder='Zipcode'
+              required
+              value={zipcode}
+              onChange={this.handleChange}
+            />
+          </Form.Field>
           <Form.Field>
             <label>Email</label>
             <input
