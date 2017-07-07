@@ -10,12 +10,6 @@ end
 gem 'rails', '~> 5.1.2'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
-<<<<<<< HEAD
-gem 'faker'
-
-
-=======
->>>>>>> bb76350a7ef698f049904568bd94692f5c2a4be2
 gem 'omniauth'
 gem 'devise'
 gem 'devise_token_auth'
