@@ -1,7 +1,12 @@
 import axios from 'axios';
 import { setFlash } from '../actions/flash';
 
-export const registerUser = (email, password, passwordConfirmation, history) => {
+export const registerUser = (auth, history) => {
+  const {
+    email, password, passwordConfirmation,
+    name, nickname, zipcode, street_address,
+    city, state
+  } = auth;
   return(dispatch) => {
     axios.post('/api/auth', { email, password, password_confirmation: passwordConfirmation })
       .then( res => {
@@ -9,8 +14,8 @@ export const registerUser = (email, password, passwordConfirmation, history) => 
         dispatch({ type: 'LOGIN', user, headers });
         history.push('/');
       })
-      .catch( res => {
-        const message = res.response.data.errors.join(',');
+      .catch( error => {
+        const message = error.response.data.errors.join(',');
         dispatch(setFlash(message, 'error'));
     });
   }
@@ -24,8 +29,8 @@ export const handleLogout = (history) => {
         dispatch(setFlash('Logged out successfully!', 'success'));
         history.push('/login');
       })
-      .catch( res => {
-        const message = res.response.data.errors.join(',');
+      .catch( error => {
+        const message = error.response.data.errors.join(',');
         dispatch(setFlash(message, 'error'));
       });
     }
@@ -39,8 +44,8 @@ export const handleLogin = (email, password, history) => {
         dispatch({ type: 'LOGIN', user, headers });
         history.push('/');
       })
-      .catch( res => {
-        const message = res.response.data.errors.join(',');
+      .catch( error => {
+        const message = error.response.data.errors.join(',');
         dispatch(setFlash(message, 'error'));
       })
   }

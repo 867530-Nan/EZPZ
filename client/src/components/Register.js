@@ -11,12 +11,11 @@ class Register extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    const { email, password, passwordConfirmation, name,
-            nickname, zipcode, street_address, city, state } = this.state;
     const { dispatch, history } = this.props;
+    const { password, passwordConfirmation } = this.state;
+    
     if(password === passwordConfirmation)
-      dispatch(registerUser(email, password, passwordConfirmation, name,
-              nickname, zipcode, street_address, city, state, history));
+      dispatch(registerUser(this.state, history));
     else
       alert('Passwords do NOT match!');
   }
