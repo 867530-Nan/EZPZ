@@ -5,7 +5,7 @@ class Api::UserActivitiesController < ApplicationController
   end
 
   def create
-    user_activities = current_user.user_activities.new(user_activities)
+    user_activities = current_user.user_activities.new(activity_id: params[:activity_id], user_id: current_user.id)
     if user_activities.save
       render json: user_activities
     else
@@ -20,6 +20,6 @@ class Api::UserActivitiesController < ApplicationController
   private
 
   def set_user_activities
-    @user_activities = current_user.user_activities.find(params[:id])
+    @user_activities = User_activities.find(params[:id])
   end
 end

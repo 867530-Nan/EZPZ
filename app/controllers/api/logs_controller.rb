@@ -28,7 +28,7 @@ class Api::LogsController < ApplicationController
 
   private
     def set_log
-      @log = current_user.logs.find(params[:id])
+      @log = Logs.find(params[:id])
     end
 
     def log_params

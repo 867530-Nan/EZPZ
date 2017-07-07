@@ -28,7 +28,7 @@ class Api::ChildrenController < ApplicationController
 
   private
     def set_child
-      @child = current_user.children.find(params[:id])
+      @child = Children.find(params[:id])
     end
 
     def child_params
