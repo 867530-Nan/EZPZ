@@ -4,19 +4,23 @@ import { setFlash } from '../actions/flash';
 export const registerUser = (auth, history) => {
   const {
     email, password, passwordConfirmation,
-    name, nickname, zipcode, street_address,
-    city, state
+    name, nickname, zipcode
   } = auth;
   return(dispatch) => {
     axios.post('/api/auth', { email, password, password_confirmation: passwordConfirmation,
-                              name, nickname, zipcode, street_address, city, state })
+                              name, nickname, zipcode })
       .then( res => {
         let { data: { data: user }, headers } = res;
         dispatch({ type: 'LOGIN', user, headers });
         history.push('/');
       })
       .catch( error => {
-        const message = error.response.data.errors.join(',');
+        let { errors } = error.response.data
+        let message;
+        if (Object.keys(errors).includes('full_messages'))
+          message = errors.full_messages.join(',')
+        else
+          message = errors.join(',');
         dispatch(setFlash(message, 'error'));
     });
   }
@@ -43,7 +47,7 @@ export const handleLogin = (email, password, history) => {
       .then( res => {
         let { data: { data: user }, headers } = res
         dispatch({ type: 'LOGIN', user, headers });
-        history.push('/');
+        history.push('/activites');
       })
       .catch( error => {
         const message = error.response.data.errors.join(',');

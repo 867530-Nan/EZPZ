@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import { Header, Form, Button, Segment } from 'semantic-ui-react';
+import { Header, Form, Button, Segment, Container, Divider } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { registerUser } from '../actions/auth';
+import '../styles/registration.css';
 
 class Register extends Component {
   state = { email: '', password: '', passwordConfirmation: '',
-            name: '', nickname: '', zipcode: '', street_address: '',
-            city: '', state: ''
+            name: '', nickname: '', zipcode: '', state: ''
           };
 
   handleSubmit = (e) => {
     e.preventDefault();
     const { dispatch, history } = this.props;
     const { password, passwordConfirmation, name,
-            nickname, zipcode, street_address, city, state } = this.state;
+            nickname, zipcode } = this.state;
 
     if(password === passwordConfirmation)
       dispatch(registerUser(this.state, history));
@@ -31,13 +31,17 @@ class Register extends Component {
 
   render() {
     const { email, password, passwordConfirmation, name,
-            nickname, zipcode, street_address, city, state } = this.state;
+            nickname, zipcode } = this.state;
 
     return(
-      <Segment basic>
-        <Header as='h1' textAlign='center'>Register Component</Header>
+      <Segment basic className='regBackground'>
+        <Header as='h1' textAlign='center' className='registrationHeader'>
+        Register Here!
+        </Header>
+        <Divider />
+        <Container>
         <Form onSubmit={this.handleSubmit}>
-          <Form.Field>
+          <Form.Field required>
             <label>Name</label>
             <input
               id='name'
@@ -48,45 +52,15 @@ class Register extends Component {
             />
           </Form.Field>
           <Form.Field>
-            <label>Nickname</label>
+            <label>Nickname (optional)</label>
             <input
               id='nickname'
-              placeholder='Nickname'
+              placeholder='Nickname (optional)'
               value={nickname}
               onChange={this.handleChange}
             />
           </Form.Field>
-          <Form.Field>
-            <label>Street Address</label>
-            <input
-              id='street_address'
-              placeholder='Street Address'
-              required
-              value={street_address}
-              onChange={this.handleChange}
-            />
-          </Form.Field>
-          <Form.Field>
-            <label>City</label>
-            <input
-              id='city'
-              placeholder='City'
-              required
-              value={city}
-              onChange={this.handleChange}
-            />
-          </Form.Field>
-          <Form.Field>
-            <label>State</label>
-            <input
-              id='state'
-              placeholder='State'
-              required
-              value={state}
-              onChange={this.handleChange}
-            />
-          </Form.Field>
-          <Form.Field>
+          <Form.Field required>
             <label>Zipcode</label>
             <input
               id='zipcode'
@@ -96,7 +70,7 @@ class Register extends Component {
               onChange={this.handleChange}
             />
           </Form.Field>
-          <Form.Field>
+          <Form.Field required>
             <label>Email</label>
             <input
               id='email'
@@ -106,7 +80,7 @@ class Register extends Component {
               onChange={this.handleChange}
             />
           </Form.Field>
-          <Form.Field>
+          <Form.Field required>
             <label>Password</label>
             <input
               id='password'
@@ -117,7 +91,7 @@ class Register extends Component {
               onChange={this.handleChange}
             />
           </Form.Field>
-          <Form.Field>
+          <Form.Field required>
             <label>Password Confirmation</label>
             <input
               id='passwordConfirmation'
@@ -129,9 +103,17 @@ class Register extends Component {
             />
           </Form.Field>
           <Segment basic textAlign='center'>
-            <Button type='submit'>Submit</Button>
+            <Button
+              inverted
+              color='violet'
+              size='huge'
+              type='submit'
+              className='registrationButton'
+            > Submit
+            </Button>
           </Segment>
         </Form>
+        </Container>
       </Segment>
     );
   }
