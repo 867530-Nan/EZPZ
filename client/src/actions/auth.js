@@ -15,7 +15,12 @@ export const registerUser = (auth, history) => {
         history.push('/');
       })
       .catch( error => {
-        const message = error.response.data.errors.join(',');
+        let { errors } = error.response.data
+        let message;
+        if (Object.keys(errors).includes('full_messages'))
+          message = errors.full_messages.join(',')
+        else
+          message = errors.join(',');
         dispatch(setFlash(message, 'error'));
     });
   }
