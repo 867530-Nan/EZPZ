@@ -4,12 +4,11 @@ import { setFlash } from '../actions/flash';
 export const registerUser = (auth, history) => {
   const {
     email, password, passwordConfirmation,
-    name, nickname, zipcode, street_address,
-    city, state
+    name, nickname, zipcode
   } = auth;
   return(dispatch) => {
     axios.post('/api/auth', { email, password, password_confirmation: passwordConfirmation,
-                              name, nickname, zipcode, street_address, city, state })
+                              name, nickname, zipcode })
       .then( res => {
         let { data: { data: user }, headers } = res;
         dispatch({ type: 'LOGIN', user, headers });
@@ -43,7 +42,7 @@ export const handleLogin = (email, password, history) => {
       .then( res => {
         let { data: { data: user }, headers } = res
         dispatch({ type: 'LOGIN', user, headers });
-        history.push('/activities');
+        history.push('/activites');
       })
       .catch( error => {
         const message = error.response.data.errors.join(',');

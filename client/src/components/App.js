@@ -9,6 +9,7 @@ import ProtectedRoute from './ProtectedRoute';
 import { Switch, Route } from 'react-router-dom';
 import FetchUser from './FetchUser';
 import Activities from './Activities';
+import '../styles/registration.css';
 
 class App extends Component {
   render() {

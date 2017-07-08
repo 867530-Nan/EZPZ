@@ -1,0 +1,12 @@
+.registrationHeader {
+  font-size: 48px !important;
+  color: #9932CC !important;
+}
+
+.registrationButton, .registrationHeader {
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+.regBackground {
+  background-color: #48D1CC !important;
+}
