@@ -9,7 +9,9 @@ import ProtectedRoute from './ProtectedRoute';
 import { Switch, Route } from 'react-router-dom';
 import FetchUser from './FetchUser';
 import Activities from './Activities';
+import Itinerary from './Itinerary';
 import '../styles/registration.css';
+
 
 class App extends Component {
   render() {
@@ -20,6 +22,7 @@ class App extends Component {
         <FetchUser>
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route exact path='/itinerary' component={Itinerary} />
             <Route exact path='/login' component={Login} />
             <Route exact path='/register' component={Register} />
             <Route exact path='/activities' component={Activities} />
