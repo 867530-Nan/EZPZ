@@ -8,7 +8,8 @@ export const registerUser = (auth, history) => {
     city, state
   } = auth;
   return(dispatch) => {
-    axios.post('/api/auth', { email, password, password_confirmation: passwordConfirmation })
+    axios.post('/api/auth', { email, password, password_confirmation: passwordConfirmation,
+                              name, nickname, zipcode, street_address, city, state })
       .then( res => {
         let { data: { data: user }, headers } = res;
         dispatch({ type: 'LOGIN', user, headers });

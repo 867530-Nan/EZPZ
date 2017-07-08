@@ -12,6 +12,12 @@ class NavBar extends Component {
     if(user.id) {
       return(
         <Menu.Menu position='right'>
+          <Link to='/profile'>
+            <Menu.Item name='Profile' />
+          </Link>
+          <Link to='/itinerary'>
+            <Menu.Item name='Itinerary' />
+          </Link>
           <Link to='/activities'>
             <Menu.Item name='Activities' />
           </Link>
