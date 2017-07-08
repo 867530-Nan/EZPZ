@@ -2,3 +2,9 @@
 # yarn lockfile v1
 
 
+<<<<<<< HEAD
+=======
+react-time-input@^0.0.16:
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/react-time-input/-/react-time-input-0.0.16.tgz#b255560e0ae3b40249145c67a428cbe98f094434"
+>>>>>>> activity
