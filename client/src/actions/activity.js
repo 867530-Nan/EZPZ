@@ -1,9 +1,9 @@
-import axios from 'axios'
+import axios from 'axios';
 
-export const getActvities = (cb) => {
+export const getActivities = (cb) => {
   return (dispatch) => {
     axios.get('/api/activities')
-    .then( res => dispatch({ type: 'ACTIVITIES' activities: res.data }) )
-    .then( cd() )
+    .then( res => dispatch({ type: 'ACTIVITIES', activities: res.data }) )
+    .then( cb() )
   }
 }
