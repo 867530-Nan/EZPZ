@@ -7,7 +7,6 @@ class NoMatch extends Component {
     return(
       <Header as='h1' textAlign='center'>
         Page Not Found,
-        <button onClick={this.props.history.goBack()}>Go Back</button>
         <Link to='/'> Home</Link>
       </Header>
     );
