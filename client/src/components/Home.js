@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Sidebar, Segment, Button, Menu, Image, Icon, Header, Form } from 'semantic-ui-react';
+import { Sidebar, Segment, Button, Menu, Image, Icon, Header, Form, Divider, Container } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { handleLogin } from '../actions/auth';
 import '../styles/home.css';
@@ -26,7 +26,10 @@ class Home extends Component {
     const { visible, email, password } = this.state
     return (
       <div>
+      <Container>
         <Button className='loginButton' onClick={this.toggleVisibility}>Login!</Button>
+        <Divider />
+      </Container>
         <Sidebar.Pushable as={Segment}>
           <Sidebar
             as={Menu}
@@ -38,7 +41,7 @@ class Home extends Component {
             vertical
             inverted
           >
-            <Menu.Item name='Login'>
+          <Menu.Item name='Login'>
             <Form onSubmit={this.handleSubmit}>
               <Form.Field>
                 <label>Email</label>
@@ -63,7 +66,7 @@ class Home extends Component {
                 />
               </Form.Field>
               <Segment textAlign='center' basic>
-                <Button primary type='submit'>Submit</Button>
+                <Button primary type='submit'>Login</Button>
               </Segment>
             </Form>
             </Menu.Item>

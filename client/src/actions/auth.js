@@ -32,7 +32,7 @@ export const handleLogout = (history) => {
       .then( res => {
         dispatch({ type: 'LOGOUT' });
         dispatch(setFlash('Logged out successfully!', 'success'));
-        history.push('/login');
+        history.push('/');
       })
       .catch( error => {
         const message = error.response.data.errors.join(',');
