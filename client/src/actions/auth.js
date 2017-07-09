@@ -47,7 +47,7 @@ export const handleLogin = (email, password, history) => {
       .then( res => {
         let { data: { data: user }, headers } = res
         dispatch({ type: 'LOGIN', user, headers });
-        history.push('/activites');
+        history.push('/activities');
       })
       .catch( error => {
         const message = error.response.data.errors.join(',');

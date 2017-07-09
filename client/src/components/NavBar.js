@@ -12,33 +12,55 @@ class NavBar extends Component {
 
     if(user.id) {
       return(
-        <Menu.Menu position='right'>
-          <Link to='/profile'>
-            <Button inverted color='red'>Profile</Button>
-          </Link>
-          <Link to='/itinerary'>
-             <Button inverted color='red'>Itinerary</Button>
-          </Link>
-          <Link to='/activities'>
-             <Button inverted color='red'>Activities</Button>
-          </Link>
-          <Button
-            onClick={() => dispatch(handleLogout(history))}
-            inverted color='red'
-          >Logout
-          </Button>  
-        </Menu.Menu>
+        <div className="nav-format">
+        <div>
+          <Menu.Menu>
+            <Link to='/activities'>
+                <Button  className="home-nav-button">Home</Button>
+            </Link>
+          </Menu.Menu>
+        </div>
+        <div>
+          <Menu.Menu>
+            <Link to='/profile'>
+              <Button  className="profile-nav-button">Profile</Button>
+            </Link>
+            <Link to='/itinerary'>
+               <Button  className="itinerary-nav-button">Itinerary</Button>
+            </Link>
+            <Link to='/activities'>
+               <Button  className="activities-nav-button">Activities</Button>
+            </Link>
+            <Button
+              onClick={() => dispatch(handleLogout(history))}
+               className="logout-nav-button"
+            >Logout
+            </Button>  
+          </Menu.Menu>
+        </div>
+        </div>
       );
     } else {
       return(
-        <Menu.Menu position='right'>
-          <Link to='/register'>
-            <Button inverted color='red'>Register</Button>
-          </Link>
-          <Link to='/login'>
-            <Button inverted color='red'>Login</Button>
-          </Link>
-        </Menu.Menu>
+        <div className="nav-format">
+        <div>
+          <Menu.Menu>
+            <Link to='/aboutus'>
+                <Button  className="about-us-nav-button">About Us</Button>
+            </Link>
+          </Menu.Menu>
+        </div>
+        <div>
+          <Menu.Menu>
+            <Link to='/register'>
+              <Button  className="register-nav-button">Register</Button>
+            </Link>
+            <Link to='/login'>
+              <Button className="login-nav-button">Login</Button>
+            </Link>
+          </Menu.Menu>
+        </div>
+        </div>
       );
     }
   }
@@ -49,9 +71,7 @@ class NavBar extends Component {
     return (
       <div className='mainNavbar'>
         <Menu pointing secondary>
-          <Link to='/'>
-            <Button inverted color='red'>Home</Button>
-          </Link>
+          
           { this.rightNavs() }
         </Menu>
       </div>
