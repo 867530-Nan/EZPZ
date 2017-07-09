@@ -25,21 +25,22 @@ class Home extends Component {
   render() {
     const { visible, email, password } = this.state
     return (
-      <div>
-      <Container>
-        <Button className='loginButton' onClick={this.toggleVisibility}>Login!</Button>
-        <Divider />
-      </Container>
+      <div className='homePage'>
+        <Container>
+          <Header as='h1' textAlign='center' className='homeHeader'>EZPZ</Header>
+          <Button className='loginButton' onClick={this.toggleVisibility}>Login!</Button>
+          <Divider />
+        </Container>
         <Sidebar.Pushable as={Segment}>
           <Sidebar
-            as={Menu}
-            animation='slide out'
-            width='thin'
-            direction='right'
-            visible={visible}
-            icon='labeled'
-            vertical
-            inverted
+          as={Menu}
+          animation='overlay'
+          width='thin'
+          direction='right'
+          visible={visible}
+          icon='labeled'
+          vertical
+          className='sidebar'
           >
           <Menu.Item name='Login'>
             <Form onSubmit={this.handleSubmit}>
@@ -66,22 +67,19 @@ class Home extends Component {
                 />
               </Form.Field>
               <Segment textAlign='center' basic>
-                <Button primary type='submit'>Login</Button>
+                <Button
+                color='violet'
+                type='submit'
+                className='sidebarLogin'
+              >Login
+              </Button>
               </Segment>
             </Form>
             </Menu.Item>
-            <Menu.Item name='gamepad'>
-              <Icon name='gamepad' />
-              Games
-            </Menu.Item>
-            <Menu.Item name='camera'>
-              <Icon name='camera' />
-              Channels
-            </Menu.Item>
           </Sidebar>
           <Sidebar.Pusher>
-            <Segment basic>
-              <Header as='h3'>Application Content</Header>
+            <Segment basic className='homePage'>
+              <Header as='h3' className='homeHeader'>Application Content</Header>
               <Image src='/assets/images/wireframe/paragraph.png' />
             </Segment>
           </Sidebar.Pusher>

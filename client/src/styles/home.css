@@ -2,3 +2,12 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.sidebar {
+  background-color: #00FA9A !important;
+}
+
+.homeHeader {
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+  color: #00FFFF !important;
+}
