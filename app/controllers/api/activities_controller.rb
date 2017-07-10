@@ -16,9 +16,10 @@ class Api::ActivitiesController < ApplicationController
 
   def update
     if @activity.update(activity_params)
-      render json: activity
+      render json: @activity
     else
       render json: { errors: @activity.errors.full_messages }, status: :bad_request
+    end
   end
 
   def destroy

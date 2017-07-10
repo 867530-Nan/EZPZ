@@ -7,7 +7,7 @@ class Api::ChildrenController < ApplicationController
 
   def create
     child = current_user.children.new(child_params)
-    if children.save
+    if child.save
       render json: child
     else
       render json: { errors: child.errors.full_messages }, status: :bad_request
