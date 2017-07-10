@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   mount_devise_token_auth_for 'User', at: 'api/auth'
   namespace :api do
-    resources :children
+    resources :user do
+      resources :children
+    end
     get 'location', to: 'location#show'
     resources :activities do
       resources :user_activities

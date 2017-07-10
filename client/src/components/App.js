@@ -14,6 +14,7 @@ import '../styles/registration.css';
 import AboutUs from './AboutUs';
 import Profile from './Profile';
 import Contact from './Contact';
+import ActivityView from './ActivityView'
 
 
 class App extends Component {
@@ -30,6 +31,7 @@ class App extends Component {
             <Route exact path='/register' component={Register} />
             <ProtectedRoute exact path='/itinerary' component={Itinerary} />
             <ProtectedRoute exact path='/activities' component={Activities} />
+            <ProtectedRoute exact path='/activity' component={ActivityView} />
             <ProtectedRoute exact path='/profile' component={Profile} />
             <ProtectedRoute exact path='/contact' component={Contact} />
             <Route component={NoMatch} />

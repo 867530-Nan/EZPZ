@@ -1,12 +1,12 @@
 class Api::ActivitiesController < ApplicationController
-  before_action :set_activity, only: (:update, :destroy)
+  before_action :set_activity, only: [:update, :destroy]
 
   def index
     render json: Activity.all
   end
 
   def create
-    activity = activity.new(activity_params)
+    activity = Activity.new(activity_params)
     if activity.save
       render json: activity
     else

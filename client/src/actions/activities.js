@@ -1,8 +1,11 @@
-const activities = ( state = [], action) => {
-  switch (action.type) {
-    case 'ACTIVITIES':
-    return action.activities;
+import axios from 'axios';
+
+export const getActivities = () => {
+  return (dispatch) => {
+    axios.get('/api/activities')
+    .then( res => {
+      console.log(res.data)
+      dispatch({ type: 'ACTIVITIES', activities: res.data })
+    })
   }
 }
-
-export default activities;

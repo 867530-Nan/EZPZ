@@ -3,11 +3,10 @@ import { Header, Segment, Button, Divider, Label } from 'semantic-ui-react'
 // import DatePicker from 'react-datepicker';
 // import moment from 'moment';
 // import 'react-datepicker/dist/react-datepicker.css';
-import TimeInput from 'react-time-input';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Container, Grid, Card } from 'semantic-ui-react';
-import { getActivities } from '../actions/activity'
+import { getActivities } from '../actions/activities'
 
 
 class Activities extends React.Component {
@@ -16,10 +15,10 @@ class Activities extends React.Component {
   //   loaded: false,
   // }
 
-  // componentDidMount = () => {
-  //   this.props.dispatch(getActivities())
-  //   this.setState({ loaded: true })
-  // }
+  componentDidMount = () => {
+    this.props.dispatch(getActivities())
+    // this.setState({ loaded: true })
+  }
 
   // handleChange = (date) => {
   //   this.setState({
@@ -27,7 +26,7 @@ class Activities extends React.Component {
   //   });
   // }
 
-  // showActivities = (startDate) => {
+  showActivities = () => {
   //   let { activities } = this.props;
   //   let visible = activities;
 
@@ -40,35 +39,37 @@ class Activities extends React.Component {
   //           name, description, inside,
   //           age, location, interest
   //         } = activity;
-  //     return (
-  //       <Grid.Column key={id} >
-  //       <Card>
-  //         <Card.Content>
-  //           <Card.Header>
-  //           { name }
-  //           </Card.Header>
-  //           <Card.Meta>
-  //           { date }
-  //           </Card.Meta>
-  //           <Card.Meta>
-  //           { time }
-  //           </Card.Meta>
-  //           <Card.Description>
-  //           { description }
-  //           </Card.Description>
-  //         </Card.Content>
-  //         <Card.Content extra>
-  //           <div className='ui two buttons'>
-  //           <Button basic color='green'>Approve</Button>
-  //           <Button basic color='red'>Decline</Button>
-  //           </div>
-  //         </Card.Content>
-  //       </Card>
-  //       </Grid.Column>
-  //     )
+      return (
+        this.props.activities.map( activity =>
+        <Grid.Column computer={4} >
+          <Card>
+            <Card.Content>
+              <Card.Header>
+              { activity.name }
+              </Card.Header>
+              <Card.Meta>
+              { activity.date }
+              </Card.Meta>
+              <Card.Meta>
+              { activity.time }
+              </Card.Meta>
+              <Card.Description>
+              { activity.description }
+              </Card.Description>
+            </Card.Content>
+            // <Card.Content extra>
+            //   <div className='ui two buttons'>
+            //   <Button basic color='green'>Approve</Button>
+            //   <Button basic color='red'>Decline</Button>
+            //   </div>
+            // </Card.Content>
+          </Card>
+        </Grid.Column>
+      )
+    )
   //   })
-  // }
-
+  }
+  //
   // render() {
   //   return(
   //     <Segment>
@@ -92,8 +93,18 @@ class Activities extends React.Component {
   //   );
   // }
   render() {
+    if(!this.props.activities) {
+      return(<div>loading</div>)
+    }
     return(
-        <div>Activities Page</div>
+      <Container>
+        <Header as='h3' textAlign="center">Activites</Header>
+          <Grid columns={16}>
+            <Grid.Row>
+              { this.showActivities() }
+            </Grid.Row>
+          </Grid>
+      </Container>
     )
   }
 }
