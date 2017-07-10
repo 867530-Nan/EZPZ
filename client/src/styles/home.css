@@ -1,10 +1,10 @@
 .loginButton {
   display: inline-block;
-  justify-content: flex;
-  cursor: pointer; cursor: hand;
+  cursor: pointer, hand;
   background-color: #96E8EA;
   border: 2px solid black;
   border-radius: 5px;
+  font-size: 17px !important;
 }
 
 .sidebarnav {

@@ -103,7 +103,7 @@ class Home extends Component {
           <Header as='h1' textAlign='center' className='homeHeader'>EZPZ</Header>
           <Divider />
           <div className='loginButton'>
-          <Icon name='sidebar' size='big' onClick={this.toggleVisibility} />
+          <Icon name='bars' size='big' onClick={this.toggleVisibility} />
           </div>
         </Container>
         <Sidebar.Pushable as={Segment}>
