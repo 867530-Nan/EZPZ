@@ -54,12 +54,6 @@ class Home extends Component {
               <Button  className="about-us-nav-button">About Us</Button>
           </Link>
           <Divider />
-          <Button
-            onClick={() => dispatch(handleLogout(history))}
-             className="logout-nav-button"
-          >Logout
-          </Button>
-          <Divider />
         </div>
       );
     } else {

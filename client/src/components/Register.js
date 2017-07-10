@@ -119,9 +119,9 @@ class Register extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return { email, password, passwordConfirmation, name,
-          nickname, zipcode }
-}
+// const mapStateToProps = (state) => {
+//   return { email, password, passwordConfirmation, name,
+//           nickname, zipcode }
+// }
 
-export default connect(mapStateToProps)(Register);
+export default connect()(Register);
