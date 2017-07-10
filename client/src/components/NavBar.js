@@ -35,7 +35,7 @@ class NavBar extends Component {
               onClick={() => dispatch(handleLogout(history))}
                className="logout-nav-button"
             >Logout
-            </Button>  
+            </Button>
           </Menu.Menu>
         </div>
         </div>
@@ -64,21 +64,21 @@ class NavBar extends Component {
       );
     }
   }
-            
-            
+
+
 
   render() {
     return (
       <div className='mainNavbar'>
         <Menu pointing secondary>
-          
+
           { this.rightNavs() }
         </Menu>
       </div>
     )
   }
 }
-           
+
 
 const mapStateToProps = (state) => {
   return { user: state.user }

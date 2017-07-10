@@ -17,6 +17,7 @@ import Contact from './Contact';
 import ActivityView from './ActivityView'
 
 
+
 class App extends Component {
   render() {
     return (
@@ -33,6 +34,7 @@ class App extends Component {
             <ProtectedRoute exact path='/activities' component={Activities} />
             <ProtectedRoute exact path='/activity' component={ActivityView} />
             <ProtectedRoute exact path='/profile' component={Profile} />
+            <ProtectedRoute exact path='/children' component={Children} />
             <ProtectedRoute exact path='/contact' component={Contact} />
             <Route component={NoMatch} />
           </Switch>

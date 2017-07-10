@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Sidebar, Segment, Button, Menu, Image, Icon, Header, Form, Divider, Container } from 'semantic-ui-react';
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';
-import { handleLogin } from '../actions/auth';
+import { handleLogin, handleLogout } from '../actions/auth';
 import { withRouter } from 'react-router-dom';
 import '../styles/home.css';
 
@@ -30,66 +30,76 @@ class Home extends Component {
     if(user.id) {
       return(
         <div>
-        <Menu.Item name='links'>
-        <div>
-        <Link to='/profile'>
-          <Button  className="profile-nav-button">Profile</Button>
-        </Link>
-        </div>
-        <Divider />
-        <div>
-        <Link to='/itinerary'>
-           <Button  className="itinerary-nav-button">Itinerary</Button>
-        </Link>
-        </div>
-        <Divider />
-        <div>
-        <Link to='/activities'>
-           <Button  className="activities-nav-button">Activities</Button>
-        </Link>
-        </div>
-        </Menu.Item>
-        <Divider />
+          <Menu.Item name='links'>
+          <div>
+            <Link to='/profile'>
+              <Button  className="profile-nav-button">Profile</Button>
+            </Link>
+          </div>
+          <Divider />
+          <div>
+            <Link to='/itinerary'>
+               <Button  className="itinerary-nav-button">Itinerary</Button>
+            </Link>
+          </div>
+          <Divider />
+          <div>
+            <Link to='/activities'>
+               <Button  className="activities-nav-button">Activities</Button>
+            </Link>
+          </div>
+          </Menu.Item>
+          <Divider />
+          <Link to='/aboutus'>
+              <Button  className="about-us-nav-button">About Us</Button>
+          </Link>
+          <Divider />
+          <Button
+            onClick={() => dispatch(handleLogout(history))}
+             className="logout-nav-button"
+          >Logout
+          </Button>
+          <Divider />
         </div>
       );
     } else {
       return (
         <div>
-        <Menu.Item name='Login'>
-        <Form onSubmit={this.handleSubmit}>
-        <Form.Field>
-        <label>Email</label>
-        <input
-          autoFocus
-          required
-          id='email'
-          value={email}
-          placeholder='Email'
-          onChange={this.handleChange}
-        />
-        </Form.Field>
-        <Form.Field>
-        <label>Password</label>
-        <input
-          required
-          id='password'
-          value={password}
-          placeholder='Password'
-          type='password'
-          onChange={this.handleChange}
-        />
-        </Form.Field>
-        <Segment textAlign='center' basic>
-        <Button
-          color='violet'
-          type='submit'
-          className='sidebarLogin'
-        >Login
-        </Button>
-        </Segment>
-        </Form>
-        </Menu.Item>
-        <Divider />
+          <Menu.Item name='Login'>
+            <Form onSubmit={this.handleSubmit}>
+            <Form.Field>
+            <label>Email</label>
+            <input
+              autoFocus
+              required
+              id='email'
+              value={email}
+              placeholder='Email'
+              onChange={this.handleChange}
+            />
+            </Form.Field>
+            <Form.Field>
+            <label>Password</label>
+            <input
+              required
+              id='password'
+              value={password}
+              placeholder='Password'
+              type='password'
+              onChange={this.handleChange}
+            />
+            </Form.Field>
+            <Segment textAlign='center' basic>
+            <Button
+              color='violet'
+              type='submit'
+              className='sidebarLogin'
+            >Login
+            </Button>
+            </Segment>
+            </Form>
+          </Menu.Item>
+          <Divider />
         </div>
       );
     }
