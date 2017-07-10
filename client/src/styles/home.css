@@ -1,9 +1,13 @@
 .loginButton {
-  display: flex;
-  justify-content: flex-end;
+  display: inline-block;
+  justify-content: flex;
+  cursor: pointer; cursor: hand;
+  background-color: #96E8EA;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
-.sidebar {
+.sidebarnav {
   background-color: #00FA9A !important;
 }
 
