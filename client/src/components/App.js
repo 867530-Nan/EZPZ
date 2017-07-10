@@ -15,6 +15,7 @@ import AboutUs from './AboutUs';
 import Profile from './Profile';
 import Contact from './Contact';
 import ActivityView from './ActivityView'
+import Children from './Children';
 
 
 
