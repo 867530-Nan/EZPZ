@@ -98,7 +98,7 @@ class Activities extends React.Component {
     }
     return(
       <Container>
-        <Header as='h3' textAlign="center">Activites</Header>
+        <Header as='h3' textAlign="center">Activities</Header>
           <Grid columns={16}>
             <Grid.Row>
               { this.showActivities() }
