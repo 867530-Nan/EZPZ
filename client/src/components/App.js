@@ -31,12 +31,12 @@ class App extends Component {
             <Route exact path='/aboutus' component={AboutUs} />
             <Route exact path='/login' component={Login} />
             <Route exact path='/register' component={Register} />
+            <Route exact path='/contact' component={Contact} />
             <ProtectedRoute exact path='/itinerary' component={Itinerary} />
             <ProtectedRoute exact path='/activities' component={Activities} />
             <ProtectedRoute exact path='/activity' component={ActivityView} />
             <ProtectedRoute exact path='/profile' component={Profile} />
             <ProtectedRoute exact path='/children' component={Children} />
-            <ProtectedRoute exact path='/contact' component={Contact} />
             <Route component={NoMatch} />
           </Switch>
         </FetchUser>

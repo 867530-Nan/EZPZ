@@ -47,6 +47,9 @@ class NavBar extends Component {
             <Link to='/aboutus'>
                 <Button  className="about-us-nav-button">About Us</Button>
             </Link>
+            <Link to='/contact'>
+               <Button  className="contact-nav-button">Contact</Button>
+            </Link>
           </Menu.Menu>
         </div>
         <div>
