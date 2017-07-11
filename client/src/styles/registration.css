@@ -1,6 +1,6 @@
 .registrationHeader {
   font-size: 48px !important;
-  color: #9932CC !important;
+  color: #FF8C00 !important;
 }
 
 .registrationButton, .registrationHeader {
@@ -8,6 +8,6 @@
 }
 
 .regBackground {
-  background-color: #48D1CC !important;
+  background-color: #4169E1 !important;
 	margin: 0 !important;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Header, Form, Button, Segment, Container, Divider } from 'semantic-ui-react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { registerUser } from '../actions/auth';
 import '../styles/registration.css';
 
@@ -102,15 +103,16 @@ class Register extends Component {
               onChange={this.handleChange}
             />
           </Form.Field>
+          <Divider />
           <Segment basic textAlign='center'>
-            <Button
-              inverted
-              color='violet'
-              size='huge'
-              type='submit'
-              className='registrationButton'
-            > Submit
-            </Button>
+              <Button
+                inverted
+                color='orange'
+                size='huge'
+                type='submit'
+                className='registrationButton'
+              > Submit
+              </Button>
           </Segment>
         </Form>
         </Container>

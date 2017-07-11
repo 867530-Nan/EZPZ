@@ -2,43 +2,27 @@ import React, { Component } from 'react';
 import { Header, Form, Button, Segment, Container, Divider, Dropdown, Menu } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { addChild } from '../actions/children';
 
 class Children extends Component {
-  state = { age: '', interests: ''
-          };
+  state = { age: '', interestOne: '', interestTwo: '', interestThree: '', interestFour: '' };
 
   handleSubmit = (e) => {
     e.preventDefault();
+    console.log(this.state)
     const { dispatch } = this.props;
-    const { age, interests } = this.state;
+    const { age, interestOne, interestTwo, interestThree, interestFour } = this.state;
+    dispatch(addChild(this.state));
   }
 
   handleChange = (e) => {
     const id = e.target.id;
     const value = e.target.value;
     this.setState({ [id]: value });
+    console.log('someting')
   }
 
-  // const options = [
-  //   { key: 1, text: '1', value: 1 },
-  //   { key: 2, text: '2', value: 2 },
-  //   { key: 3, text: '3', value: 3 },
-  //   { key: 4, text: '4', value: 4 },
-  //   { key: 5, text: '5', value: 5 },
-  //   { key: 6, text: '6', value: 6 },
-  //   { key: 7, text: '7', value: 7 },
-  //   { key: 8, text: '8', value: 8 },
-  //   { key: 9, text: '9', value: 9 },
-  //   { key: 10, text: '10', value: 10 },
-  //   { key: 11, text: '11', value: 11 },
-  //   { key: 12, text: '12', value: 12 },
-  //   { key: 13, text: '13', value: 13 },
-  //   { key: 14, text: '14', value: 14 },
-  //   { key: 15, text: '15', value: 15 },
-  //   { key: 16, text: '16', value: 16 },
-  //   { key: 17, text: '17', value: 17 },
-  //   { key: 18, text: '18', value: 18 },
-  // ]
+  interests = () => {}
 
   render() {
     const { age, interests } = this.state;
@@ -46,38 +30,85 @@ class Children extends Component {
     return(
       <Segment basic className='regBackground'>
         <Header as='h1' textAlign='center' className='registrationHeader'>
-        Register Here!
+          Register Here!
         </Header>
         <Divider />
         <Container>
         <Form onSubmit={this.handleSubmit}>
-          <Form.Field required>
-            <label>Age:</label>
-            <input
-              id='age'
-              placeholder='Age'
-              value={age}
-              onChange={this.handleChange}
-            />
+          <Form.Field
+            label='Age:'
+            control='select'
+            id='age'
+            value={this.state.value}
+            onChange={this.handleChange}
+          >
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+            <option value='13'>13</option>
+            <option value='14'>14</option>
+            <option value='15'>15</option>
+            <option value='16'>16</option>
+            <option value='17'>17</option>
+            <option value='18'>18</option>
           </Form.Field>
-          <Form.Field>
-            <label>Interests:</label>
-            <input
-              id='interests'
-              placeholder='Interests'
-              value={interests}
-              onChange={this.handleChange}
-            />
-          </Form.Field>
+          <Form.Group widths='equal'>
+            <Form.Field label='Interest:'
+            control='select'
+            id='interestOne'
+            value={this.state.value}
+            onChange={this.handleChange}>
+              <option></option>
+              <option value='basketball'>Basketball</option>
+              <option value='reading'>Reading</option>
+              <option value='castle'>Sand Castle Building</option>
+              <option value='sloths'>Sloth Wrestling</option>
+            </Form.Field>
+            <Form.Field label='Interest:'
+            control='select'
+            id='interestTwo'
+            value={this.state.value}
+            onChange={this.handleChange}>
+              <option></option>
+              <option value='basketball'>Basketball</option>
+              <option value='reading'>Reading</option>
+              <option value='castle'>Sand Castle Building</option>
+              <option value='sloths'>Sloth Wrestling</option>
+            </Form.Field>
+            <Form.Field label='Interest:'
+            control='select'
+            id='interestThree'
+            value={this.state.value}
+            onChange={this.handleChange}>
+              <option></option>
+              <option value='basketball'>Basketball</option>
+              <option value='reading'>Reading</option>
+              <option value='castle'>Sand Castle Building</option>
+              <option value='sloths'>Sloth Wrestling</option>
+            </Form.Field>
+            <Form.Field label='Interest:'
+            control='select'
+            id='interestFour'
+            value={this.state.value}
+            onChange={this.handleChange}>
+              <option></option>
+              <option value='basketball'>Basketball</option>
+              <option value='reading'>Reading</option>
+              <option value='castle'>Sand Castle Building</option>
+              <option value='sloths'>Sloth Wrestling</option>
+            </Form.Field>
+          </Form.Group>
           <Segment basic textAlign='center'>
-            <Button
-              inverted
-              color='violet'
-              size='huge'
-              type='submit'
-              className='registrationButton'
-            > Submit
-            </Button>
+            <Button>Submit</Button>
           </Segment>
         </Form>
         </Container>
