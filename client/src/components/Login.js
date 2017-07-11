@@ -26,7 +26,7 @@ class Login extends Component {
     return(
       <div className="login-background">
         <Segment basic className="login-segment">
-            <Header as='h1' textAlign='left' className="login-font">EZPZ Login</Header>
+            <Header as='h1' textAlign='left' className="login-font">EZPZ Family Portal</Header>
             <Form onSubmit={this.handleSubmit}>
               <Form.Field>
                 <label>Email</label>
