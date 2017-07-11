@@ -1,0 +1,11 @@
+.pokemon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(
+	      rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+	      url('../photodump/benefits.jpeg')
+	      center center no-repeat;
+	height: 760px;
+	font-size: 80px;
+}

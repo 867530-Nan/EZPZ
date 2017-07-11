@@ -12,14 +12,7 @@ class NavBar extends Component {
 
     if(user.id) {
       return(
-        <div className="nav-format">
-        <div>
-          <Menu.Menu>
-            <Link to='/activities'>
-                <Button  className="home-nav-button">Home</Button>
-            </Link>
-          </Menu.Menu>
-        </div>
+        <div className="nav-logged-in">
         <div>
           <Menu.Menu>
             <Link to='/profile'>
@@ -30,6 +23,9 @@ class NavBar extends Component {
             </Link>
             <Link to='/activities'>
                <Button  className="activities-nav-button">Activities</Button>
+            </Link>
+            <Link to='/contact'>
+               <Button  className="contact-nav-button">Contact</Button>
             </Link>
             <Button
               onClick={() => dispatch(handleLogout(history))}
@@ -42,7 +38,7 @@ class NavBar extends Component {
       );
     } else {
       return(
-        <div className="nav-format">
+        <div className="nav-logged-out">
         <div>
           <Menu.Menu>
             <Link to='/aboutus'>
