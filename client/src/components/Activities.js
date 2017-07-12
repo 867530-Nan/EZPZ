@@ -6,6 +6,7 @@ import { Header, Segment, Button, Divider, Label, Container, Grid, Card, Dropdow
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getActivities } from '../actions/activities'
+import ActivityView from './ActivityView'
 
 
 class Activities extends React.Component {
@@ -23,7 +24,7 @@ class Activities extends React.Component {
 
   tick =() => {
     let activeIndex = this.state.activeIndex;
-    if (activeIndex == this.props.users.length - 1){
+    if (activeIndex == this.props.activities.length - 1){
       activeIndex = 0;
       } else {
         activeIndex++;
@@ -36,38 +37,13 @@ class Activities extends React.Component {
   showActivities = () => {
 
       let visible = this.props.activities;
-      if (this.state.month)
+      const activeIndex = this.state.activeIndex
+      if (visible)
         visible = this.props.activities.filter( a => a.date === this.state.month )
       return (
-        <Grid.Column computer={4} >
-          <Card>
-            <Card.Content>
-              <Card.Header>
-              { this.state.activities.activeIndex.name }
-              </Card.Header>
-              <Card.Meta>
-              { this.state.activeIndex.date }
-              </Card.Meta>
-              <Card.Meta>
-              { this.state.activeIndex.time }
-              </Card.Meta>
-              <Card.Description>
-              { this.state.activeIndex.description }
-              </Card.Description>
-            </Card.Content>
-            <Card.Content extra>
-              <div className='ui two buttons'>
-              <Button basic color='green'>Approve</Button>
-              <button className = "btn btn-default" onClick={this.tick} >
-                  Show Next Activity
-              </button>
-              </div>
-            </Card.Content>
-          </Card>
-        </Grid.Column>
+          <ActivityView activity={this.props.activities[this.state.activeIndex]} />
       )
-  //   })
-  }
+   }
 
   monthOptions = () => {
     let { months } = this.props;
@@ -83,7 +59,7 @@ class Activities extends React.Component {
     if(!this.props.activities) {
       return(<div>loading</div>)
     }
-    debugger
+    console.log(this.state.activeIndex)
     return(
       <Container>
         <Header as='h3' textAlign="center">Activities</Header>
@@ -107,9 +83,16 @@ class Activities extends React.Component {
               <Divider />
           <Grid columns={16}>
             <Grid.Row>
-              { this.showActivities() }
+              <ActivityView activity={this.props.activities[this.state.activeIndex]} />
             </Grid.Row>
           </Grid>
+          { this.showActivities }
+          <div className='ui two buttons'>
+            <Button basic color='green'>Approve</Button>
+            <Button className = "btn btn-default" onClick={this.tick} >
+              Show Next Activity
+            </Button>
+          </div>
       </Container>
     )
   }
