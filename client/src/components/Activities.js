@@ -10,65 +10,51 @@ import ActivityView from './ActivityView'
 
 
 class Activities extends React.Component {
-  // state = {
-  //   startDate: moment(),
-  //   loaded: false,
-  // }
 
-  state = { month: '', activeIndex: 0 }
+  state = { month: '', activeIndex: 0, visible: [] }
 
-  componentDidMount = () => {
-    this.props.dispatch(getActivities())
-    // this.setState({ loaded: true })
+  componentWillMount() {
+    this.props.dispatch(getActivities(this.setActivities));
+  }
+
+  setActivities = (activities) => {
+    this.setState({ visible: activities });
   }
 
   tick =() => {
     let activeIndex = this.state.activeIndex;
-    if (activeIndex == this.props.activities.length - 1){
-      activeIndex = 0;
-      } else {
-        activeIndex++;
-        }
-    this.setState({
-      activeIndex
-    });
+    console.log(this.state.activeIndex, this.state.visible.length)
+    if (activeIndex == this.state.visible.length - 1){
+      activeIndex = 0
+    } else {
+      activeIndex++;
+    }
+    this.setState({ activeIndex });
   }
-
-  showActivities = () => {
-
-      let visible = this.props.activities;
-      const activeIndex = this.state.activeIndex
-      if (visible)
-        visible = this.props.activities.filter( a => a.date === this.state.month )
-      return (
-          <ActivityView activity={this.props.activities[this.state.activeIndex]} />
-      )
-   }
 
   monthOptions = () => {
     let { months } = this.props;
     return months.map( (month, index) => { return { key: index, text: month, value: month}})
   }
 
-
+  updateFilter = (e, data) => {
+    let visible = this.props.activities.filter( a => a.date === data.value)
+    this.setState({ month: data.value, visible, activeIndex: 0 });
+  }
 
 
 
   render() {
     let { month } = this.state;
-    if(!this.props.activities) {
-      return(<div>loading</div>)
-    }
-    console.log(this.state.activeIndex)
-    return(
-      <Container>
-        <Header as='h3' textAlign="center">Activities</Header>
-        <Dropdown
+    if (month == '')
+      return(
+        <Container>
+          <Dropdown
           placeholder="Select Month to Play"
           fluid
           selection
           options={this.monthOptions()}
-          onChange={ (e, data) => this.setState({ month: data.value }) }
+          onChange={this.updateFilter}
           value={month}
           />
           { month &&
@@ -79,22 +65,44 @@ class Activities extends React.Component {
               >
               Clear Filter: {month}
               </Button>
-              }
-              <Divider />
-          <Grid columns={16}>
-            <Grid.Row>
-              <ActivityView activity={this.props.activities[this.state.activeIndex]} />
-            </Grid.Row>
-          </Grid>
-          { this.showActivities }
-          <div className='ui two buttons'>
-            <Button basic color='green'>Approve</Button>
-            <Button className = "btn btn-default" onClick={this.tick} >
-              Show Next Activity
-            </Button>
-          </div>
-      </Container>
-    )
+            }
+          </Container>
+        )
+    else
+      return(
+        <Container>
+          <Header as='h3' textAlign="center">Activities</Header>
+          <Dropdown
+            placeholder="Select Month to Play"
+            fluid
+            selection
+            options={this.monthOptions()}
+            onChange={this.updateFilter}
+            value={month}
+            />
+            { month &&
+                <Button
+                  fluid
+                  basic
+                  onClick={ () => this.setState({ month: '' }) }
+                >
+                Clear Filter: {month}
+                </Button>
+                }
+                <Divider />
+            <Grid columns={16}>
+              <Grid.Row>
+                <ActivityView activity={this.state.visible[this.state.activeIndex]} />
+              </Grid.Row>
+            </Grid>
+            <div className='ui two buttons'>
+              <Button className = "btn btn-default" onClick={this.tick} >
+                Show Next Activity
+              </Button>
+              <Button basic color='green'>Approve</Button>
+            </div>
+        </Container>
+      )
   }
 }
 

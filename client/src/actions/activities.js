@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-export const getActivities = () => {
+export const getActivities = (cb) => {
   return (dispatch) => {
     axios.get('/api/activities')
     .then( res => {
-      console.log(res.data)
+      cb(res.data);
       dispatch({ type: 'ACTIVITIES', activities: res.data })
     })
   }

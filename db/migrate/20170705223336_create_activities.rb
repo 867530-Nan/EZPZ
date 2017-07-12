@@ -1,7 +1,9 @@
 class CreateActivities < ActiveRecord::Migration[5.1]
   def change
     create_table :activities do |t|
-      t.string :date
+      t.string :month
+      t.integer :day
+      t.integer :year
       t.string :url
       t.datetime :time
       t.string :name
