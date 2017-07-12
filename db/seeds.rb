@@ -1,6 +1,6 @@
 months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
-200.times do 
+200.times do
   Activity.create(
     location: Faker::Pokemon.location,
     date: months.sample,
@@ -32,8 +32,9 @@ end
     name: Faker::Name.name,
     user_id: User.all.sample.id,
     age: Faker::Number.between(1,18),
-    interest: Faker::Music.instrument,   
+    interestOne: Faker::Music.instrument,
+    interestTwo: Faker::Music.instrument,
+    interestThree: Faker::Music.instrument,
+    interestFour: Faker::Music.instrument,   
   )
-end 
-
-
+end

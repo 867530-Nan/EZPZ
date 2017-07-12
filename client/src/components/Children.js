@@ -9,7 +9,6 @@ class Children extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state)
     const { dispatch } = this.props;
     const { age, interestOne, interestTwo, interestThree, interestFour } = this.state;
     dispatch(addChild(this.state));
@@ -19,18 +18,17 @@ class Children extends Component {
     const id = e.target.id;
     const value = e.target.value;
     this.setState({ [id]: value });
-    console.log('someting')
   }
 
   interests = () => {}
 
   render() {
-    const { age, interests } = this.state;
+    const { age, interestOne, interestTwo, interestThree, interestFour } = this.state;
 
     return(
       <Segment basic className='regBackground'>
         <Header as='h1' textAlign='center' className='registrationHeader'>
-          Register Here!
+          Register Your Children!
         </Header>
         <Divider />
         <Container>
@@ -108,7 +106,14 @@ class Children extends Component {
             </Form.Field>
           </Form.Group>
           <Segment basic textAlign='center'>
-            <Button>Submit</Button>
+          <Button
+            inverted
+            color='orange'
+            size='huge'
+            type='submit'
+            className='registrationButton'
+          > Submit
+          </Button>
           </Segment>
         </Form>
         </Container>
