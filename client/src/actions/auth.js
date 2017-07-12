@@ -50,6 +50,7 @@ export const handleLogin = (email, password, history) => {
         history.push('/activities');
       })
       .catch( error => {
+        debugger
         const message = error.response.data.errors.join(',');
         dispatch(setFlash(message, 'error'));
       })

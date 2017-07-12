@@ -14,64 +14,58 @@ class Activities extends React.Component {
   //   loaded: false,
   // }
 
-  state = { month: '' }
+  state = { month: '', activeIndex: 0 }
 
   componentDidMount = () => {
     this.props.dispatch(getActivities())
     // this.setState({ loaded: true })
   }
 
-  // handleChange = (date) => {
-  //   this.setState({
-  //     startDate: date
-  //   });
-  // }
+  tick =() => {
+    let activeIndex = this.state.activeIndex;
+    if (activeIndex == this.props.users.length - 1){
+      activeIndex = 0;
+      } else {
+        activeIndex++;
+        }
+    this.setState({
+      activeIndex
+    });
+  }
 
   showActivities = () => {
-  //   let { activities } = this.props;
-  //   let visible = activities;
-
-  //   //TODO: update logic in if-statement
-  //   debugger
-  //   if ( startDate === this.activity.id.date )
-  //     visible = activities.filter( a => a.date === this.date )
-  //     return visible.map ( activity => {
-  //     let { id, date, url, time,
-  //           name, description, inside,
-  //           age, location, interest
-  //         } = activity;
 
       let visible = this.props.activities;
       if (this.state.month)
         visible = this.props.activities.filter( a => a.date === this.state.month )
-      return visible.map( activity => {
-          return (
+      return (
         <Grid.Column computer={4} >
           <Card>
             <Card.Content>
               <Card.Header>
-              { activity.name }
+              { this.state.activities.activeIndex.name }
               </Card.Header>
               <Card.Meta>
-              { activity.date }
+              { this.state.activeIndex.date }
               </Card.Meta>
               <Card.Meta>
-              { activity.time }
+              { this.state.activeIndex.time }
               </Card.Meta>
               <Card.Description>
-              { activity.description }
+              { this.state.activeIndex.description }
               </Card.Description>
             </Card.Content>
             <Card.Content extra>
               <div className='ui two buttons'>
               <Button basic color='green'>Approve</Button>
-              <Button basic color='red'>Decline</Button>
+              <button className = "btn btn-default" onClick={this.tick} >
+                  Show Next Activity
+              </button>
               </div>
             </Card.Content>
           </Card>
         </Grid.Column>
       )
-    })
   //   })
   }
 
@@ -79,34 +73,17 @@ class Activities extends React.Component {
     let { months } = this.props;
     return months.map( (month, index) => { return { key: index, text: month, value: month}})
   }
-  //
-  // render() {
-  //   return(
-  //     <Segment>
-  //     <Header as='h3' textAlign='center' >When are we hanging out?</Header>
-  //     <Label>Date</Label>
-  //      <DatePicker
-  //         selected={this.state.startDate}
-  //         onChange={this.handleChange}
-  //       />
-  //       <Label>Activities Page</Label>
-  //       <Divider />
-  //       <Grid columns={16}>
-  //         <Grid.Row>
-  //           { this.showActivities() }
-  //         </Grid.Row>
-  //       </Grid>
-  //       <Button>Save</Button>
-  //       <Button>Next</Button>
-  //     </Segment>
 
-  //   );
-  // }
+
+
+
+
   render() {
     let { month } = this.state;
     if(!this.props.activities) {
       return(<div>loading</div>)
     }
+    debugger
     return(
       <Container>
         <Header as='h3' textAlign="center">Activities</Header>
