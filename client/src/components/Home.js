@@ -123,12 +123,8 @@ class Home extends Component {
           { this.leftNavs() }
           </Sidebar>
           <Sidebar.Pusher>
-            <Segment basic className='homePage'>
-            <Header as='h3' className='homeHeader'>Application Content</Header>
-            <Header as='h3' className='homeHeader'>Application Content</Header>
-            <Header as='h3' className='homeHeader'>Application Content</Header>
-              <Header as='h3' className='homeHeader'>Application Content</Header>
-              <Image src='/assets/images/wireframe/paragraph.png' />
+            <Segment basic>
+              <div className='homePage'></div>
             </Segment>
           </Sidebar.Pusher>
         </Sidebar.Pushable>

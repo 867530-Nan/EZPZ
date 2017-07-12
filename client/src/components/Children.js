@@ -9,9 +9,9 @@ class Children extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    const { dispatch } = this.props;
+    const { dispatch, history } = this.props;
     const { age, interestOne, interestTwo, interestThree, interestFour } = this.state;
-    dispatch(addChild(this.state));
+    dispatch(addChild(this.state, history));
   }
 
   handleChange = (e) => {
