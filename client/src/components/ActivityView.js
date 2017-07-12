@@ -16,28 +16,28 @@ const ActivityView = ({ activity = {} }) => (
 
       <Table.Body>
         <Table.Row>
-          <Table.Cell>Description</Table.Cell>
-          <Table.Cell>{activity.description}</Table.Cell>
+          <Table.Cell>Date</Table.Cell>
+          <Table.Cell>{activity.month}/{activity.day}/{activity.year}</Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.Cell>Location</Table.Cell>
           <Table.Cell>{activity.location}</Table.Cell>
         </Table.Row>
         <Table.Row>
-          <Table.Cell>Time</Table.Cell>
-          <Table.Cell>{activity.time}</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.Cell>Date</Table.Cell>
-          <Table.Cell>{activity.date}</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.Cell>Inside:</Table.Cell>
-          <Table.Cell>{activity.inside}</Table.Cell>
+          <Table.Cell>Inside</Table.Cell>
+          <Table.Cell>No</Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.Cell>Webpage</Table.Cell>
           <Table.Cell>{activity.url}</Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.Cell>Description</Table.Cell>
+          <Table.Cell>{activity.description}</Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.Cell>Time</Table.Cell>
+          <Table.Cell>5:00 PM</Table.Cell>
         </Table.Row>
       </Table.Body>
     </Table>

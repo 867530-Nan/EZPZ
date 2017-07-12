@@ -23,7 +23,7 @@ class Activities extends React.Component {
 
   tick =() => {
     let activeIndex = this.state.activeIndex;
-    console.log(this.state.activeIndex, this.state.visible.length)
+    // console.log(this.state.activeIndex, this.state.visible.length)
     if (activeIndex == this.state.visible.length - 1){
       activeIndex = 0
     } else {
@@ -34,11 +34,11 @@ class Activities extends React.Component {
 
   monthOptions = () => {
     let { months } = this.props;
-    return months.map( (month, index) => { return { key: index, text: month, value: month}})
+    return months.map( (month, index) => { return { key: index, text: month, value: month} } )
   }
 
   updateFilter = (e, data) => {
-    let visible = this.props.activities.filter( a => a.date === data.value)
+    let visible = this.props.activities.filter( a => a.month === data.value)
     this.setState({ month: data.value, visible, activeIndex: 0 });
   }
 
@@ -108,7 +108,7 @@ class Activities extends React.Component {
 
 const mapStateToProps = (state) => {
   const activities = state.activities;
-  const months = [...new Set(state.activities.map( a => a.date ))]
+  const months = [...new Set(state.activities.map( a => a.month ))]
   return { activities, months }
 }
 
