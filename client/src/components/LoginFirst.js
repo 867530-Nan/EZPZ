@@ -29,7 +29,7 @@ class LoginFirst extends Component {
      	 	<div className="register-login">
          <StepRegisterLogin className="steps"/>
           <div className="family-photo">
-            <Header as='h1' textAlign='left' color="orange" className="login-font">EZPZ Family Portal</Header>
+            <Header as='h1' textAlign='left' color="orange" className="login-font">Welcome to EZPZ</Header>
             <Form className="form" onSubmit={this.handleSubmit}>
               <Form.Field>
                 <label>Email</label>
@@ -56,7 +56,14 @@ class LoginFirst extends Component {
                 />
               </Form.Field>
               <Segment textAlign='center' basic>
-                <Button primary type='submit'>Submit</Button>
+                <Button
+                
+                  color='white'
+                  size='huge'
+                  type='submit'
+                  className='registrationButton'
+                > Submit
+                </Button>
               </Segment>
             </Form>
           </div>

@@ -34,3 +34,16 @@
 	padding-top: 80px;
 }
 
+.registrationButton, .registrationHeader {
+  font-family: "Helvetica", cursive, sans-serif !important;
+  border: 2px solid #F2711C !important;
+  color: #F2711C !important;
+  background-color: white !important;
+	font-weight: 500 !important;
+}
+
+.registrationButton:hover {
+	color: white !important;
+	background-color: #F2711C !important;
+}
+
