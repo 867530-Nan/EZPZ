@@ -12,7 +12,7 @@ export const registerUser = (auth, history) => {
       .then( res => {
         let { data: { data: user }, headers } = res;
         dispatch({ type: 'LOGIN', user, headers });
-        history.push('/');
+        history.push('/children');
       })
       .catch( error => {
         let { errors } = error.response.data

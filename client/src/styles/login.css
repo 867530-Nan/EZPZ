@@ -18,3 +18,8 @@
 .login-input{
 	background-color: rgba(255, 255, 255, 0.3) !important;
 }
+
+.register-login {
+	display: flex !important;
+	justify-content: center;
+}

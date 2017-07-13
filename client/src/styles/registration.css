@@ -11,3 +11,8 @@
   background-color: #4169E1 !important;
 	margin: 0 !important;
 }
+
+.register-parent {
+	display: flex !important;
+	justify-content: center;
+}

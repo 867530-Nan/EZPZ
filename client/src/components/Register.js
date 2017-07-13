@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { registerUser } from '../actions/auth';
 import '../styles/registration.css';
+import StepRegisterParent from './step_register_parent';
 
 class Register extends Component {
   state = { email: '', password: '', passwordConfirmation: '',
@@ -36,9 +37,9 @@ class Register extends Component {
 
     return(
       <Segment basic className='regBackground'>
-        <Header as='h1' textAlign='center' className='registrationHeader'>
-        Register Here!
-        </Header>
+      <div className="register-parent">
+        <StepRegisterParent />
+      </div>
         <Divider />
         <Container>
         <Form onSubmit={this.handleSubmit}>

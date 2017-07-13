@@ -3,6 +3,9 @@ import { Header, Form, Button, Segment, Container, Divider, Dropdown, Menu } fro
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { addChild } from '../actions/children';
+import StepRegisterChildren from './step_register_children'
+import '../styles/children.css';
+
 
 class Children extends Component {
   state = { age: '', interestOne: '', interestTwo: '', interestThree: '', interestFour: '' };
@@ -27,9 +30,9 @@ class Children extends Component {
 
     return(
       <Segment basic className='regBackground'>
-        <Header as='h1' textAlign='center' className='registrationHeader'>
-          Register Your Children!
-        </Header>
+        <div className="register-child">
+          <StepRegisterChildren />
+        </div>
         <Divider />
         <Container>
         <Form onSubmit={this.handleSubmit}>
