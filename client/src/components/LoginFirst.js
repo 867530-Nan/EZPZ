@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Header, Segment, Form, Button } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { handleLogin } from '../actions/auth';
-import '../styles/login.css';
+import '../styles/loginfirst.css';
 import StepRegisterLogin from './step_register_login'
 
 class LoginFirst extends Component {
@@ -25,13 +25,12 @@ class LoginFirst extends Component {
     const { email, password } = this.state;
 
     return(
-      <div className="login-background">
+      <div>
      	 	<div className="register-login">
-          <StepRegisterLogin />
-        </div>
-        <Segment basic className="login-segment">
+         <StepRegisterLogin className="steps"/>
+          <div className="family-photo">
             <Header as='h1' textAlign='left' className="login-font">EZPZ Family Portal</Header>
-            <Form onSubmit={this.handleSubmit}>
+            <Form className="form" onSubmit={this.handleSubmit}>
               <Form.Field>
                 <label>Email</label>
                 <input
@@ -60,7 +59,8 @@ class LoginFirst extends Component {
                 <Button primary type='submit'>Submit</Button>
               </Segment>
             </Form>
-        </Segment>
+          </div>
+        </div>
       </div>
     );
   }

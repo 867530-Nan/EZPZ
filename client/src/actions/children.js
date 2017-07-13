@@ -6,6 +6,6 @@ export const addChild = (childInput, history) => {
   return (dispatch) => {
     axios.post('/api/children', { child })
       .then( res => dispatch({ type: 'ADD_CHILD', app: res.data }) )
-      history.push('/activities');
+      history.push('/initial-login');
   }
 }

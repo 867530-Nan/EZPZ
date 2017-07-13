@@ -124,7 +124,9 @@ class Home extends Component {
           </Sidebar>
           <Sidebar.Pusher>
             <Segment basic>
-              <div className='homePage'></div>
+              <div className='homePage'>
+              
+              </div>
             </Segment>
           </Sidebar.Pusher>
         </Sidebar.Pushable>

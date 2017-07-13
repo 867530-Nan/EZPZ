@@ -13,20 +13,20 @@ const StepRegisterChildren = () => (
       <Step completed>
         <Step.Content>
           <Step.Title>Register Parent</Step.Title>
-          <Step.Description>Input Parent Information</Step.Description>
+          <Step.Description>Enter Basic Parent Information</Step.Description>
         </Step.Content>
       </Step>
 
       <Step completed>
         <Step.Content>
-          <Step.Title>Register Child(ren)</Step.Title>
-          <Step.Description>Input Child(rens) Information</Step.Description>
+          <Step.Title>Child Information</Step.Title>
+          <Step.Description>Simply Enter Age and Interests</Step.Description>
         </Step.Content>
       </Step>
 
       <Step active>
         <Step.Content>
-          <Step.Title>Login</Step.Title>
+          <Step.Title>User Login</Step.Title>
           <Step.Description>Begin Family Time</Step.Description>
         </Step.Content>
       </Step>

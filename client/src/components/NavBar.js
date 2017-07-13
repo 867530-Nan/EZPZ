@@ -24,9 +24,6 @@ class NavBar extends Component {
             <Link to='/activities'>
                <Button  className="activities-nav-button">Activities</Button>
             </Link>
-            <Link to='/children'>
-               <Button  className="activities-nav-button">Children</Button>
-            </Link>
             <Link to='/contact'>
                <Button  className="contact-nav-button">Contact</Button>
             </Link>

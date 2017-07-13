@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Form, Button, Segment, Container, Divider } from 'semantic-ui-react';
+import { Header, Form, Button, Segment, Container, Divider, Icon } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { registerUser } from '../actions/auth';
@@ -36,88 +36,92 @@ class Register extends Component {
             nickname, zipcode } = this.state;
 
     return(
-      <Segment basic className='regBackground'>
-      <div className="register-parent">
-        <StepRegisterParent />
+      
+        <div >
+          <StepRegisterParent className="register-parent"/>
+          <Segment basic className='regBackground'>
+            <Header className='create-profile' color="orange" as='h1' icon textAlign='center'>
+              <Icon name='address card' />
+              Create Parent Profile Below
+            </Header>
+            <Divider />
+          <Container>
+          <Form onSubmit={this.handleSubmit}>
+            <Form.Field required>
+              <label>Name</label>
+              <input
+                id='name'
+                placeholder='Name'
+                required
+                value={name}
+                onChange={this.handleChange}
+              />
+            </Form.Field>
+            <Form.Field>
+              <label>Nickname (optional)</label>
+              <input
+                id='nickname'
+                placeholder='Nickname (optional)'
+                value={nickname}
+                onChange={this.handleChange}
+              />
+            </Form.Field>
+            <Form.Field required>
+              <label>Zipcode</label>
+              <input
+                id='zipcode'
+                placeholder='Zipcode'
+                required
+                value={zipcode}
+                onChange={this.handleChange}
+              />
+            </Form.Field>
+            <Form.Field required>
+              <label>Email</label>
+              <input
+                id='email'
+                placeholder='Email'
+                required
+                value={email}
+                onChange={this.handleChange}
+              />
+            </Form.Field>
+            <Form.Field required>
+              <label>Password</label>
+              <input
+                id='password'
+                placeholder='Password'
+                type='password'
+                required
+                value={password}
+                onChange={this.handleChange}
+              />
+            </Form.Field>
+            <Form.Field required>
+              <label>Password Confirmation</label>
+              <input
+                id='passwordConfirmation'
+                placeholder='Password Confirmation'
+                type='password'
+                required
+                value={passwordConfirmation}
+                onChange={this.handleChange}
+              />
+            </Form.Field>
+            <Segment basic textAlign='center'>
+                <Button
+                  inverted
+                  color='orange'
+                  size='huge'
+                  type='submit'
+                  className='registrationButton'
+                > Submit
+                </Button>
+            </Segment>
+          </Form>
+          </Container>
+        </Segment>
       </div>
-        <Divider />
-        <Container>
-        <Form onSubmit={this.handleSubmit}>
-          <Form.Field required>
-            <label>Name</label>
-            <input
-              id='name'
-              placeholder='Name'
-              required
-              value={name}
-              onChange={this.handleChange}
-            />
-          </Form.Field>
-          <Form.Field>
-            <label>Nickname (optional)</label>
-            <input
-              id='nickname'
-              placeholder='Nickname (optional)'
-              value={nickname}
-              onChange={this.handleChange}
-            />
-          </Form.Field>
-          <Form.Field required>
-            <label>Zipcode</label>
-            <input
-              id='zipcode'
-              placeholder='Zipcode'
-              required
-              value={zipcode}
-              onChange={this.handleChange}
-            />
-          </Form.Field>
-          <Form.Field required>
-            <label>Email</label>
-            <input
-              id='email'
-              placeholder='Email'
-              required
-              value={email}
-              onChange={this.handleChange}
-            />
-          </Form.Field>
-          <Form.Field required>
-            <label>Password</label>
-            <input
-              id='password'
-              placeholder='Password'
-              type='password'
-              required
-              value={password}
-              onChange={this.handleChange}
-            />
-          </Form.Field>
-          <Form.Field required>
-            <label>Password Confirmation</label>
-            <input
-              id='passwordConfirmation'
-              placeholder='Password Confirmation'
-              type='password'
-              required
-              value={passwordConfirmation}
-              onChange={this.handleChange}
-            />
-          </Form.Field>
-          <Divider />
-          <Segment basic textAlign='center'>
-              <Button
-                inverted
-                color='orange'
-                size='huge'
-                type='submit'
-                className='registrationButton'
-              > Submit
-              </Button>
-          </Segment>
-        </Form>
-        </Container>
-      </Segment>
     );
   }
 }
