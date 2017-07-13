@@ -6,8 +6,7 @@ class Contact extends Component {
   render() {
     return(
       <Header as='h1' textAlign='center'>
-        Page Not Found,
-        <Link to='/'> Home</Link>
+        Contact Page
       </Header>
     );
   }
