@@ -16,16 +16,44 @@ class NavBar extends Component {
         <div>
           <Menu.Menu>
             <Link to='/profile'>
-              <Button  className="profile-nav-button">Profile</Button>
+              <Button className="profile-nav-button" animated='fade'>
+                <Button.Content visible>
+                  Profile
+                </Button.Content>
+                <Button.Content hidden>
+                  Create
+                </Button.Content>
+              </Button>
             </Link>
             <Link to='/itinerary'>
-               <Button  className="itinerary-nav-button">Itinerary</Button>
+                <Button className="itinerary-nav-button" animated='fade'>
+                  <Button.Content visible>
+                    Itinerary
+                </Button.Content>
+                  <Button.Content hidden>
+                    View
+                </Button.Content>
+                </Button>
             </Link>
             <Link to='/activities'>
-               <Button  className="activities-nav-button">Activities</Button>
+                <Button className="activities-nav-button" animated='fade'>
+                  <Button.Content visible>
+                    Activities
+                </Button.Content>
+                  <Button.Content hidden>
+                    Browse
+                </Button.Content>
+                </Button>
             </Link>
             <Link to='/contact'>
-               <Button  className="contact-nav-button">Contact</Button>
+                <Button className="contact-nav-button" animated='fade'>
+                  <Button.Content visible>
+                    Contact
+                </Button.Content>
+                  <Button.Content hidden>
+                    Us
+                </Button.Content>
+                </Button>
             </Link>
             <Button
               onClick={() => dispatch(handleLogout(history))}
@@ -42,20 +70,48 @@ class NavBar extends Component {
         <div>
           <Menu.Menu>
             <Link to='/aboutus'>
-                <Button  className="about-us-nav-button">About Us</Button>
+                <Button className="about-us-nav-button" animated='fade'>
+                  <Button.Content visible>
+                    About
+                </Button.Content>
+                  <Button.Content hidden>
+                    Us
+                </Button.Content>
+                </Button>
             </Link>
             <Link to='/contact'>
-               <Button  className="contact-nav-button">Contact</Button>
+                <Button className="contact-nav-button" animated='fade'>
+                  <Button.Content visible>
+                    Contact
+                </Button.Content>
+                  <Button.Content hidden>
+                    Us
+                </Button.Content>
+                </Button>
             </Link>
           </Menu.Menu>
         </div>
         <div>
           <Menu.Menu>
             <Link to='/register'>
-              <Button  className="register-nav-button">Register</Button>
+                <Button className="register-nav-button" animated='fade'>
+                  <Button.Content visible>
+                    Register
+                </Button.Content>
+                  <Button.Content hidden>
+                    Now
+                </Button.Content>
+                </Button>
             </Link>
             <Link to='/login'>
-              <Button className="login-nav-button">Login</Button>
+                <Button className="login-nav-button" animated='fade'>
+                  <Button.Content visible>
+                    Login
+                </Button.Content>
+                  <Button.Content hidden>
+                    Us
+                </Button.Content>
+                </Button>
             </Link>
           </Menu.Menu>
         </div>

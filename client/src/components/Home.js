@@ -105,31 +105,7 @@ class Home extends Component {
       <div className='homePage'>
         <Container>
           <Header as='h1' textAlign='center' className='homeHeader'>EZPZ</Header>
-          <Divider />
-          <div className='loginButton'>
-          <Icon name='bars' size='big' onClick={this.toggleVisibility} />
-          </div>
         </Container>
-        <Sidebar.Pushable as={Segment}>
-          <Sidebar
-          as={Menu}
-          animation='scale down'
-          width='thin'
-          visible={visible}
-          icon='labeled'
-          vertical
-          className='sidebarnav'
-          >
-          { this.leftNavs() }
-          </Sidebar>
-          <Sidebar.Pusher>
-            <Segment basic>
-              <div className='homePage'>
-              
-              </div>
-            </Segment>
-          </Sidebar.Pusher>
-        </Sidebar.Pushable>
       </div>
     )
   }
@@ -140,3 +116,6 @@ const mapStateToProps = (state) => {
 }
 
 export default withRouter(connect(mapStateToProps)(Home));
+        
+         
+          

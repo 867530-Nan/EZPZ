@@ -19,3 +19,8 @@
 .homepage {
 	height: 600px !important;
 }
+.homePage {
+  background: url('../photodump/homebackground.jpg');
+  height: 2500px;
+  font-size: 80px;
+}

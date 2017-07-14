@@ -1,5 +1,5 @@
 .mainNavbar {
-  background-color: white !important;
+  background: url('../photodump/homebackground.jpg');
   color: !important;
   padding: 2px;
 
@@ -29,103 +29,143 @@
 }
 
 .home-nav-button:hover {
-	color: white !important;
-	background-color: #FF7F00 !important;
-	border: 2px solid #FF7F00 !important;
+color: white !important;
+border: 2px solid white !important;
 }
 
 .profile-nav-button{
-	background-color: white !important;
-	color: #FF9B12 !important;
-	border: 2px solid #FF9B12 !important;
+	background: #FF7100 !important;
+	background-image: linear-gradient(-222deg, #FAD961 0%, #F77623 73%, #F77623 73%, #F76B1C 97%)!important;
+	border: 2px solid #FFFFFF !important;
+	box-shadow: 0 13px 15px 2px rgba(0, 0, 0, 0.95) !important;
+	border-radius: 30px !important;
+	font-family: ArialRoundedMTBold !important;
+	font-size: 16px !important;
+	color: #FFFFFF !important;
+	letter-spacing: 1.22px !important;
 }
 
 .profile-nav-button:hover{
-	background-color: #FF9B12 !important;
 	color: white !important;
-	border: 2px solid #FF9B12 !important;
+	border: 2px solid white !important;
 }
 
 .logout-nav-button{
-	background-color: white !important;
-	color: #FF8359 !important;
-	border: 2px solid #FF8359 !important;
+	background: #00F86B !important;
+	background-image: linear-gradient(-180deg, #A3FF00 0%, #429321 100%) !important;
+	border: 2px solid #FFFFFF !important;
+	box-shadow: 0 13px 15px 2px rgba(0, 0, 0, 0.95) !important;
+	border-radius: 30px !important;
+	font-family: ArialRoundedMTBold !important;
+	font-size: 16px !important;
+	color: #FFFFFF !important;
+	letter-spacing: 1.22px !important;
 }
 
 .logout-nav-button:hover{
-	background-color: #FF8359 !important;
 	color: white !important;
-	border: 2px solid #FF8359 !important;
+	border: 2px solid white !important;
 }
 
 .itinerary-nav-button{
-	background-color: white !important;
-	color: #C408C9 !important;
-	border: 2px solid #C408C9 !important;
+		background: #345EF2 !important;
+		background-image: linear-gradient(-223deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 94%) !important;
+		border: 2px solid #FFFFFF !important;
+		box-shadow: 0 13px 15px 2px rgba(0, 0, 0, 0.95) !important;
+		border-radius: 30px !important;
+		font-family: ArialRoundedMTBold !important;
+		font-size: 16px !important;
+		color: #FFFFFF !important;
+		letter-spacing: 1.22px !important;
 }
 
 .itinerary-nav-button:hover{
 	color: white !important;
-	border: 2px solid #C408C9 !important;
-	background-color: #C408C9 !important;
+	border: 2px solid white !important;
 }
 
 .activities-nav-button{
-	background-color: white !important;
-	color: #54E1FF !important;
-	border: 2px solid #54E1FF !important;
+	background: #00B4FD !important;
+	background-image: linear-gradient(-223deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 94%) !important;
+	border: 2px solid #FFFFFF !important;
+	box-shadow: 0 13px 15px 2px rgba(0, 0, 0, 0.95) !important;
+	border-radius: 30px !important;
+	font-family: ArialRoundedMTBold !important;
+	font-size: 16px !important;
+	color: #FFFFFF !important;
+	letter-spacing: 1.22px !important;
 }
 
 .activities-nav-button:hover{
-	background-color: #54E1FF !important;
-	border: 2px solid #54E1FF !important;
-	color: white !important;
+color: white !important;
+border: 2px solid white !important;
 }
 
 .contact-nav-button{
-	background-color: white !important;
-	color: #2F9606 !important;
-	border: 2px solid #2F9606 !important;
+	background: #FA000D !important;
+  background-image: linear-gradient(-228deg, #FF0017 0%, #9F041B 100%) !important;
+	border: 2px solid #FFFFFF !important;
+	box-shadow: 0 13px 15px 2px rgba(0, 0, 0, 0.95) !important;
+	border-radius: 30px !important;
+	font-family: ArialRoundedMTBold !important;
+	font-size: 16px !important;
+	color: #FFFFFF !important;
+	letter-spacing: 1.22px !important;
 }
 
 .contact-nav-button:hover{
-	background-color: #2F9606 !important;
-	border: 2px solid #2F9606 !important;
 	color: white !important;
+	border: 2px solid white !important;
 }
 
 .about-us-nav-button{
-	background-color: white !important;
-	color: #FF7F00 !important;
-	border: 2px solid #FF7F00 !important;	
+	background: #FF7100 !important;
+	background-image: linear-gradient(-222deg, #FAD961 0%, #F77623 73%, #F77623 73%, #F76B1C 97%)!important;
+	border: 2px solid #FFFFFF !important;
+	box-shadow: 0 13px 15px 2px rgba(0, 0, 0, 0.95) !important;
+	border-radius: 30px !important;
+	font-family: ArialRoundedMTBold !important;
+	font-size: 16px !important;
+	color: #FFFFFF !important;
+	letter-spacing: 1.22px !important;
 }
 
 .about-us-nav-button:hover{
-	background-color: #FF7F00 !important;
-	border: 2px solid #FF7F00 !important;	
-	color: white !important;
+color: white !important;
+border: 2px solid white !important;
 }
 
 .register-nav-button{
-	background-color: white !important;
-	color: #0A96C4 !important;
-	border: 2px solid #0A96C4 !important;
+	background: #00B4FD !important;
+	background-image: linear-gradient(-223deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 94%) !important;
+	border: 2px solid #FFFFFF !important;
+	box-shadow: 0 13px 15px 2px rgba(0, 0, 0, 0.95) !important;
+	border-radius: 30px !important;
+	font-family: ArialRoundedMTBold !important;
+	font-size: 16px !important;
+	color: #FFFFFF !important;
+	letter-spacing: 1.22px !important;
 }
 
 .register-nav-button:hover{
-	background-color: #0A96C4 !important;
-	border: 2px solid #0A96C4 !important;
-	color: white !important;
+color: white !important;
+border: 2px solid white !important;
 }
 
 .login-nav-button{
-	background-color: white !important;
-	color: #0DDB00 !important;
-	border: 2px solid #0DDB00 !important;
+	background: #00F86B !important;
+	background-image: linear-gradient(-180deg, #A3FF00 0%, #429321 100%) !important;
+  border: 2px solid #FFFFFF !important;
+  box-shadow: 0 13px 15px 2px rgba(0, 0, 0, 0.95) !important;
+	border-radius: 30px !important;
+	font-family: ArialRoundedMTBold !important;
+	font-size: 16px !important;
+	color: #FFFFFF !important;
+	letter-spacing: 1.22px !important;
 }
 
 .login-nav-button:hover{
-	background-color: #0DDB00 !important;
-	border: 2px solid #0DDB00 !important;
-	color: white !important;
+color: white !important;
+border: 2px solid white !important;
 }
+
