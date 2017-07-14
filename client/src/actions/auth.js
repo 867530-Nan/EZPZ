@@ -1,27 +1,29 @@
 import axios from 'axios';
 import { setFlash } from '../actions/flash';
+import { addChild } from './children';
 
-export const registerUser = (auth, history) => {
+export const registerUser = (auth, history, child) => {
   const {
     email, password, passwordConfirmation,
     name, nickname, zipcode
   } = auth;
-  return(dispatch) => {
-    axios.post('/api/auth', { email, password, password_confirmation: passwordConfirmation,
-                              name, nickname, zipcode })
+
+  return(dispatch, getState) => {
+    axios.post('/api/auth', auth)
       .then( res => {
         let { data: { data: user }, headers } = res;
-        dispatch({ type: 'LOGIN', user, headers });
-        history.push('/children');
+        dispatch({ type: 'REGISTER', user, headers });
+        dispatch(addChild(child, history, user.id));
+        // history.push('/children');
       })
       .catch( error => {
-        let { errors } = error.response.data
-        let message;
-        if (Object.keys(errors).includes('full_messages'))
-          message = errors.full_messages.join(',')
-        else
-          message = errors.join(',');
-        dispatch(setFlash(message, 'error'));
+        // let { errors } = error.response.data
+        // let message;
+        // if (Object.keys(errors).includes('full_messages'))
+        //   message = errors.join(',')
+        // else
+        //   message = errors.join(',');
+        // dispatch(setFlash(message, 'error'));
     });
   }
 }
@@ -32,7 +34,7 @@ export const handleLogout = (history) => {
       .then( res => {
         dispatch({ type: 'LOGOUT' });
         dispatch(setFlash('Logged out successfully!', 'success'));
-        history.push('/aboutus');
+        history.push('/');
       })
       .catch( error => {
         const message = error.response.data.errors.join(',');

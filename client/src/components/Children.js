@@ -3,8 +3,9 @@ import { Header, Form, Button, Segment, Container, Divider, Menu, Icon } from 's
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { addChild } from '../actions/children';
-import StepRegisterChildren from './step_register_children'
+import StepRegisterChildren from './step_register_children';
 import '../styles/children.css';
+import { registerUser } from '../actions/auth';
 
 
 class Children extends Component {
@@ -14,7 +15,8 @@ class Children extends Component {
     e.preventDefault();
     const { dispatch, history } = this.props;
     const { age, interestOne, interestTwo, interestThree, interestFour } = this.state;
-    dispatch(addChild(this.state, history));
+    //dispatch register user
+    dispatch(registerUser(this.props.user, history, this.state));
   }
 
   handleChange = (e) => {
@@ -195,4 +197,8 @@ class Children extends Component {
   }
 }
 
-export default connect()(Children);
+const mapStateToProps = (state) => {
+  return { user: state.user }
+}
+
+export default connect(mapStateToProps)(Children);

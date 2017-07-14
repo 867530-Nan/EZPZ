@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import { Header, Form, Button, Segment, Container, Divider, Icon } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { registerUser } from '../actions/auth';
 import '../styles/registration.css';
 import StepRegisterParent from './step_register_parent';
 
 class Register extends Component {
   state = { email: '', password: '', passwordConfirmation: '',
-            name: '', nickname: '', zipcode: '', state: ''
+            name: '', nickname: '', zipcode: '', state: '', id: 0
           };
 
   handleSubmit = (e) => {
@@ -17,8 +16,12 @@ class Register extends Component {
     const { password, passwordConfirmation, name,
             nickname, zipcode } = this.state;
 
-    if(password === passwordConfirmation)
-      dispatch(registerUser(this.state, history));
+    if(password === passwordConfirmation) {
+      dispatch({ type: 'REGISTER', user: this.state })
+      history.push('/children')
+    }
+
+      //dispatch(registerUser(this.state, history));
     else
       alert('Passwords do NOT match!');
   }

@@ -6,7 +6,8 @@ class Api::ChildrenController < ApplicationController
   end
 
   def create
-    child = current_user.children.new(child_params)
+    @user = User.find(params[:user_id])
+    child = @user.children.new(child_params)
     if child.save
       render json: child
     else
@@ -33,6 +34,6 @@ class Api::ChildrenController < ApplicationController
 
     def child_params
       params.require(:child).permit(:name, :age, :interestOne,
-                                    :interestTwo, :interestThree, :interestFour)
+                                    :interestTwo, :interestThree, :interestFour, :auth, :registration)
     end
 end
