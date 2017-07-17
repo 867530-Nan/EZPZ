@@ -4,14 +4,13 @@ Rails.application.routes.draw do
   namespace :api do
     resources :user
     post '/user/:user_id/children', to: 'children#create'
+    post '/user/photos', to: 'photos#create'
     resources :children
     get 'location', to: 'location#show'
     resources :activities do
       resources :user_activities
     end
     resources :log
-    get 'photos', to: 'photos#index'
-    post 'photos', to: 'photos#create'
     #API ROUTES SHOULD GO HERE
   end
 

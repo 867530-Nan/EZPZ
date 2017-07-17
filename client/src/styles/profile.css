@@ -20,3 +20,16 @@
   margin: 20px 30px 0 30px;
   height: 600px;
 }
+
+.child {
+  height: 225px !important;
+  width: 500px !important;
+}
+
+.username {
+  text-align: center !important;
+}
+.photos {
+  height: 300px;
+  width: 300px;
+}

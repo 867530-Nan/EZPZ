@@ -45,9 +45,6 @@ class NavBar extends Component {
                 </Button.Content>
                 </Button>
             </Link>
-            <Link to='/photos'>
-               <Button  className="activities-nav-button">Photos</Button>
-            </Link>
             <Link to='/contact'>
                 <Button className="contact-nav-button" animated='fade'>
                   <Button.Content visible>

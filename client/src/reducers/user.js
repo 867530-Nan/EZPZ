@@ -6,6 +6,8 @@ const user = (state = {}, action ) => {
       return {}
     case 'REGISTER':
     	return { ...action.user }
+    case 'UPDATE_USER_PHOTO':
+      return { ...action.user }
     default:
       return state;
   }

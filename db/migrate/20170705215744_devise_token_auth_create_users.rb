@@ -42,7 +42,7 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[5.1]
       t.string :street_address
       t.string :city
       t.string :state
-      t.string :image_url
+      t.string :image_url, array: true, default: []
 
       ## Tokens
       t.json :tokens

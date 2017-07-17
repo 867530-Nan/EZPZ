@@ -17,7 +17,6 @@ import Contact from './Contact';
 import ActivityView from './ActivityView'
 import Children from './Children';
 import LoginFirst from './LoginFirst';
-import Photos from './Photos';
 
 
 
@@ -40,7 +39,6 @@ class App extends Component {
             <ProtectedRoute exact path='/activities' component={Activities} />
             <ProtectedRoute exact path='/activity' component={ActivityView} />
             <ProtectedRoute exact path='/profile' component={Profile} />
-            <ProtectedRoute exact path='/photos' component={Photos} />
             <Route component={NoMatch} />
           </Switch>
         </FetchUser>

@@ -1,7 +1,4 @@
 class Api::PhotosController < ApplicationController
-  def index
-    render json: Photo.all
-  end
 
   def create
     auth = {
@@ -15,8 +12,9 @@ class Api::PhotosController < ApplicationController
 
     begin
       cloud_photo = Cloudinary::Uploader.upload(uploaded_file, auth)
-      photo = Photo.create(url: cloud_photo['url'])
-      render json: photo
+      cloud_photo['url'].push(current_user.image)
+      current_user.save
+      render json: current_user
     rescue => e
       render json: { errors: e }, status: :bad_request
     end
