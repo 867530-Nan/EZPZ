@@ -5,13 +5,20 @@ import { Header, Segment, Button, Divider, Label, Container, Grid, Card, Dropdow
 // import 'react-datepicker/dist/react-datepicker.css';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { getActivities } from '../actions/activities'
+import { getActivities, addActivity } from '../actions/activities'
 import ActivityView from './ActivityView'
 
 
 class Activities extends React.Component {
 
   state = { month: '', activeIndex: 0, visible: [] }
+
+  addActivity = (id) => {
+    this.props.dispatch(addActivity(id));
+    let activeIndex = this.state.activeIndex;
+    activeIndex++;
+    this.setState({ activeIndex });
+  }
 
   componentWillMount() {
     this.props.dispatch(getActivities(this.setActivities));
@@ -45,7 +52,7 @@ class Activities extends React.Component {
 
 
   render() {
-    let { month } = this.state;
+    let { month, activeIndex } = this.state;
     if (month == '')
       return(
         <Container>
@@ -99,7 +106,7 @@ class Activities extends React.Component {
               <Button className = "btn btn-default" onClick={this.tick} >
                 Show Next Activity
               </Button>
-              <Button basic color='green'>Approve</Button>
+              <Button basic color='green' onClick={() => this.addActivity(this.state.visible[activeIndex].id)}>Approve</Button>
             </div>
         </Container>
       )

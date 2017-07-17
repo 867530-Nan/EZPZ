@@ -21,6 +21,7 @@ const Flash = ({ flash, dispatch }) => {
         { flash.message }
         { fadeFlash(dispatch) }
         <Button onClick={ () => dispatch(clearFlash()) }> X </Button>
+        <Button to="/itinerary"> Visit Itinerary Page for Activity List</Button>
       </div>
     )
   } else {
