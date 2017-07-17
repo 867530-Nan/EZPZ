@@ -10,6 +10,8 @@ Rails.application.routes.draw do
       resources :user_activities
     end
     resources :log
+    get 'photos', to: 'photos#index'
+    post 'photos', to: 'photos#create'
     #API ROUTES SHOULD GO HERE
   end
 
