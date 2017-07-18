@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Segment, Icon, Button, Divider, Container, Image, Card } from 'semantic-ui-react';
+import { Header, Segment, Button, Divider, Container, Image, Card } from 'semantic-ui-react';
 import Dropzone from 'react-dropzone';
 import { Link } from 'react-router-dom';
 import { handleUpload } from '../actions/photos';
@@ -13,15 +13,14 @@ class Profile extends Component {
     this.props.dispatch(handleUpload(photos[0]));
   }
 
-  displayPhotos = () => {
-      return(
-        <Segment>
-          <Image src={this.props.user.image_url} fluid />
-        </Segment>
-      );
-  }
-
   render() {
+
+    const images = this.props.user.image_url.map( image => {
+      return(
+        <Image src={image} fluid />
+      )
+    })
+
     return(
       <div className='bigBox'>
         <Header as='h1' textAlign='center'>
@@ -48,9 +47,9 @@ class Profile extends Component {
               <Segment basic>
                 <Header as='h2'>Family Photos!</Header>
                 <Divider />
-                <div className='photos'>
-                  { this.displayPhotos() }
-                </div>
+                <Segment className='photos'>
+                  { images }
+                </Segment>
               </Segment>
             </div>
           </Container>

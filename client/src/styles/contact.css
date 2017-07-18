@@ -1,0 +1,12 @@
+.cards {
+  height: 410px !important;
+  width: 225px !important;
+}
+
+.photo {
+  height: 215px !important;
+}
+
+.row {
+  flex: row;
+}
