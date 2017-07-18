@@ -8,8 +8,9 @@ Rails.application.routes.draw do
     resources :children
     get 'location', to: 'location#show'
     resources :activities do
-      resources :user_activities
+      resources :user_activities, except: [:index]
     end
+    get 'activity_user_activities', to: 'user_activities#index'
     resources :log
     #API ROUTES SHOULD GO HERE
   end

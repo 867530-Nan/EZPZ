@@ -4,7 +4,7 @@ import flash from './flash'
 import activities from './activities'
 import photos from './photos';
 import children from './children';
-import userActs from './user_activity';
+import userActs from './userActs';
 
 const rootReducer = combineReducers({
   user,
