@@ -10,23 +10,12 @@ class Api::PhotosController < ApplicationController
       api_key: ENV['CLOUDINARY_API_KEY'],
       api_secret: ENV['CLOUDINARY_API_SECRET']
     }
-
+  
     uploaded_photo_name = params.keys.first
     uploaded_file = params[uploaded_photo_name]
 
     begin
       cloud_photo = Cloudinary::Uploader.upload(uploaded_file, auth)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      # current_user.image_url = cloud_photo['url']
->>>>>>> images
-=======
-      # current_user.image_url = cloud_photo['url']
->>>>>>> photo upload working
-=======
->>>>>>> photos
       penguin = current_user.image_url
       penguin.push(cloud_photo['url'])
       current_user.save
