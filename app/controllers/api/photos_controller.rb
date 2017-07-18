@@ -12,7 +12,9 @@ class Api::PhotosController < ApplicationController
 
     begin
       cloud_photo = Cloudinary::Uploader.upload(uploaded_file, auth)
-      cloud_photo['url'].push(current_user.image)
+      # current_user.image_url = cloud_photo['url']
+      penguin = current_user.image_url
+      penguin.push(cloud_photo['url'])
       current_user.save
       render json: current_user
     rescue => e

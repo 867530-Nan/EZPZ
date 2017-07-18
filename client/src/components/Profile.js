@@ -16,7 +16,7 @@ class Profile extends Component {
   displayPhotos = () => {
       return(
         <Segment>
-          <Image src={this.props.user.image} fluid />
+          <Image src={this.props.user.image_url} fluid />
         </Segment>
       );
   }
