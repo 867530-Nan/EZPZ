@@ -12,10 +12,13 @@ class Api::PhotosController < ApplicationController
 
     begin
       cloud_photo = Cloudinary::Uploader.upload(uploaded_file, auth)
-      cloud_photo['url'].push(current_user.image)
+      binding.pry
+      @picture = cloud_photo['url']
+      curent_user.image_url.push(@picture)
       current_user.save
       render json: current_user
     rescue => e
+      binding.pry
       render json: { errors: e }, status: :bad_request
     end
   end

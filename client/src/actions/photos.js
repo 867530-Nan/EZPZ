@@ -13,7 +13,7 @@ export const handleUpload = (photo) => {
   return(dispatch) => {
     let data = new FormData();
     data.append(photo.name, photo);
-    axios.post(`/api/user/photos`, data)
+    axios.post(`/api/user/photos`, { data })
       .then( res => {
         dispatch({type: 'UPDATE_USER_PHOTO', user: res.data});
       })

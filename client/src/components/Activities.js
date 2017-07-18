@@ -103,11 +103,12 @@ class Activities extends React.Component {
               </Grid.Row>
             </Grid>
             <div className='ui two buttons'>
-              <Button className = "btn btn-default" onClick={this.tick} >
+              <Button color="orange" onClick={this.tick} >
                 Show Next Activity
               </Button>
-              <Button basic color='green' onClick={() => this.addActivity(this.state.visible[activeIndex].id)}>Approve</Button>
+              <Button attached='bottom' color="green" onClick={() => this.addActivity(this.state.visible[activeIndex].id)}>Add to Itinerary</Button>
             </div>
+              <Button fluid color="violet" to="/itinerary">Visit Itinerary for all Activities</Button>
         </Container>
       )
   }
