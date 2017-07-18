@@ -1,14 +1,6 @@
 import { setFlash } from './flash';
 import axios from 'axios';
 
-const addPhoto = (photo) => {
-  return { type: 'ADD_PHOTO', photo }
-}
-
-const setPhotos = (photos) => {
-  return { type: 'SET_PHOTOS', photos }
-}
-
 export const handleUpload = (photo) => {
   return(dispatch) => {
     let data = new FormData();

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Segment, Icon, Button, Divider, Container, Image, Card } from 'semantic-ui-react';
+import { Header, Segment, Button, Divider, Container, Image, Card } from 'semantic-ui-react';
 import Dropzone from 'react-dropzone';
 import { Link } from 'react-router-dom';
 import { handleUpload } from '../actions/photos';
