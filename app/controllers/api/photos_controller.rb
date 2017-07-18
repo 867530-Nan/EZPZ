@@ -16,6 +16,10 @@ class Api::PhotosController < ApplicationController
 
     begin
       cloud_photo = Cloudinary::Uploader.upload(uploaded_file, auth)
+<<<<<<< HEAD
+=======
+      # current_user.image_url = cloud_photo['url']
+>>>>>>> images
       penguin = current_user.image_url
       penguin.push(cloud_photo['url'])
       current_user.save
