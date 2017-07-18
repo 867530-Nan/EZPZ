@@ -17,9 +17,17 @@ class Profile extends Component {
 
     const images = this.props.user.image_url.map( image => {
       return(
+<<<<<<< HEAD
         <Image src={image} fluid />
       )
     })
+=======
+        <Segment>
+          <Image src={this.props.user.image_url} fluid />
+        </Segment>
+      );
+  }
+>>>>>>> photo upload working
 
     return(
       <div className='bigBox'>
