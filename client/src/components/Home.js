@@ -27,25 +27,20 @@ class Home extends Component {
             <h3 className="title-about-words">Strenghtening Families Through New Adventures and Energizing Play</h3>
           </div> 
         </div>
-          <Grid divided columns={3} className="three-part-words">
+          <Grid divided columns={2} className="three-part-words">
             <Grid.Row>
               <Grid.Column textAlign='center' centered color="green" className="trio-grid">
                 <div className="single">
-                  <Icon name="calendar" size="massive"/>
-                  <h5 className="trio-words">EZPZ Centralizes Event Calendars Within Your Region</h5>
+                  <Icon name="calendar" size="huge"/>
+                  <h5 className="trio-words">See What Activities are Happening in your area based off a child's interest</h5>
                 </div>
               </Grid.Column>
 
-              <Grid.Column textAlign='center' centered color="teal" className="trio-grid">
-                <div className="single">
-                  <Icon name="calendar" size="massive"/>
-                  <h5 className="trio-words">Activities are Displayed Using your Selected Family Interests</h5>
-                </div>
-              </Grid.Column>
+             
 
               <Grid.Column textAlign='center' centered color="orange" className="trio-grid">
                 <div className="single">
-                  <Icon name="child" size="massive"/>
+                  <Icon name="child" size="huge"/>
                   <h5 className="trio-words">Select Availability, See Activities in Your Area, and Family Time</h5> 
                 </div>
               </Grid.Column>

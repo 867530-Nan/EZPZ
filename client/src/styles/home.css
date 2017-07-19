@@ -73,10 +73,15 @@
  }
 
  .single {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+ }
+
+ .icon.child {
+  height: 1em !important;
+  width: 1.18em !important;
  }
 
 
