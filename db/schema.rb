@@ -19,13 +19,16 @@ ActiveRecord::Schema.define(version: 20170705230427) do
     t.string "month"
     t.integer "day"
     t.integer "year"
+    t.string "date"
     t.string "url"
     t.datetime "time"
     t.string "name"
+    t.float "cost"
     t.text "description"
     t.boolean "inside", default: false
-    t.integer "age"
+    t.string "age"
     t.string "location"
+    t.string "address"
     t.string "interest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
