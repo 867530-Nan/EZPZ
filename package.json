@@ -9,7 +9,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "react-time-input": "^0.0.16"
-  }
+  "dependencies": {}
 }
