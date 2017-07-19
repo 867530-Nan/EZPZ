@@ -13,14 +13,15 @@ class Profile extends Component {
     this.props.dispatch(handleUpload(photos[0]));
   }
 
-  render() {
-
-    const images = this.props.user.image_url.map( image => {
+  displayPhotos = () => {
       return(
-        <Image src={image} fluid />
-      )
-    })
+        <Segment>
+          <Image src={this.props.user.image_url} fluid />
+        </Segment>
+      );
+  }
 
+  render() {
     return(
       <div className='bigBox'>
         <Header as='h1' textAlign='center'>
@@ -47,9 +48,9 @@ class Profile extends Component {
               <Segment basic>
                 <Header as='h2'>Family Photos!</Header>
                 <Divider />
-                <Segment className='photos'>
-                  { images }
-                </Segment>
+                <div className='photos'>
+                  { this.displayPhotos() }
+                </div>
               </Segment>
             </div>
           </Container>
