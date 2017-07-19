@@ -18,30 +18,30 @@ class Home extends Component {
 
   render() {
     const { visible, email, password } = this.state
-    return (
+    return ( 
       <div>
         <div className="top-photo">
-          <Header as='h1' textAlign='center' className='homeHeader'>EZPZ</Header>
-          <Header as='h1' textAlign='center' className='home-duo'>Empowering Parenting | Eliminating Planning</Header>
+          <Header as='h1' textAlign='center' className='homeHeader'>&#123; <span className="e">E</span>Z | <span className="p">P</span>Z &#125;</Header>
+          <Header as='h1' textAlign='center' className='home-duo'>Empowering Parenting by Eliminating Planning</Header>
           <div className="title-about">
             <h3 className="title-about-words">Strenghtening Families Through New Adventures and Energizing Play</h3>
           </div> 
         </div>
           <Grid divided columns={2} className="three-part-words">
             <Grid.Row>
-              <Grid.Column textAlign='center' centered color="green" className="trio-grid">
+              <Grid.Column textAlign='center' centered className="duo-grid duo-first">
                 <div className="single">
                   <Icon name="calendar" size="huge"/>
-                  <h5 className="trio-words">See What Activities are Happening in your area based off a child's interest</h5>
+                  <h5 className="duo-words">See What Activities are Happening in your area based off a child's interest</h5>
                 </div>
               </Grid.Column>
 
              
 
-              <Grid.Column textAlign='center' centered color="orange" className="trio-grid">
+              <Grid.Column textAlign='center' centered className="duo-grid duo-second">
                 <div className="single">
                   <Icon name="child" size="huge"/>
-                  <h5 className="trio-words">Select Availability, See Activities in Your Area, and Family Time</h5> 
+                  <h5 className="duo-words">Select Availability, See Activities in Your Area, and Family Time</h5> 
                 </div>
               </Grid.Column>
             </Grid.Row>

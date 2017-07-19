@@ -8,12 +8,20 @@
   font-size: 17px !important;
 }
 
+.e {
+  color: black;
+}
+
+.p {
+  color: black;
+}
+
 .sidebarnav {
   background-color: #00FA9A !important;
 }
 
 .homeHeader {
-  padding-top: 30px !important;
+  padding-top: 20px !important;
   font-size: 60px !important;
   font-family: 'BioRhyme', sans-serif !important;
   font-weight: 200 !important;
@@ -21,7 +29,7 @@
 }
 
 .home-duo {
-  font-size: 50px !important;
+  font-size: 45px !important;
   font-family: 'BioRhyme', sans-serif !important;
   font-weight: 200 !important;
   color: gray !important;
@@ -30,6 +38,8 @@
 .top-photo {
   background: url('../photodump/foggy-family.jpg')
                    bottom no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   height: 700px;
 }
 
@@ -59,17 +69,44 @@
   color: black !important;
  }
 
- .trio-grid{
+ .duo-grid{
   height: 300px;
   display: flex !important;
+  flex-direction: column;
   align-items: center !important;
+  justify-content: center;
+  padding: 0 50px !important;
  }
 
- .trio-words{
+ .duo-words{
   font-size: 24px !important;
   font-family: Helvetica, sans-serif !important;
   font-weight: 300;
   color: #F2EEEE !important;
+ }
+
+.icon.child{
+  color: white !important;
+}
+
+.icon.calendar{
+  color: white !important;
+}
+
+ .row {
+  padding: 0 !important;
+ }
+
+.duo-first {
+  background-color: #FF891C;
+ }
+
+ .duo-second {
+  background-color: #3BC954;
+ }
+
+ .ui.divided.two.column.grid.three-part-words{
+  margin: 0 !important;
  }
 
  .single {

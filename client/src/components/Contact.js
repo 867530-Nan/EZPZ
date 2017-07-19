@@ -37,10 +37,10 @@ class Contact extends Component {
                 </Card.Header>
                 <Divider />
                 <Card.Meta>
-                  This is Addy
+                  The Deep Thinker.
                 </Card.Meta>
                 <Card.Description>
-                  Addy is great. We love him.
+                  Addy is the glue to the EZPZ family. He's also a father. He's probably glue to that family as well. 
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -55,7 +55,7 @@ class Contact extends Component {
                   This is stockton
                 </Card.Meta>
                 <Card.Description>
-                  Stockton description.
+                  #1 in the hearts of EZPZ families everywhere, and #12 on the roster of Utah Jazz Fans everywhere.
                 </Card.Description>
               </Card.Content>
             </Card>

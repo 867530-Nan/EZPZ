@@ -14,7 +14,7 @@ class NavBar extends Component {
       return(
         <div className="nav-logged-in">
         <div>
-          <Menu.Menu>
+          <Menu.Menu stackable >
             <Link to='/profile'>
               <Button className="profile-nav-button" animated='fade'>
                 <Button.Content visible>

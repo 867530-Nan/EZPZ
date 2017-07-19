@@ -16,6 +16,10 @@
 	justify-content: center;
 }
 
+.title{
+	height: 20px !important;
+}
+
 .create-profile {
 	padding-top: 20px !important;
 	padding-bottom: 15px !important;
