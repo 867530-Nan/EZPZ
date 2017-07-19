@@ -10,7 +10,7 @@ class Api::PhotosController < ApplicationController
       api_key: ENV['CLOUDINARY_API_KEY'],
       api_secret: ENV['CLOUDINARY_API_SECRET']
     }
-  
+
     uploaded_photo_name = params.keys.first
     uploaded_file = params[uploaded_photo_name]
 
