@@ -10,7 +10,7 @@ import { Switch, Route } from 'react-router-dom';
 import FetchUser from './FetchUser';
 import Activities from './Activities';
 import Itinerary from './Itinerary';
-import '../styles/registration.css';
+import '../styles/every_component.css';
 import AboutUs from './AboutUs';
 import Profile from './Profile';
 import Contact from './Contact';

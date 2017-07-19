@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Sidebar, Segment, Button, Menu, Image, Icon, Header, Form, Divider, Container } from 'semantic-ui-react';
+import { Sidebar, Segment, Button, Menu, Image, Icon, Header, Form, Divider, Container, Grid } from 'semantic-ui-react';
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { handleLogin, handleLogout } from '../actions/auth';
@@ -16,96 +16,41 @@ class Home extends Component {
     this.setState({ [id]: value });
   }
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-    const { dispatch, history } = this.props;
-    const { email, password } = this.state;
-
-    dispatch(handleLogin(email, password, history));
-  }
-
-  leftNavs = () => {
-    const { visible, email, password } = this.state
-    const { user, history } = this.props;
-    if(user.id) {
-      return(
-        <div>
-          <Menu.Item name='links'>
-          <div>
-            <Link to='/profile'>
-              <Button  className="profile-nav-button">Profile</Button>
-            </Link>
-          </div>
-          <Divider />
-          <div>
-            <Link to='/itinerary'>
-               <Button  className="itinerary-nav-button">Itinerary</Button>
-            </Link>
-          </div>
-          <Divider />
-          <div>
-            <Link to='/activities'>
-               <Button  className="activities-nav-button">Activities</Button>
-            </Link>
-          </div>
-          </Menu.Item>
-          <Divider />
-          <Link to='/aboutus'>
-              <Button  className="about-us-nav-button">About Us</Button>
-          </Link>
-          <Divider />
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <Menu.Item name='Login'>
-            <Form onSubmit={this.handleSubmit}>
-            <Form.Field>
-            <label>Email</label>
-            <input
-              autoFocus
-              required
-              id='email'
-              value={email}
-              placeholder='Email'
-              onChange={this.handleChange}
-            />
-            </Form.Field>
-            <Form.Field>
-            <label>Password</label>
-            <input
-              required
-              id='password'
-              value={password}
-              placeholder='Password'
-              type='password'
-              onChange={this.handleChange}
-            />
-            </Form.Field>
-            <Segment textAlign='center' basic>
-            <Button
-              color='violet'
-              type='submit'
-              className='sidebarLogin'
-            >Login
-            </Button>
-            </Segment>
-            </Form>
-          </Menu.Item>
-          <Divider />
-        </div>
-      );
-    }
-  }
-
   render() {
     const { visible, email, password } = this.state
     return (
-      <div className='homePage'>
-        <Container>
+      <div>
+        <div className="top-photo">
           <Header as='h1' textAlign='center' className='homeHeader'>EZPZ</Header>
-        </Container>
+          <Header as='h1' textAlign='center' className='home-duo'>Empowering Parenting | Eliminating Planning</Header>
+          <div className="title-about">
+            <h3 className="title-about-words">Strenghtening Families Through New Adventures and Energizing Play</h3>
+          </div> 
+        </div>
+          <Grid divided columns={3} className="three-part-words">
+            <Grid.Row>
+              <Grid.Column textAlign='center' centered color="green" className="trio-grid">
+                <div className="single">
+                  <Icon name="calendar" size="massive"/>
+                  <h5 className="trio-words">EZPZ Centralizes Event Calendars Within Your Region</h5>
+                </div>
+              </Grid.Column>
+
+              <Grid.Column textAlign='center' centered color="teal" className="trio-grid">
+                <div className="single">
+                  <Icon name="calendar" size="massive"/>
+                  <h5 className="trio-words">Activities are Displayed Using your Selected Family Interests</h5>
+                </div>
+              </Grid.Column>
+
+              <Grid.Column textAlign='center' centered color="orange" className="trio-grid">
+                <div className="single">
+                  <Icon name="child" size="massive"/>
+                  <h5 className="trio-words">Select Availability, See Activities in Your Area, and Family Time</h5> 
+                </div>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
       </div>
     )
   }

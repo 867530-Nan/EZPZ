@@ -1,3 +1,4 @@
+<link href="https://fonts.googleapis.com/css?family=BioRhyme:200,300" rel="stylesheet">
 .loginButton {
   display: inline-block;
   cursor: pointer, hand;
@@ -12,14 +13,75 @@
 }
 
 .homeHeader {
-  font-family: "Comic Sans MS", cursive, sans-serif !important;
-  color: #00FFFF !important;
+  padding-top: 30px !important;
+  font-size: 60px !important;
+  font-family: 'BioRhyme', sans-serif !important;
+  font-weight: 200 !important;
+  color: gray !important;
 }
 
-.homepage {
-	height: 600px !important;
+.home-duo {
+  font-size: 50px !important;
+  font-family: 'BioRhyme', sans-serif !important;
+  font-weight: 200 !important;
+  color: gray !important;
 }
-.homePage {
-  height: 2500px;
-  font-size: 80px;
+
+.top-photo {
+  background: url('../photodump/foggy-family.jpg')
+                   bottom no-repeat;
+  height: 700px;
 }
+
+.title {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+.title-words {
+  font-size: 50px;
+  font-weight: 300;
+  width: 100%;
+}
+
+.title-about{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+ }
+
+ .title-about-words {
+  font-family: 'BioRhyme' !important;
+  font-weight: 300 !important;
+  font-size: 28px !important;
+  color: black !important;
+ }
+
+ .trio-grid{
+  height: 300px;
+  display: flex !important;
+  align-items: center !important;
+ }
+
+ .trio-words{
+  font-size: 24px !important;
+  font-family: Helvetica, sans-serif !important;
+  font-weight: 300;
+  color: #F2EEEE !important;
+ }
+
+ .single {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+
+
+/*title
+title-about
+three-part*/
