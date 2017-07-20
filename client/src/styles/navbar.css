@@ -21,7 +21,6 @@
 
 .home-nav-button{
 	color: #FF7F00 !important;
-	background-color: white !important;
 	border: 2px solid #FF7F00 !important;
 }
 
@@ -31,13 +30,8 @@ border: 2px solid white !important;
 }
 
 .profile-nav-button{
-	background: #FF7100 !important;
-	background-image: linear-gradient(-180deg, #FAD961 0%, #F77623 73%, #F77623 73%, #F76B1C 97%)!important;
-	border: 2px solid #FFFFFF !important;
-	border-radius: 30px !important;
 	font-family: ArialRoundedMTBold !important;
 	font-size: 16px !important;
-	color: #FFFFFF !important;
 	letter-spacing: 1.22px !important;
 }
 
@@ -47,13 +41,8 @@ border: 2px solid white !important;
 }
 
 .logout-nav-button{
-	background: #00F86B !important;
-	background-image: linear-gradient(-180deg, #A3FF00 0%, #429321 100%) !important;
-	border: 2px solid #FFFFFF !important;
-	border-radius: 30px !important;
 	font-family: ArialRoundedMTBold !important;
 	font-size: 16px !important;
-	color: #FFFFFF !important;
 	letter-spacing: 1.22px !important;
 }
 
@@ -63,14 +52,8 @@ border: 2px solid white !important;
 }
 
 .itinerary-nav-button{
-		background: #345EF2 !important;
-		background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 94%) !important;
-		border: 2px solid #FFFFFF !important;
-
-		border-radius: 30px !important;
 		font-family: ArialRoundedMTBold !important;
 		font-size: 16px !important;
-		color: #FFFFFF !important;
 		letter-spacing: 1.22px !important;
 }
 
@@ -80,13 +63,8 @@ border: 2px solid white !important;
 }
 
 .activities-nav-button{
-	background: #00B4FD !important;
-	background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 94%) !important;
-	border: 2px solid #FFFFFF !important;
-	border-radius: 30px !important;
 	font-family: ArialRoundedMTBold !important;
 	font-size: 16px !important;
-	color: #FFFFFF !important;
 	letter-spacing: 1.22px !important;
 }
 
@@ -96,13 +74,8 @@ border: 2px solid white !important;
 }
 
 .contact-nav-button{
-	background: #FA000D !important;
-  background-image: linear-gradient(-180deg, #FF0017 0%, #9F041B 100%) !important;
-	border: 2px solid #FFFFFF !important;
-	border-radius: 30px !important;
 	font-family: ArialRoundedMTBold !important;
 	font-size: 16px !important;
-	color: #FFFFFF !important;
 	letter-spacing: 1.22px !important;
 }
 
@@ -112,13 +85,8 @@ border: 2px solid white !important;
 }
 
 .about-us-nav-button{
-	background: #FF7100 !important;
-	background-image: linear-gradient(-180deg, #FAD961 0%, #F77623 73%, #F77623 73%, #F76B1C 97%)!important;
-	border: 2px solid #FFFFFF !important;
-	border-radius: 30px !important;
 	font-family: ArialRoundedMTBold !important;
 	font-size: 16px !important;
-	color: #FFFFFF !important;
 	letter-spacing: 1.22px !important;
 }
 
@@ -128,13 +96,8 @@ border: 2px solid white !important;
 }
 
 .register-nav-button{
-	background: #00B4FD !important;
-	background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 94%) !important;
-	border: 2px solid #FFFFFF !important;
-	border-radius: 30px !important;
 	font-family: ArialRoundedMTBold !important;
 	font-size: 16px !important;
-	color: #FFFFFF !important;
 	letter-spacing: 1.22px !important;
 }
 
@@ -144,14 +107,8 @@ border: 2px solid white !important;
 }
 
 .login-nav-button{
-	background: #00F86B !important;
-	background-image: linear-gradient(-180deg, #A3FF00 0%, #429321 100%) !important;
-  border: 2px solid #FFFFFF !important;
-
-	border-radius: 30px !important;
 	font-family: ArialRoundedMTBold !important;
 	font-size: 16px !important;
-	color: #FFFFFF !important;
 	letter-spacing: 1.22px !important;
 }
 
