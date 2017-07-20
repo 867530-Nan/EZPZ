@@ -7,7 +7,7 @@ export const handleUpload = (photo) => {
     data.append(photo.name, photo);
     axios.post('/api/user/photos', data)
       .then( res => {
-        dispatch({type: 'UPDATE_USER_PHOTO', user: res.data});
+        dispatch({type: 'UPDATE_USER_PHOTO', user: res.data, headers: res.headers});
       })
       .catch( res => {
         dispatch(setFlash('Error uploading file. Please try again!', 'error'));
