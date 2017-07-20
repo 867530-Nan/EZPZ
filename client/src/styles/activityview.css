@@ -1,0 +1,7 @@
+h3.ui.header{
+	font-size: 3rem !important;
+}
+
+.ui.header:first-child{
+	margin-top: 0 !important;
+}

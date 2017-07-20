@@ -5,8 +5,9 @@ import { Header, Segment, Button, Divider, Label, Container, Grid, Card, Dropdow
 // import 'react-datepicker/dist/react-datepicker.css';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { getActivities, addActivity } from '../actions/activities'
-import ActivityView from './ActivityView'
+import { getActivities, addActivity } from '../actions/activities';
+import ActivityView from './ActivityView';
+import '../styles/activities.css';
 
 
 class Activities extends React.Component {
@@ -56,6 +57,9 @@ class Activities extends React.Component {
     if (month == '')
       return(
         <Container>
+          <Segment as="h1" className="activity-header" textAlign="center" padded basic color="teal">
+            Please Select a Date:
+          </Segment>
           <Dropdown
           placeholder="Select Month to Play"
           fluid
@@ -78,7 +82,7 @@ class Activities extends React.Component {
     else
       return(
         <Container>
-          <Header as='h3' textAlign="center">Activities</Header>
+          <Header size="massive" textAlign="center">Select Date:</Header>
           <Dropdown
             placeholder="Select Month to Play"
             fluid
@@ -103,7 +107,7 @@ class Activities extends React.Component {
               </Grid.Row>
             </Grid>
             <div className='ui two buttons'>
-              <Button color="orange" onClick={this.tick} >
+              <Button attached='bottom' color="orange" onClick={this.tick} >
                 Show Next Activity
               </Button>
               <Button attached='bottom' color="green" onClick={() => this.addActivity(this.state.visible[activeIndex].id)}>Add to Itinerary</Button>

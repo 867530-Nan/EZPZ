@@ -6,7 +6,7 @@ class CreateActivities < ActiveRecord::Migration[5.1]
       t.integer :year
       t.string :date
       t.string :url
-      t.datetime :time
+      t.string :time
       t.string :name
       t.float :cost
       t.text :description

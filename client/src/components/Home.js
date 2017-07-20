@@ -32,7 +32,7 @@ class Home extends Component {
               <Grid.Column textAlign='center' centered className="duo-grid duo-first">
                 <div className="single">
                   <Icon name="calendar" size="huge"/>
-                  <h5 className="duo-words">See What Activities are Happening in your area based off a child's interest</h5>
+                  <h5 className="duo-words">See What Family Friendly Activities are Happening in Your Community</h5>
                 </div>
               </Grid.Column>
 
@@ -41,7 +41,7 @@ class Home extends Component {
               <Grid.Column textAlign='center' centered className="duo-grid duo-second">
                 <div className="single">
                   <Icon name="child" size="huge"/>
-                  <h5 className="duo-words">Select Availability, See Activities in Your Area, and Family Time</h5> 
+                  <h5 className="duo-words">Select Availability, Browse Activities, and Beign Spending Time with Your Family</h5> 
                 </div>
               </Grid.Column>
             </Grid.Row>

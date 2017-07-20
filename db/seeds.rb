@@ -16,7 +16,7 @@ end
 
 1.times do
   Activity.create(
-    name: 'Movie in the Park',
+    name: 'Trolls - Movie in the Park',
     date: 'August 4, 2017',
     time: '9:00 PM',
     description: 'Movie will begin at dusk. The movie will be Trolls. Bring your lawn chairs & blankets!! Concessions will be available.',
@@ -223,6 +223,7 @@ end
 1.times do
 Activity.create(
     location: 'Ogden Ampitheater',
+    date: 'July 24, 2017',
     day: 24,
     month: 'July',
     year: 2017,
@@ -239,6 +240,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
+    date: 'August 1, 2017',
     day: 1,
     month: 'August',
     year: 2017,
@@ -255,6 +257,7 @@ end
 Activity.create(
     location: '',
     address: 'On the corner of 26th and Washington Blvd',
+    date: 'August 2, 2017',
     day: 2,
     month: 'August',
     year: 2017,
@@ -287,6 +290,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street, Ogden, UT 84401',
+    date: 'August 5, 2017',
     day: 5,
     month: 'August',
     year: 2017,
@@ -303,6 +307,7 @@ end
 Activity.create(
     location: 'On the Corner of 26th and Washington Blvd',
     address: '2549 Washington Boulevard Ogden, UT 84401',
+    date: 'August 9, 2017',
     day: 9,
     month: 'August',
     year: 2017,
@@ -587,3 +592,440 @@ Activity.create(
     url: 'https://www.volunteersignup.org/3XAC4'
     )
 end
+
+Activity.create(
+    location: 'The Gallivan Center',
+    address: ' 239 Main St, Salt Lake City, UT 84111',
+    date: 'July 31, 2017',
+    day: 31,
+    month: 'July',
+    year: 2017,
+    cost: 'Free',
+    time: '8:30',
+    age: 'All Ages',
+    name: 'Movie - 0Close Encounters of the Third Kind',
+    interest: ['Movies', 'Imagination'],
+    description: "The Gallivan Center is thrilled to present the FREE 2017 Monday Night Movies series. This year's theme: A Summer of Spielberg! July 3: Jurassic Park July 10: Jaws July 17: Raiders of the Lost Ark July 31: Close Encounters of the Third Kind Movies start at dusk. Low back chairs, blankets, pillows and food are allowed. And don't forget about the Gallivan Center's concessions stand offering all kinds of munchies and drinks as well! Sponsorship packages available!",
+    url: 'http://www.thegallivancenter.com/calendar'
+    )
+
+Activity.create(
+    location: 'The Gallivan Center',
+    address: '239 Main St, Salt Lake City, UT 84111',
+    date: 'July 31, 2017',
+    day: 31,
+    month: 'July',
+    year: 2017,
+    cost: 'Free',
+    time: '12:00pm',
+    age: 'All Ages',
+    name: 'Lunch Bunch Concert Series',
+    interest: ['Music', 'Musical Instruments'],
+    description: '',
+    url: 'http://www.thegallivancenter.com/calendar'
+    )
+
+Activity.create(
+    location: 'Holladay City Hall Park',
+    address: '4570 S 2300 E, Holladay, UT 84117',
+    date: 'July 29, 2017',
+    day: 29,
+    month: 'July',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00-10:00pm',
+    age: 'All Ages',
+    name: 'Night on Broadway',
+    interest: ['Music', 'Musical Instruments'],
+    description: 'Night on Broadway – Featuring Michael Chipman & Melinda Kirigin-Voss',
+    url: 'http://excellenceconcerts.org/'
+    )
+
+Activity.create(
+    location: 'Gallivan Center Stage',
+    address: '239 Main St, Salt Lake City, UT 84111',
+    date: 'August 3, 2017',
+    day: 3,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '7:30-10:00pm',
+    age: 'All Ages',
+    name: 'David Halliday & The Jazz Vespers Quartet',
+    interest: ['Music', 'Musical Instruments'],
+    description: 'Night on Broadway – Featuring Michael Chipman & Melinda Kirigin-Voss',
+    url: 'http://excellenceconcerts.org/'
+    )
+
+Activity.create(
+    location: 'Holladay City Hall Park',
+    address: '4570 S 2300 E, Holladay, UT 84117',
+    date: 'August 5, 2017',
+    day: 5,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00-10:00pm',
+    age: 'All Ages',
+    name: 'Free Concert - Excellence in the Community - JOE MUSCOLINO BAND',
+    interest: ['Music', 'Musical Instruments'],
+    description: '',
+    url: 'http://excellenceconcerts.org/'
+    )
+
+Activity.create(
+    location: 'Gallivan Center Stage',
+    address: '239 Main St, Salt Lake City, UT 84111',
+    date: 'August 8, 2017',
+    day: 8,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '7:00pm',
+    age: 'All Ages',
+    name: 'Night Star Jazz Orchestra',
+    interest: ['Music', 'Musical Instruments'],
+    description: 'Dance lessons start at 7:00, Music starts at 7:30, Free!',
+    url: 'http://excellenceconcerts.org/',
+    )
+
+Activity.create(
+    location: 'Holladay City Hall Park',
+    address: '4570 S 2300 E, Holladay, UT 84117',
+    date: 'August 12, 2017',
+    day: 12,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00 - 10:30pm',
+    age: 'All Ages',
+    name: 'Philip Kuehn Orchestra',
+    interest: ['Music', 'Musical Instruments'],
+    description: 'Free Outdoor Concert!',
+    url: 'http://excellenceconcerts.org/'
+    )
+
+Activity.create(
+    location: 'The County Library: Viridian Event Calendar',
+    address: '8030 S 1825 W, West Jordan, Utah 84088',
+    date: 'August 12, 2017',
+    day: 12,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '8:30 - 10:00pm',
+    age: 'All Ages',
+    name: 'Island Time II',
+    interest: ['Music', 'Musical Instruments'],
+    description: 'Free Outdoor Concert!',
+    url: 'http://excellenceconcerts.org/'
+    )
+
+Activity.create(
+    location: 'Holladay City Hall Park',
+    address: '4570 S 2300 E, Holladay, UT 84117',
+    date: 'August 19, 2017',
+    day: 19,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00pm',
+    age: 'All Ages',
+    name: 'Night Star Jazz Orchestra',
+    interest: ['Music', 'Musical Instruments'],
+    description: 'Free Outdoor Concert!',
+    url: 'http://excellenceconcerts.org/'
+    )
+
+Activity.create(
+    location: 'Gallivan Center Stage',
+    address: '239 Main St, Salt Lake City, UT 84111',
+    date: 'August 24, 2017',
+    day: 24,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '7:30 - 10:30pm',
+    age: 'All Ages',
+    name: 'Changing Lanes Experience',
+    interest: ['Music', 'Musical Instruments'],
+    description: 'Free, Live Music',
+    url: 'http://excellenceconcerts.org/'
+    )
+
+Activity.create(
+    location: 'Holladay City Hall Park',
+    address: '4570 S 2300 E, Holladay, UT 84117',
+    date: 'August 26, 2017',
+    day: 26,
+    month:'August',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00 - 10:00pm',
+    age: 'All Ages',
+    name: ' Fly Me To The Moon',
+    interest: ['Music', 'Musical Instruments'],
+    description: 'Free, Live Music',
+    url: 'http://excellenceconcerts.org/'
+    )
+
+Activity.create(
+    location: 'Gallivan Center Stage',
+    address: '239 Main St, Salt Lake City, UT 84111',
+    date: 'August 31, 2017',
+    day: 26,
+    month:'August',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00 - 10:00pm',
+    age: 'All Ages',
+    name: ' Fly Me To The Moon',
+    interest: ['Music', 'Musical Instruments'],
+    description: 'Free, Live Music',
+    url: 'http://excellenceconcerts.org/'
+    )
+
+Activity.create(
+    location: 'HighPoint Park',
+    address: '7851 S 1000 E, Sandy, UT 84094',
+    date: 'July 28, 2017',
+    day: 28,
+    month: 'July',
+    year: 2017,
+    cost: 'Free',
+    time: '7:30 - 10:00pm',
+    age: 'All Ages',
+    name: 'Movies in the Park - Hercules',
+    interest: ['Music', 'Musical Instruments'],
+    description: 'Hercules at Highpoint Park',
+    url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/970/746'
+    )
+
+Activity.create(
+    location: 'HighPoint Park',
+    address: '11400 South 1700 East, Sandy, Utah 84092',
+    date: 'August 4, 2017',
+    day: 4,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '7:30 - 10:00pm',
+    age: 'All Ages',
+    name: 'Movies in the Park - Zootopia',
+    interest: ['Music', 'Musical Instruments'],
+    description: 'Zootopia at Highpoint Park',
+    url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/972/746'
+    )
+
+Activity.create(
+    location: 'Sandy Amphitheater',
+    address: '9400 South 1300 East | Sandy, UT 84094',
+    date: 'August 4, 2017 - August 12, 2017',
+    day: 4,
+    month: 'August',
+    year: 2017,
+    cost: 'Pricing Depends on Seating',
+    time: '8:00 - 10:00pm',
+    age: 'All Ages',
+    name: 'Beauty and the Beast - A Musical',
+    interest: ['Performing Arts', 'Imagination'],
+    description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
+    url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
+    )
+
+Activity.create(
+    location: 'Sandy Amphitheater',
+    address: '9400 South 1300 East | Sandy, UT 84094',
+    date: 'August 4, 2017 - August 12, 2017',
+    day: 5,
+    month: 'August',
+    year: 2017,
+    cost: 'Pricing Depends on Seating',
+    time: '8:00 - 10:00pm',
+    age: 'All Ages',
+    name: 'Beauty and the Beast - A Musical',
+    interest: ['Performing Arts', 'Imagination'],
+    description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
+    url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
+    )
+
+Activity.create(
+    location: 'Sandy Amphitheater',
+    address: '9400 South 1300 East | Sandy, UT 84094',
+    date: 'August 4, 2017 - August 12, 2017',
+    day: 6,
+    month: 'August',
+    year: 2017,
+    cost: 'Pricing Depends on Seating',
+    time: '8:00 - 10:00pm',
+    age: 'All Ages',
+    name: 'Beauty and the Beast - A Musical',
+    interest: ['Performing Arts', 'Imagination'],
+    description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
+    url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
+    )
+
+Activity.create(
+    location: 'Sandy Amphitheater',
+    address: '9400 South 1300 East | Sandy, UT 84094',
+    date: 'August 4, 2017 - August 12, 2017',
+    day: 7,
+    month: 'August',
+    year: 2017,
+    cost: 'Pricing Depends on Seating',
+    time: '8:00 - 10:00pm',
+    age: 'All Ages',
+    name: 'Beauty and the Beast - A Musical',
+    interest: ['Performing Arts', 'Imagination'],
+    description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
+    url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
+    )
+
+Activity.create(
+    location: 'Sandy Amphitheater',
+    address: '9400 South 1300 East | Sandy, UT 84094',
+    date: 'August 4, 2017 - August 12, 2017',
+    day: 8,
+    month: 'August',
+    year: 2017,
+    cost: 'Pricing Depends on Seating',
+    time: '8:00 - 10:00pm',
+    age: 'All Ages',
+    name: 'Beauty and the Beast - A Musical',
+    interest: ['Performing Arts', 'Imagination'],
+    description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
+    url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
+    )
+
+Activity.create(
+    location: 'Sandy Amphitheater',
+    address: '9400 South 1300 East | Sandy, UT 84094',
+    date: 'August 4, 2017 - August 12, 2017',
+    day: 9,
+    month: 'August',
+    year: 2017,
+    cost: 'Pricing Depends on Seating',
+    time: '8:00 - 10:00pm',
+    age: 'All Ages',
+    name: 'Beauty and the Beast - A Musical',
+    interest: ['Performing Arts', 'Imagination'],
+    description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
+    url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746',
+    )
+
+Activity.create(
+    location: 'Sandy Amphitheater',
+    address: '9400 South 1300 East | Sandy, UT 84094',
+    date: 'August 4, 2017 - August 12, 2017',
+    day: 10,
+    month: 'August',
+    year: 2017,
+    cost: 'Pricing Depends on Seating',
+    time: '8:00 - 10:00pm',
+    age: 'All Ages',
+    name: 'Beauty and the Beast - A Musical',
+    interest: ['Performing Arts', 'Imagination'],
+    description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
+    url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
+    )
+
+Activity.create(
+    location: 'Sandy Amphitheater',
+    address: '9400 South 1300 East | Sandy, UT 84094',
+    date: 'August 4, 2017 - August 12, 2017',
+    day: 11,
+    month: 'August',
+    year: 2017,
+    cost: 'Pricing Depends on Seating',
+    time: '8:00 - 10:00pm',
+    age: 'All Ages',
+    name: 'Beauty and the Beast - A Musical',
+    interest: ['Performing Arts', 'Imagination'],
+    description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
+    url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
+    )
+
+Activity.create(
+    location: 'Sandy Amphitheater',
+    address: '9400 South 1300 East | Sandy, UT 84094',
+    date: 'August 4, 2017 - August 12, 2017',
+    day: 12,
+    month: 'August',
+    year: 2017,
+    cost: 'Pricing Depends on Seating',
+    time: '8:00 - 10:00pm',
+    age: 'All Ages',
+    name: 'Beauty and the Beast - A Musical',
+    interest: ['Performing Arts', 'Imagination'],
+    description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
+    url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
+    )
+
+Activity.create(
+    location: 'Ampthitheater Park',
+    address: '9400 South 1300 East, Sandy, Utah 84094',
+    date: 'August 19, 2017',
+    day: 19, 
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00 - 10:00pm',
+    age: 'All Ages',
+    name: 'International Folk Festival - FREE!',
+    interest: ['Music', 'Musical Instruments'],
+    description: 'Free Events, no tickets required',
+    url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/956/746'
+    )
+
+Activity.create(
+    location: 'Heritage Park',
+    address: '10800 S Redwood Rd, South Jordan, UT 84095',
+    date: 'August 3, 2017',
+    day: 3,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '7:00am - 12:30pm',
+    age: 'All Ages',
+    name: '2017 Chalk Art Contest',
+    interest: ['Reading', 'Drawing', 'Creative Arts', 'Being Imaginative'],
+    description: '',
+    url: 'http://www.sjc.utah.gov/event/2017-chalk-art-contest/?instance_id=181'
+    )
+
+Activity.create(
+    location: 'Heritage Park',
+    address: '10800 S Redwood Rd, South Jordan, UT 84095',
+    date: 'August 11, 2017',
+    day: 11,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00pm - 11:00pm',
+    age: 'All Ages',
+    name: 'Sights & Sounds of Summer Movie - Fantastic Beasts and Where to Find Them',
+    interest: ['Being Imaginative', 'Creative Arts', 'Movies'],
+    description: 'Movies in the Park',
+    url: 'http://www.sjc.utah.gov/event/sights-sounds-of-summer-movie-fantastic-beasts/?instance_id=220'
+    )
+
+Activity.create(
+    location: 'Gale Center of History & Culture',
+    address: '10300 Beckstead Ln, South Jordan, UT 84095',
+    date: 'August 29, 2017',
+    day: 29,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '10:00 - 11:00am',
+    age: 'All Ages',
+    name: 'Terrific Tuesday - August Cookie Decorating',
+    interest: ['Cooking / Baking'],
+    description: '',
+    url: 'http://www.sjc.utah.gov/event/terrific-tuesday-cookie-decorating/?instance_id=262'
+    )
+
+
+
+
+
