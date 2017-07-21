@@ -16,20 +16,54 @@ class NavBar extends Component {
         <div>
           <Menu.Menu stackable >
             <Link to='/profile'>
-                <Button inverted color='orange' className='profile-nav-button'>Profile</Button>
+                <Button className='profile-nav-button' inverted color='dark orange' animated='fade'
+                  onClick={() => dispatch(handleLogout(history))} >
+                  <Button.Content visible>
+                    Profile
+                    </Button.Content>
+                  <Button.Content hidden>
+                    Page
+                  </Button.Content>
+                </Button>
             </Link>
             <Link to='/itinerary'>
-                <Button inverted color='violet' className='itinerary-nav-button'>Itinerary</Button>
+                <Button className='itinerary-nav-button' inverted color='violet' animated='fade'>
+                  <Button.Content visible>
+                    Itinerary
+                    </Button.Content>
+                  <Button.Content hidden>
+                    View!
+                  </Button.Content>
+                </Button>
             </Link>
             <Link to='/activities'>
-                <Button inverted color='blue' className='activities-nav-button'>Activities</Button>
+                <Button className='activities-nav-button' inverted color='blue' animated='fade'>
+                  <Button.Content visible>
+                    Activities
+                    </Button.Content>
+                  <Button.Content hidden>
+                    Go! 
+                  </Button.Content>
+                </Button>
             </Link>
             <Link to='/contact'>
-                <Button inverted color='red' className='contact-nav-button'>Contact</Button>
+                <Button className='contact-nav-button' inverted color='red' animated='fade'>
+                  <Button.Content visible>
+                    Contact
+                    </Button.Content>
+                  <Button.Content hidden>
+                    Us!
+                  </Button.Content>
+                </Button>
             </Link>
-            <Button inverted color='green' className='logout-nav-button'
-              onClick={() => dispatch(handleLogout(history))}
-            >Logout
+            <Button className='logout-nav-button' inverted color='green' animated='fade'
+              onClick={() => dispatch(handleLogout(history))} >
+              <Button.Content visible>
+                Log Out
+                    </Button.Content>
+              <Button.Content hidden>
+                Bye!
+                  </Button.Content>
             </Button>
           </Menu.Menu>
         </div>
@@ -41,20 +75,48 @@ class NavBar extends Component {
         <div>
           <Menu.Menu>
             <Link to='/aboutus'>
-                <Button inverted color='orange' className='aboutus-nav-button'>About</Button>
+                <Button className='about-us-nav-button' inverted color='orange' animated='fade'>
+                  <Button.Content visible>
+                    About
+                    </Button.Content>
+                  <Button.Content hidden>
+                    Us!
+                  </Button.Content>
+                </Button>
             </Link>
             <Link to='/contact'>
-                <Button inverted color='red' className='contact-nav-bar'>Contact</Button>
+                <Button className='contact-nav-button' inverted color='red' animated='fade'>
+                  <Button.Content visible>
+                    Contact
+                    </Button.Content>
+                  <Button.Content hidden>
+                    Us!
+                  </Button.Content>
+                </Button>
             </Link>
           </Menu.Menu>
         </div>
         <div>
           <Menu.Menu>
             <Link to='/register'>
-                <Button inverted color='blue' className='register-nav-button'>Register</Button>
+                <Button className='register-nav-button' inverted color='blue' animated='fade'>
+                  <Button.Content visible>
+                    Register
+                    </Button.Content>
+                  <Button.Content hidden>
+                    Now!
+                  </Button.Content>
+                </Button>
             </Link>
             <Link to='/login'>
-                <Button inverted color='green' className='login-nav-button'>Login</Button>
+                <Button className='login-nav-button' inverted color='green' animated='fade'>
+                  <Button.Content visible>
+                    Login
+                    </Button.Content>
+                  <Button.Content hidden>
+                    In
+                  </Button.Content>
+                </Button>
             </Link>
           </Menu.Menu>
         </div>

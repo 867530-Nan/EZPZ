@@ -134,7 +134,9 @@ class Activities extends React.Component {
               </Button>
               <Button attached='bottom' color="green" onClick={() => this.addActivity(this.state.visible[activeIndex].id)}>Add to Itinerary</Button>
             </div>
-              <Button fluid color="violet" to="/itinerary">Visit Itinerary for all Activities</Button>
+            <Link to='/itinerary'>
+            <Button fluid color="violet" to="/itinerary">Visit Itinerary for all Activities</Button>
+            </Link>
         </Container>
       )
   }
