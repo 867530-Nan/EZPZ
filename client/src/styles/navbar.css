@@ -1,3 +1,8 @@
+<link href="https://fonts.googleapis.com/css?family=BioRhyme:200,300" rel="stylesheet">
+.navbar-logo{
+imageb: url('../photodump/ezpz.jpg')
+}
+
 .mainNavbar {
   padding: 2px;
 }
@@ -20,100 +25,152 @@
 
 
 .home-nav-button{
+	font-family: 'BioRhyme', sans-serif !important;
 	color: #FF7F00 !important;
 	border: 2px solid #FF7F00 !important;
 }
 
 .home-nav-button:hover {
-color: white !important;
-border: 2px solid white !important;
+font-family: 'BioRhyme', sans-serif !important;
+color: snow !important;
+border: 2px solid snow !important;
 }
 
 .profile-nav-button{
-	font-family: ArialRoundedMTBold !important;
-	font-size: 16px !important;
+	border-color: #FF7100 !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
 	letter-spacing: 1.22px !important;
 }
 
 .profile-nav-button:hover{
-	color: white !important;
-	border: 2px solid white !important;
+	background: #FF7100 !important;
+	background-image: linear-gradient(-222deg, #FAD961 0%, #F77623 73%, #F77623 73%, #F76B1C 97%) !important;
+	border: 6px solid #FFFFFF !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
 }
 
 .logout-nav-button{
-	font-family: ArialRoundedMTBold !important;
-	font-size: 16px !important;
+	border-color: #00F86B !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
 	letter-spacing: 1.22px !important;
 }
 
 .logout-nav-button:hover{
-	color: white !important;
-	border: 2px solid white !important;
+	background: #00F86B !important;
+	background-image: linear-gradient(-180deg, #A3FF00 0%, #429321 100%) !important;
+	border: 6px solid #FFFFFF !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
 }
 
 .itinerary-nav-button{
-		font-family: ArialRoundedMTBold !important;
-		font-size: 16px !important;
-		letter-spacing: 1.22px !important;
+	border-color: #3023AE !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
+	letter-spacing: 1.22px !important;
 }
 
 .itinerary-nav-button:hover{
-	color: white !important;
-	border: 2px solid white !important;
+	background-image: linear-gradient(-134deg, #3023AE 0%, #C86DD7 100%) !important;
+	background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%) !important;
+	border: 6px solid #FFFFFF !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
 }
 
 .activities-nav-button{
-	font-family: ArialRoundedMTBold !important;
-	font-size: 16px !important;
+	border-color: #00B4FD !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
 	letter-spacing: 1.22px !important;
 }
 
 .activities-nav-button:hover{
-color: white !important;
-border: 2px solid white !important;
+background: #00B4FD !important;
+background-image: linear-gradient(-223deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 94%) !important;
+border: 6px solid #FFFFFF !important;
+font-family: 'BioRhyme', sans-serif !important;
+color: snow !important;
+border: 2px solid snow !important;
+font-size: 18px !important;
 }
 
 .contact-nav-button{
-	font-family: ArialRoundedMTBold !important;
-	font-size: 16px !important;
+	border-color: #FF0017 !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
 	letter-spacing: 1.22px !important;
 }
 
 .contact-nav-button:hover{
-	color: white !important;
-	border: 2px solid white !important;
+	background-image: linear-gradient(-180deg, #FF0017 0%, #9F041B 100%) !important;
+	background-image: radial-gradient(75% -431%, invalid gradient) !important;
+	border: 1px solid #FFFFFF !important;
+
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
 }
 
 .about-us-nav-button{
-	font-family: ArialRoundedMTBold !important;
-	font-size: 16px !important;
+	border-color: #F76B1C !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
 	letter-spacing: 1.22px !important;
 }
 
 .about-us-nav-button:hover{
-color: white !important;
-border: 2px solid white !important;
+background-image: linear-gradient(-180deg, #F4FF00 0%, #F76B1C 100%) !important;
+border: 6px solid #FBF3F3 !important;
+
+font-family: 'BioRhyme', sans-serif !important;
+color: snow !important;
+border: 2px solid snow !important;
+font-size: 18px !important;
 }
 
 .register-nav-button{
-	font-family: ArialRoundedMTBold !important;
-	font-size: 16px !important;
+	border-color: #00B4FD !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
 	letter-spacing: 1.22px !important;
 }
 
-.register-nav-button:hover{
-color: white !important;
-border: 2px solid white !important;
+.register-nav-button:hover {
+	background: #00B4FD !important;
+	background-image: linear-gradient(-223deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 94%) !important;
+	border: 6px solid #FFFFFF !important;
+	box-shadow: 0 13px 15px 2px rgba(0, 0, 0, 0.95) !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
 }
 
 .login-nav-button{
-	font-family: ArialRoundedMTBold !important;
-	font-size: 16px !important;
+	border-color: #A3FF00 !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
 	letter-spacing: 1.22px !important;
 }
 
 .login-nav-button:hover{
-color: white !important;
-border: 2px solid white !important;
+background: #00F86B !important;
+background-image: linear-gradient(-180deg, #A3FF00 0%, #429321 100%) !important;
+border: 6px solid #FFFFFF !important;
+font-family: 'BioRhyme', sans-serif !important;
+color: snow !important;
+border: 2px solid snow !important;
+font-size: 18px !important;
 }
 

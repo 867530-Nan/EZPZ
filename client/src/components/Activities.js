@@ -117,8 +117,7 @@ class Activities extends React.Component {
                 <Button
                   fluid
                   basic
-                  onClick={ () => this.setState({ month: '' }) }
-                >
+                  onClick={ () => this.setState({ month: '' }) } >
                 Clear Filter: {month}
                 </Button>
                 }
