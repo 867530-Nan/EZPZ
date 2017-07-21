@@ -6,3 +6,17 @@
 	font-size: 3rem !important;
 	margin-top: 30px !important;
 }
+
+.calendar {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	height: 100px !important;
+}
+
+.DayPickerInput{
+	display: inline-flex !important;
+	width: 100% !important;
+	justify-content: center;
+	align-self: center;
+}

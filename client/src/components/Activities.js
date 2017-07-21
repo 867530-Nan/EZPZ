@@ -8,11 +8,16 @@ import { Link } from 'react-router-dom';
 import { getActivities, addActivity } from '../actions/activities';
 import ActivityView from './ActivityView';
 import '../styles/activities.css';
+import DayPicker from 'react-day-picker';
+import 'react-day-picker/lib/style.css';
+import moment from 'moment';
+import DayPickerInput from 'react-day-picker/DayPickerInput'
 
+const DAY_FORMAT = 'DD/MM/YYYY';
 
 class Activities extends React.Component {
 
-  state = { month: '', activeIndex: 0, visible: [] }
+  state = { month: '', activeIndex: null, visible: [], selectedDay: undefined, isDisabled: false, }
 
   addActivity = (id) => {
     this.props.dispatch(addActivity(id));
@@ -20,6 +25,12 @@ class Activities extends React.Component {
     activeIndex++;
     this.setState({ activeIndex });
   }
+
+  handleDayChange = (selectedDay, modifiers) => {
+    let monthParse = moment(selectedDay).format("MMMM DD YYYY")
+    let visible = this.props.activities.filter( a => moment(`${a.month} ${a.day} ${a.year}`).format("MMMM DD YYYY") === monthParse)
+    this.setState({ visible, activeIndex: 0 });
+  };
 
   componentWillMount() {
     this.props.dispatch(getActivities(this.setActivities));
@@ -53,30 +64,41 @@ class Activities extends React.Component {
 
 
   render() {
+    const { selectedDay, isDisabled } = this.state;
+    const formattedDay = selectedDay
+      ? moment(selectedDay).format(DAY_FORMAT)
+      : '';
+
+    const dayPickerProps = {
+      todayButton: 'Go to Today',
+      disabledDays: {
+        daysOfWeek: [0, 6],
+      },
+      enableOutsideDays: true,
+      modifiers: {
+        monday: { daysOfWeek: [1] },
+      },
+    };
+
     let { month, activeIndex } = this.state;
-    if (month == '')
+
+    if (activeIndex == null)
       return(
         <Container>
           <Segment as="h1" className="activity-header" textAlign="center" padded basic color="teal">
             Please Select a Date:
           </Segment>
-          <Dropdown
-          placeholder="Select Month to Play"
-          fluid
-          selection
-          options={this.monthOptions()}
-          onChange={this.updateFilter}
-          value={month}
-          />
-          { month &&
-              <Button
-                fluid
-                basic
-                onClick={ () => this.setState({ month: '' }) }
-              >
-              Clear Filter: {month}
-              </Button>
-            }
+          <div className="calendar">
+            <DayPickerInput
+              value={formattedDay}
+              onDayChange={this.handleDayChange}
+              format={DAY_FORMAT}
+              placeholder={`E.g. ${moment().locale('en').format(DAY_FORMAT)}`}
+              dayPickerProps={dayPickerProps}
+              className = "day-picker"
+            /> 
+          </div>
+
           </Container>
         )
     else
@@ -119,9 +141,8 @@ class Activities extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  const activities = state.activities;
   const months = [...new Set(state.activities.map( a => a.month ))]
-  return { activities, months }
+  return { activities: state.activities, months, selectedDay: state.selectedDay }
 }
 
 export default connect(mapStateToProps)(Activities);
