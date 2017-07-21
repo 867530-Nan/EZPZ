@@ -9,15 +9,14 @@ import { registerUser } from '../actions/auth';
 
 
 class Children extends Component {
-  state = { age: '', realInterest: [] };
+  state = { age: '', realInterest: [] }
 
   handleSubmit = (e) => {
 
     e.preventDefault();
     const { dispatch, history, user } = this.props;
-      debugger;
     //dispatch register user
-    dispatch(addChild(user, history, this.state));
+    dispatch(registerUser(user, history, this.state));
   }
 
 
@@ -78,6 +77,7 @@ class Children extends Component {
                 value={this.state.value}
                 onChange={this.handleChange}
               >
+                <option value=''></option>
                 <option value='1'>1</option>
                 <option value='2'>2</option>
                 <option value='3'>3</option>

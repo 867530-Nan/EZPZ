@@ -37,10 +37,7 @@ ActiveRecord::Schema.define(version: 20170705230427) do
   create_table "children", force: :cascade do |t|
     t.integer "age"
     t.string "name"
-    t.string "interestOne"
-    t.string "interestTwo"
-    t.string "interestThree"
-    t.string "interestFour"
+    t.string "realInterest", default: [], array: true
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

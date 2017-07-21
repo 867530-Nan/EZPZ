@@ -8,7 +8,7 @@ import StepRegisterParent from './step_register_parent';
 class Register extends Component {
   state = { email: '', password: '', passwordConfirmation: '',
             name: '', nickname: '', zipcode: '', state: '', id: 0
-          };
+          }
 
   handleSubmit = (e) => {
     e.preventDefault();
