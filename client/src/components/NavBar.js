@@ -63,8 +63,6 @@ class NavBar extends Component {
     }
   }
 
-
-
   render() {
     return (
       <div className='mainNavbar'>
@@ -83,3 +81,5 @@ const mapStateToProps = (state) => {
 }
 
 export default withRouter(connect(mapStateToProps)(NavBar));
+
+

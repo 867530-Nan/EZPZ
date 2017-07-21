@@ -1,6 +1,12 @@
 .nameHere {
   text-align: center;
 }
+  .top-photo {
+  background: url('../photodump/foggy-family.jpg') bottom no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 700px;
+}
 
 .profContainer {
   padding-left: 100px !important;
