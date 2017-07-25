@@ -61,8 +61,6 @@ class Activities extends React.Component {
     this.setState({ month: data.value, visible, activeIndex: 0 });
   }
 
-
-
   render() {
     const { selectedDay, isDisabled } = this.state;
     const formattedDay = selectedDay

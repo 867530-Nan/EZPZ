@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { handleLogout } from '../actions/auth';
 import { withRouter } from 'react-router-dom';
 import '../styles/navbar.css'
+import Logo from '../photodump/addykinglogo.png'
 
 class NavBar extends Component {
   rightNavs = () => {
@@ -85,7 +86,7 @@ class NavBar extends Component {
                 </Button>
             </Link>
             <Link to='/contact'>
-                <Button className='contact-nav-button' inverted color='red' animated='fade' compact>
+                <Button className='contact-nav-button' inverted color="violet" animated='fade' compact>
                   <Button.Content visible>
                     Contact
                     </Button.Content>
@@ -96,7 +97,7 @@ class NavBar extends Component {
             </Link>
           </Menu.Menu>
         </div>
-    
+        <img className="logo" src={ Logo }></img>
         <div>
           <Menu.Menu>
             <Link to='/register'>
