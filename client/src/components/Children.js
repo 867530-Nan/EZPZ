@@ -15,7 +15,6 @@ class Children extends Component {
 
     e.preventDefault();
     const { dispatch, history, user } = this.props;
-    //dispatch register user
     dispatch(registerUser(user, history, this.state));
   }
 

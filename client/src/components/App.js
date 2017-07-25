@@ -35,10 +35,10 @@ class App extends Component {
             <Route exact path='/register' component={Register} />
             <Route exact path='/children' component={Children} />
             <Route exact path='/contact' component={Contact} />
-            <ProtectedRoute exact path='/itinerary' component={Itinerary} />
-            <ProtectedRoute exact path='/activities' component={Activities} />
-            <ProtectedRoute exact path='/activity' component={ActivityView} />
-            <ProtectedRoute exact path='/profile' component={Profile} />
+            <Route exact path='/itinerary' component={Itinerary} />
+            <Route exact path='/activities' component={Activities} />
+            <Route exact path='/activity' component={ActivityView} />
+            <Route exact path='/profile' component={Profile} />
             <Route component={NoMatch} />
           </Switch>
         </FetchUser>

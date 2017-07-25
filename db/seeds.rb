@@ -324,7 +324,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 12, 2017',
     day: 12,
     month: 'August',
     year: 2017,
@@ -341,7 +341,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 13, 2017',
     day: 13,
     month: 'August',
     year: 2017,
@@ -358,7 +358,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 14, 2017',
     day: 14,
     month: 'August',
     year: 2017,
@@ -375,7 +375,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 15, 2017',
     day: 15,
     month: 'August',
     year: 2017,
@@ -392,7 +392,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 16, 2017',
     day: 16,
     month: 'August',
     year: 2017,
@@ -409,7 +409,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 17, 2017',
     day: 17,
     month: 'August',
     year: 2017,
@@ -426,7 +426,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 18, 2017',
     day: 18,
     month: 'August',
     year: 2017,
@@ -443,7 +443,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 19, 2017',
     day: 19,
     month: 'August',
     year: 2017,
@@ -460,7 +460,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 20, 2017',
     day: 20,
     month: 'August',
     year: 2017,
@@ -477,7 +477,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 21, 2017',
     day: 21,
     month: 'August',
     year: 2017,
@@ -494,7 +494,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 22, 2017',
     day: 22,
     month: 'August',
     year: 2017,
@@ -511,7 +511,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 23, 2017',
     day: 23,
     month: 'August',
     year: 2017,
@@ -528,7 +528,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 24, 2017',
     day: 24,
     month: 'August',
     year: 2017,
@@ -545,7 +545,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 25, 2017',
     day: 25,
     month: 'August',
     year: 2017,
@@ -562,7 +562,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street Ogden, UT 84401',
-    date: 'August 12, 2017 - August 26, 2017',
+    date: 'August 26, 2017',
     day: 26,
     month: 'August',
     year: 2017,
@@ -603,7 +603,7 @@ Activity.create(
     cost: 'Free',
     time: '8:30',
     age: 'All Ages',
-    name: 'Movie - 0Close Encounters of the Third Kind',
+    name: 'Movie - Close Encounters of the Third Kind',
     interest: ['Movies', 'Imagination'],
     description: "The Gallivan Center is thrilled to present the FREE 2017 Monday Night Movies series. This year's theme: A Summer of Spielberg! July 3: Jurassic Park July 10: Jaws July 17: Raiders of the Lost Ark July 31: Close Encounters of the Third Kind Movies start at dusk. Low back chairs, blankets, pillows and food are allowed. And don't forget about the Gallivan Center's concessions stand offering all kinds of munchies and drinks as well! Sponsorship packages available!",
     url: 'http://www.thegallivancenter.com/calendar'
@@ -621,7 +621,7 @@ Activity.create(
     age: 'All Ages',
     name: 'Lunch Bunch Concert Series',
     interest: ['Music', 'Musical Instruments'],
-    description: '',
+    description: 'Outdoor Concert Series for All Ages',
     url: 'http://www.thegallivancenter.com/calendar'
     )
 
@@ -820,7 +820,7 @@ Activity.create(
 Activity.create(
     location: 'Sandy Amphitheater',
     address: '9400 South 1300 East | Sandy, UT 84094',
-    date: 'August 4, 2017 - August 12, 2017',
+    date: 'August 4, 2017',
     day: 4,
     month: 'August',
     year: 2017,
@@ -836,9 +836,9 @@ Activity.create(
 Activity.create(
     location: 'Sandy Amphitheater',
     address: '9400 South 1300 East | Sandy, UT 84094',
-    date: 'August 4, 2017 - August 12, 2017',
+    date: 'August 5, 2017',
     day: 5,
-    month: 'August',
+    month: 'August 5',
     year: 2017,
     cost: 'Pricing Depends on Seating',
     time: '8:00 - 10:00pm',
@@ -852,9 +852,9 @@ Activity.create(
 Activity.create(
     location: 'Sandy Amphitheater',
     address: '9400 South 1300 East | Sandy, UT 84094',
-    date: 'August 4, 2017 - August 12, 2017',
+    date: 'August 6, 2017',
     day: 6,
-    month: 'August',
+    month: 'August 6',
     year: 2017,
     cost: 'Pricing Depends on Seating',
     time: '8:00 - 10:00pm',
@@ -868,7 +868,7 @@ Activity.create(
 Activity.create(
     location: 'Sandy Amphitheater',
     address: '9400 South 1300 East | Sandy, UT 84094',
-    date: 'August 4, 2017 - August 12, 2017',
+    date: 'August 7, 2017',
     day: 7,
     month: 'August',
     year: 2017,
@@ -884,7 +884,7 @@ Activity.create(
 Activity.create(
     location: 'Sandy Amphitheater',
     address: '9400 South 1300 East | Sandy, UT 84094',
-    date: 'August 4, 2017 - August 12, 2017',
+    date: 'August 8, 2017',
     day: 8,
     month: 'August',
     year: 2017,
@@ -900,7 +900,7 @@ Activity.create(
 Activity.create(
     location: 'Sandy Amphitheater',
     address: '9400 South 1300 East | Sandy, UT 84094',
-    date: 'August 4, 2017 - August 12, 2017',
+    date: 'August 9, 2017',
     day: 9,
     month: 'August',
     year: 2017,
@@ -916,7 +916,7 @@ Activity.create(
 Activity.create(
     location: 'Sandy Amphitheater',
     address: '9400 South 1300 East | Sandy, UT 84094',
-    date: 'August 4, 2017 - August 12, 2017',
+    date: 'August 10, 2017',
     day: 10,
     month: 'August',
     year: 2017,
@@ -932,7 +932,7 @@ Activity.create(
 Activity.create(
     location: 'Sandy Amphitheater',
     address: '9400 South 1300 East | Sandy, UT 84094',
-    date: 'August 4, 2017 - August 12, 2017',
+    date: 'August 11, 2017',
     day: 11,
     month: 'August',
     year: 2017,
@@ -948,7 +948,7 @@ Activity.create(
 Activity.create(
     location: 'Sandy Amphitheater',
     address: '9400 South 1300 East | Sandy, UT 84094',
-    date: 'August 4, 2017 - August 12, 2017',
+    date: 'August 12, 2017',
     day: 12,
     month: 'August',
     year: 2017,

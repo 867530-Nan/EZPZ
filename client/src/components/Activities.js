@@ -84,59 +84,65 @@ class Activities extends React.Component {
 
     if (activeIndex == null)
       return(
-        <Container>
-          <Segment as="h1" className="activity-header" textAlign="center" padded basic color="teal">
-            Please Select a Date:
-          </Segment>
-          <div className="calendar">
-            <DayPickerInput
-              value={formattedDay}
-              onDayChange={this.handleDayChange}
-              format={DAY_FORMAT}
-              placeholder={`E.g. ${moment().locale('en').format(DAY_FORMAT)}`}
-              dayPickerProps={dayPickerProps}
-              className = "day-picker"
-            /> 
+        <div className="dateMod">
+          <div className="dateSelect">
+            <h1 className="activity-header" textAlign="center" basic color="teal">
+              Select Activity Date:
+            </h1>
+            <div className="calendar">
+              <DayPickerInput
+                value={formattedDay}
+                onDayChange={this.handleDayChange}
+                format={DAY_FORMAT}
+                placeholder={`E.g. ${moment().locale('en').format(DAY_FORMAT)}`}
+                dayPickerProps={dayPickerProps}
+                className = "day-picker"
+              /> 
+            </div>
           </div>
-
-          </Container>
+        </div>
         )
     else
       return(
-        <Container>
-          <Header size="massive" textAlign="center">Select Date:</Header>
-          <Dropdown
-            placeholder="Select Month to Play"
-            fluid
-            selection
-            options={this.monthOptions()}
-            onChange={this.updateFilter}
-            value={month}
-            />
-            { month &&
-                <Button
-                  fluid
-                  basic
-                  onClick={ () => this.setState({ month: '' }) } >
-                Clear Filter: {month}
-                </Button>
-                }
-                <Divider />
+        <div className="actMod">
+          
+            
+          <div className="actInfo"> 
             <Grid columns={16}>
               <Grid.Row>
                 <ActivityView activity={this.state.visible[this.state.activeIndex]} />
               </Grid.Row>
             </Grid>
-            <div className='ui two buttons'>
+
+            <div className='ui two buttons singleAct'>
               <Button attached='bottom' color="orange" onClick={this.tick} >
                 Show Next Activity
               </Button>
-              <Button attached='bottom' color="green" onClick={() => this.addActivity(this.state.visible[activeIndex].id)}>Add to Itinerary</Button>
+              <Button attached='bottom' color="green" onClick={() => this.addActivity(this.state.visible[activeIndex].id)}>
+                Add to Itinerary
+              </Button>
             </div>
             <Link to='/itinerary'>
             <Button fluid color="violet" to="/itinerary">Visit Itinerary for all Activities</Button>
             </Link>
-        </Container>
+          </div>
+
+            <Divider />
+            <div className="singleAct-date">
+              <div as="h1" className="singleAct-header" textAlign="center" basic color="teal">
+                Select a New Date:
+              </div>
+              <DayPickerInput
+                  value={formattedDay}
+                  onDayChange={this.handleDayChange}
+                  format={DAY_FORMAT}
+                  placeholder={`E.g. ${moment().locale('en').format(DAY_FORMAT)}`}
+                  dayPickerProps={dayPickerProps}
+                  className = "singleAct-picker"
+                /> 
+            </div>
+          
+        </div>
       )
   }
 }

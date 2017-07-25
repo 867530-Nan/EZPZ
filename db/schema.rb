@@ -85,6 +85,7 @@ ActiveRecord::Schema.define(version: 20170705230427) do
     t.string "street_address"
     t.string "city"
     t.string "state"
+    t.string "registration"
     t.string "image_url", default: [], array: true
     t.json "tokens"
     t.datetime "created_at", null: false
