@@ -15,6 +15,7 @@ class NavBar extends Component {
     if(user.id) {
       return(
         <div className="nav-logged-in">
+          <img className="logo" src={Logo}></img>
         <div>
           <Menu.Menu stackable >  
               <Link to='/profile'>
@@ -27,13 +28,13 @@ class NavBar extends Component {
                   </Button.Content>
                 </Button>
               </Link>
-              <Link to='/itinerary'>
-                <Button className='itinerary-nav-button' inverted color='violet' animated='fade' compact>
+              <Link to='/contact'>
+                <Button className='contact-nav-button' inverted color='violet' animated='fade' compact>
                   <Button.Content visible>
-                    Itinerary
+                    Contact
                     </Button.Content>
                   <Button.Content hidden>
-                      <Icon inverted color='white' name='map outline' size='medium' />
+                    <Icon inverted color='white' name='talk outline' size='medium' />
                   </Button.Content>
                 </Button>
               </Link>
@@ -47,16 +48,18 @@ class NavBar extends Component {
                   </Button.Content>
                 </Button>
               </Link>
-              <Link to='/contact'>
-                <Button className='contact-nav-button' inverted color='red' animated='fade' compact>
+              <Link to='/itinerary'>
+                <Button className='itinerary-nav-button' inverted color='red' animated='fade' compact>
                   <Button.Content visible>
-                    Contact
+                    Itinerary
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted color='white' name='talk outline' size='medium' />
+                    <Icon inverted color='white' name='map outline' size='medium' />
                   </Button.Content>
                 </Button>
               </Link>
+             
+              
             <Button className='logout-nav-button' inverted color='green' animated='fade' compact
               onClick={() => dispatch(handleLogout(history))} >
             <Button.Content visible>
@@ -67,7 +70,8 @@ class NavBar extends Component {
             </Button.Content>
               </Button>   
           </Menu.Menu>
-        </div>
+          </div>
+        <img className="logo" src={Logo}></img>  
         </div>
       );
     } else {
