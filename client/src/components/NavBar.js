@@ -23,7 +23,7 @@ class NavBar extends Component {
                     Profile
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted color='white' name='hand outline right' size='medium' />
+                    <Icon inverted color='white' name='user circle' size='medium' />
                   </Button.Content>
                 </Button>
               </Link>
@@ -81,7 +81,7 @@ class NavBar extends Component {
                     About
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted color='white' name='group' size='medium' />
+                    <Icon inverted color='white' name='user circle' size='medium' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -126,9 +126,7 @@ class NavBar extends Component {
       );
     }
   }
-
   
-
   render() {
     return (
       <div className='mainNavbar'>
@@ -140,6 +138,9 @@ class NavBar extends Component {
     )
   }
 }
+
+  
+
 
 
 const mapStateToProps = (state) => {
