@@ -1025,7 +1025,1511 @@ Activity.create(
     url: 'http://www.sjc.utah.gov/event/terrific-tuesday-cookie-decorating/?instance_id=262'
     )
 
+Activity.create(
+    location: 'Towne Center Drive',
+    address: '1600 W Towne Center Dr',
+    date: 'August 5, 2017',
+    day: 5,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00am - 2:00pm',
+    age: 'All Ages',
+    name: 'Farmers Market',
+    interest: ['Cooking / Baking'],
+    description: "Today's Event: Farmers Market 9 year Anniversary. Utah Growers, Make the Connection from Farm to Table",
+    url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
+    )
 
+Activity.create(
+    location: 'Towne Center Drive',
+    address: '1600 W Towne Center Dr',
+    date: 'August 12, 2017',
+    day: 12,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00am - 2:00pm',
+    age: 'All Ages',
+    name: 'Farmers Market',
+    interest: ['Cooking / Baking'],
+    description: "Today's Event: Face Painting. Utah Growers, Make the Connection from Farm to Table",
+    url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
+    )
+
+Activity.create(
+    location: 'Towne Center Drive',
+    address: '1600 W Towne Center Dr',
+    date: 'August 19, 2017',
+    day: 19,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00am - 2:00pm',
+    age: 'All Ages',
+    name: 'Farmers Market',
+    interest: ['Cooking / Baking'],
+    description: "Today's Event: Library Activities. Utah Growers, Make the Connection from Farm to Table",
+    url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
+    )
+
+Activity.create(
+    location: 'Towne Center Drive',
+    address: '1600 W Towne Center Dr',
+    date: 'August 26, 2017',
+    day: 26,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00am - 2:00pm',
+    age: 'All Ages',
+    name: 'Farmers Market',
+    interest: ['Cooking / Baking'],
+    description: "Today's Event: Arts and Crafts at the Market. Utah Growers, Make the Connection from Farm to Table",
+    url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
+    )
+
+Activity.create(
+    location: 'Towne Center Drive',
+    address: '1600 W Towne Center Dr',
+    date: 'September 2, 2017',
+    day: 2,
+    month: 'September',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00am - 2:00pm',
+    age: 'All Ages',
+    name: 'Farmers Market',
+    interest: ['Cooking / Baking'],
+    description: "Today's Event: DJ and Trivia. Utah Growers, Make the Connection from Farm to Table",
+    url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
+    )
+
+Activity.create(
+    location: 'Towne Center Drive',
+    address: '1600 W Towne Center Dr',
+    date: 'September 9, 2017',
+    day: 9,
+    month: 'September',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00am - 2:00pm',
+    age: 'All Ages',
+    name: 'Farmers Market',
+    interest: ['Cooking / Baking'],
+    description: "Today's Event: Selfie Day. Utah Growers, Make the Connection from Farm to Table",
+    url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
+    )
+
+Activity.create(
+    location: 'Towne Center Drive',
+    address: '1600 W Towne Center Dr',
+    date: 'September 16, 2017',
+    day: 16,
+    month: 'September',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00am - 2:00pm',
+    age: 'All Ages',
+    name: 'Farmers Market',
+    interest: ['Cooking / Baking'],
+    description: "Today's Event: National Poh-Day Day. Utah Growers, Make the Connection from Farm to Table",
+    url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
+    )
+
+Activity.create(
+    location: 'Towne Center Drive',
+    address: '1600 W Towne Center Dr',
+    date: 'September 23, 2017',
+    day: 23,
+    month: 'September',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00am - 2:00pm',
+    age: 'All Ages',
+    name: 'Farmers Market',
+    interest: ['Cooking / Baking'],
+    description: "Today's Event: Sample Day (Try new items). Utah Growers, Make the Connection from Farm to Table",
+    url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
+    )
+
+Activity.create(
+    location: 'Towne Center Drive',
+    address: '1600 W Towne Center Dr',
+    date: 'September 30, 2017',
+    day: 30,
+    month: 'September',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00am - 2:00pm',
+    age: 'All Ages',
+    name: 'Farmers Market',
+    interest: ['Cooking / Baking'],
+    description: "Today's Event: Quilt Show. Utah Growers, Make the Connection from Farm to Table",
+    url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
+    )
+
+Activity.create(
+    location: 'Towne Center Drive',
+    address: '1600 W Towne Center Dr',
+    date: 'October 7, 2017',
+    day: 7,
+    month: 'October',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00am - 2:00pm',
+    age: 'All Ages',
+    name: 'Farmers Market',
+    interest: ['Cooking / Baking'],
+    description: "Today's Event: DJ and Trivia. Utah Growers, Make the Connection from Farm to Table",
+    url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
+    )
+
+Activity.create(
+    location: 'Towne Center Drive',
+    address: '1600 W Towne Center Dr',
+    date: 'October 14, 2017',
+    day: 14,
+    month: 'October',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00am - 2:00pm',
+    age: 'All Ages',
+    name: 'Farmers Market',
+    interest: ['Cooking / Baking'],
+    description: "Today's Event: Cookie Decorating. Utah Growers, Make the Connection from Farm to Table",
+    url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
+    )
+
+Activity.create(
+    location: 'Towne Center Drive',
+    address: '1600 W Towne Center Dr',
+    date: 'October 21, 2017',
+    day: 21,
+    month: 'October',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00am - 2:00pm',
+    age: 'All Ages',
+    name: 'Farmers Market',
+    interest: ['Cooking / Baking'],
+    description: "Today's Event: Pumpkin Party. Utah Growers, Make the Connection from Farm to Table",
+    url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
+    )
+
+Activity.create(
+    location: 'Towne Center Drive',
+    address: '1600 W Towne Center Dr',
+    date: 'October 28, 2017',
+    day: 28,
+    month: 'October',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00am - 2:00pm',
+    age: 'All Ages',
+    name: 'Farmers Market',
+    interest: ['Cooking / Baking'],
+    description: "Today's Event: Chocolate Day. Utah Growers, Make the Connection from Farm to Table",
+    url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
+    )
+
+Activity.create(
+    location: 'Gale Center of History & Culture',
+    address: '1600 W Towne Center Dr',
+    date: 'September 26, 2017',
+    day: 26,
+    month: 'September',
+    year: 2017,
+    cost: 'Free',
+    time: '6:00pm - 8:00pm',
+    age: 'All Ages',
+    name: 'Mommy & Me',
+    interest: ['Cooking / Baking'],
+    description: "Craft & Cupcakes for Mommy's & Sons, and Mommy's & Daughters",
+    url: 'http://www.sjc.utah.gov/event/terrific-tuesday-mommy-me/?instance_id=264'
+    )
+
+Activity.create(
+    location: 'Murray Park Pavilion #5',
+    address: ' 296 E Murray Park Ave',
+    date: 'July 25, 2017',
+    day: 25,
+    month: 'July',
+    year: 2017,
+    cost: 'Free',
+    time: '12:00pm - 2:00pm',
+    age: 'All Ages',
+    name: 'Lunch Concert Series',
+    interest: ['Cooking / Baking'],
+    description: "Time Cruisers, Oldies",
+    url: 'http://murray.utah.gov/Calendar.aspx?EID=1343&month=7&year=2017&day=25&calType=0'
+    )
+
+Activity.create(
+    location: 'Murray Park Pavilion #5',
+    address: ' 296 E Murray Park Ave',
+    date: 'August 1, 2017',
+    day: 1,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '12:00pm - 2:00pm',
+    age: 'All Ages',
+    name: 'Lunch Concert Series',
+    interest: ['Cooking / Baking'],
+    description: "New Hot 5, Oldies",
+    url: 'http://murray.utah.gov/Calendar.aspx?EID=1344&month=8&year=2017&day=25&calType=0'
+    )
+
+Activity.create(
+    location: 'Murray Park Pavilion #5',
+    address: ' 296 E Murray Park Ave',
+    date: 'July 27, 2017',
+    day: 27,
+    month: 'July',
+    year: 2017,
+    cost: 'Free',
+    time: '2:00pm - 4:00pm',
+    age: 'All Ages',
+    name: 'Children Matinee Series',
+    interest: ['Cooking / Baking'],
+    description: "Storytelling with Rachel and Janine",
+    url: 'http://murray.utah.gov/Calendar.aspx?EID=1352&month=7&year=2017&day=25&calType=0'
+    )
+
+Activity.create(
+    location: 'Murray Park Pavilion #5',
+    address: '495 East 5300 South',
+    date: 'July 31, 2017',
+    day: 31,
+    month: 'July',
+    year: 2017,
+    cost: '$10 Adult, $8 Child/Senior $35 Family with Dependent Children (July 31 only)',
+    time: '8:00pm - 10:00pm',
+    age: 'All Ages',
+    name: 'The Music Man',
+    interest: ['Cooking / Baking'],
+    description: "The Music Man, Presented by special arrangement with MTI",
+    url: 'http://murray.utah.gov/Calendar.aspx?EID=1330&month=7&year=2017&day=25&calType=0'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'July 25, 2017',
+    day: 25,
+    month: 'July',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'July 26, 2017',
+    day: 26,
+    month: 'July',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'July 27, 2017',
+    day: 27,
+    month: 'July',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'July 28, 2017',
+    day: 28,
+    month: 'July',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'July 29, 2017',
+    day: 29,
+    month: 'July',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'July 30, 2017',
+    day: 30,
+    month: 'July',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'July 31, 2017',
+    day: 31,
+    month: 'July',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 1, 2017',
+    day: 1,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 2, 2017',
+    day: 2,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 2, 2017',
+    day: 2,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 3, 2017',
+    day: 3,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 4, 2017',
+    day: 4,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 5, 2017',
+    day: 5,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 6, 2017',
+    day: 6,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 7, 2017',
+    day: 7,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 8, 2017',
+    day: 8,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 9, 2017',
+    day: 9,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 10, 2017',
+    day: 10,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 11, 2017',
+    day: 11,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 12, 2017',
+    day: 12,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 13, 2017',
+    day: 13,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 14, 2017',
+    day: 14,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 15, 2017',
+    day: 15,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 16, 2017',
+    day: 16,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 17, 2017',
+    day: 17,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 18, 2017',
+    day: 18,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 19, 2017',
+    day: 19,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 20, 2017',
+    day: 20,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 21, 2017',
+    day: 21,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 22, 2017',
+    day: 22,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 23, 2017',
+    day: 23,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 24, 2017',
+    day: 24,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 25, 2017',
+    day: 25,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 26, 2017',
+    day: 26,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 27, 2017',
+    day: 27,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 28, 2017',
+    day: 28,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 29, 2017',
+    day: 29,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 30, 2017',
+    day: 30,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+Activity.create(
+    location: "Murray City's Outdoor Aquatic Center",
+    address: '5109 S Murray Park Lane, Murray, UT 84107',
+    date: 'August 31, 2017',
+    day: 31,
+    month: 'August',
+    year: 2017,
+    cost: 'See Website for Daily / Membership Rates - varies with age',
+    time: '10:00am - 6:00pm',
+    age: 'All Ages',
+    name: 'Murray Outdoor Swimming Pool',
+    interest: ['Cooking / Baking'],
+    description: "Fun in the Sun",
+    url: 'http://murray.utah.gov/846/Hours-of-Operation'
+    )
+
+
+Activity.create(
+    location: "Murray Park Amphitheater",
+    address: '495 East 5300 South, Murray, UT 84107',
+    date: 'August 11, 2017',
+    day: 11,
+    month: 'August',
+    year: 2017,
+    cost: '$10 Adult, $8 Child/Senior, $35 family with dependent children (august 14 only)',
+    time: '8:00pm - 10:00pm',
+    age: 'All Ages',
+    name: 'Carousel - Live Music',
+    interest: ['Cooking / Baking'],
+    description: "Carousel - Presented by special arrangement with Rodgers and Hammerstein",
+    url: 'http://murray.utah.gov/Calendar.aspx?EID=1332&month=8&year=2017&day=25&calType=0'
+    )
+
+Activity.create(
+    location: "Murray Park Amphitheater",
+    address: '495 East 5300 South, Murray, UT 84107',
+    date: 'August 12, 2017',
+    day: 12,
+    month: 'August',
+    year: 2017,
+    cost: '$10 Adult, $8 Child/Senior, $35 family with dependent children (august 14 only)',
+    time: '8:00pm - 10:00pm',
+    age: 'All Ages',
+    name: 'Carousel - Live Music',
+    interest: ['Cooking / Baking'],
+    description: "Carousel - Presented by special arrangement with Rodgers and Hammerstein",
+    url: 'http://murray.utah.gov/Calendar.aspx?EID=1332&month=8&year=2017&day=25&calType=0'
+    )
+
+Activity.create(
+    location: "Murray Park Amphitheater",
+    address: '495 East 5300 South, Murray, UT 84107',
+    date: 'August 14, 2017',
+    day: 14,
+    month: 'August',
+    year: 2017,
+    cost: '$10 Adult, $8 Child/Senior, $35 family with dependent children (august 14 only)',
+    time: '8:00pm - 10:00pm',
+    age: 'All Ages',
+    name: 'Carousel - Live Music',
+    interest: ['Cooking / Baking'],
+    description: "Carousel - Presented by special arrangement with Rodgers and Hammerstein",
+    url: 'http://murray.utah.gov/Calendar.aspx?EID=1332&month=8&year=2017&day=25&calType=0'
+    )
+
+Activity.create(
+    location: "Murray Park Amphitheater",
+    address: '495 East 5300 South, Murray, UT 84107',
+    date: 'August 17, 2017',
+    day: 17,
+    month: 'August',
+    year: 2017,
+    cost: '$10 Adult, $8 Child/Senior, $35 family with dependent children (august 14 only)',
+    time: '8:00pm - 10:00pm',
+    age: 'All Ages',
+    name: 'Carousel - Live Music',
+    interest: ['Cooking / Baking'],
+    description: "Carousel - Presented by special arrangement with Rodgers and Hammerstein",
+    url: 'http://murray.utah.gov/Calendar.aspx?EID=1332&month=8&year=2017&day=25&calType=0'
+    )
+
+Activity.create(
+    location: "Murray Park Amphitheater",
+    address: '495 East 5300 South, Murray, UT 84107',
+    date: 'August 18, 2017',
+    day: 18,
+    month: 'August',
+    year: 2017,
+    cost: '$10 Adult, $8 Child/Senior, $35 family with dependent children (august 14 only)',
+    time: '8:00pm - 10:00pm',
+    age: 'All Ages',
+    name: 'Carousel - Live Music',
+    interest: ['Cooking / Baking'],
+    description: "Carousel - Presented by special arrangement with Rodgers and Hammerstein",
+    url: 'http://murray.utah.gov/Calendar.aspx?EID=1332&month=8&year=2017&day=25&calType=0'
+    )
+
+Activity.create(
+    location: "Murray Park Amphitheater",
+    address: '495 East 5300 South, Murray, UT 84107',
+    date: 'August 19, 2017',
+    day: 19,
+    month: 'August',
+    year: 2017,
+    cost: '$10 Adult, $8 Child/Senior, $35 family with dependent children (august 14 only)',
+    time: '8:00pm - 10:00pm',
+    age: 'All Ages',
+    name: 'Carousel - Live Music',
+    interest: ['Cooking / Baking'],
+    description: "Carousel - Presented by special arrangement with Rodgers and Hammerstein",
+    url: 'http://murray.utah.gov/Calendar.aspx?EID=1332&month=8&year=2017&day=25&calType=0'
+    )
+
+Activity.create(
+    location: "Murray Heritage Senior Center",
+    address: '#10 East 6150 South, Murray, UT 84107',
+    date: 'August 14, 2017',
+    day: 14,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '8:00pm - 10:00pm',
+    age: 'All Ages',
+    name: 'Family Night Series',
+    interest: ['Cooking / Baking'],
+    description: "Live Music, David Sharp - Celtic",
+    url: 'http://murray.utah.gov/Calendar.aspx?EID=1356&month=8&year=2017&day=25&calType=0'
+    )
+
+Activity.create(
+    location: "Murray Park Amphitheater",
+    address: '495 East 5300 South, Murray UT 84107',
+    date: 'August 26, 2017',
+    day: 26,
+    month: 'August',
+    year: 2017,
+    cost: '$8 General Admission, $2 Children 10 and under',
+    time: '8:00pm - 10:00pm',
+    age: 'All Ages',
+    name: 'Family Night Series',
+    interest: ['Cooking / Baking'],
+    description: "Cityjazz Big Band with Debra Bonner and the Unity Gospel Choir",
+    url: 'http://murray.utah.gov/Calendar.aspx?EID=1356&month=8&year=2017&day=25&calType=0'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 1, 2017',
+    day: 1,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 2, 2017',
+    day: 2,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 3, 2017',
+    day: 3,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 4, 2017',
+    day: 4,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 7, 2017',
+    day: 7,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 8, 2017',
+    day: 8,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 9, 2017',
+    day: 9,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 10, 2017',
+    day: 10,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 11, 2017',
+    day: 11,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 14, 2017',
+    day: 14,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 15, 2017',
+    day: 15,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 16, 2017',
+    day: 16,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 17, 2017',
+    day: 17,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 18, 2017',
+    day: 18,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 21, 2017',
+    day: 21,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 22, 2017',
+    day: 22,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 23, 2017',
+    day: 23,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 24, 2017',
+    day: 24,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 25, 2017',
+    day: 25,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 28, 2017',
+    day: 28,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 29, 2017',
+    day: 29,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 30, 2017',
+    day: 30,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Woodbury Art Museum",
+    address: 'University Mall, 575 East University Parkway #250, Orem, UT 84097',
+    date: 'August 31, 2017',
+    day: 31,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '11:00am - 5:00pm',
+    age: 'All Ages',
+    name: 'Art of Our Century Exhibit',
+    interest: ['Cooking / Baking'],
+    description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
+    url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
+    )
+
+Activity.create(
+    location: "Springville Arts Park",
+    address: "620 South 1350 East, Springville, UT 84663",
+    date: 'July 31, 2017',
+    day: 31,
+    month: 'July',
+    year: 2017,
+    cost: 'Free',
+    time: '7:30pm',
+    age: 'All Ages',
+    name: 'The Annual Springville World Folkfest',
+    interest: ['Cooking / Baking'],
+    description: "The Springville World Folkfest will bring the color and excitement of traditional folk dance and music from around the world to Springville. This annual production of folk music and energetic dance by musicians and dancers from many lands has grown to become the largest festival of folk dance and music in the United States.",
+    url: 'http://www.worldfolkfest.dreamhosters.com/'
+    )
+
+Activity.create(
+    location: "Springville Arts Park",
+    address: "620 South 1350 East, Springville, UT 84663",
+    date: 'August 1, 2017',
+    day: 1,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '7:30pm',
+    age: 'All Ages',
+    name: 'The Annual Springville World Folkfest',
+    interest: ['Cooking / Baking'],
+    description: "The Springville World Folkfest will bring the color and excitement of traditional folk dance and music from around the world to Springville. This annual production of folk music and energetic dance by musicians and dancers from many lands has grown to become the largest festival of folk dance and music in the United States.",
+    url: "http://www.worldfolkfest.dreamhosters.com/"
+    )
+
+Activity.create(
+    location: "Springville Arts Park",
+    address: "620 South 1350 East, Springville, UT 84663",
+    date: 'August 2, 2017',
+    day: 2,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '7:30pm',
+    age: 'All Ages',
+    name: 'The Annual Springville World Folkfest',
+    interest: ['Cooking / Baking'],
+    description: "The Springville World Folkfest will bring the color and excitement of traditional folk dance and music from around the world to Springville. This annual production of folk music and energetic dance by musicians and dancers from many lands has grown to become the largest festival of folk dance and music in the United States.",
+    url: "http://www.worldfolkfest.dreamhosters.com/"
+    )
+
+Activity.create(
+    location: "Springville Arts Park",
+    address: "620 South 1350 East, Springville, UT 84663",
+    date: 'August 3, 2017',
+    day: 3,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '7:30pm',
+    age: 'All Ages',
+    name: 'The Annual Springville World Folkfest',
+    interest: ['Cooking / Baking'],
+    description: "The Springville World Folkfest will bring the color and excitement of traditional folk dance and music from around the world to Springville. This annual production of folk music and energetic dance by musicians and dancers from many lands has grown to become the largest festival of folk dance and music in the United States.",
+    url: "http://www.worldfolkfest.dreamhosters.com/"
+    )
+
+Activity.create(
+    location: "Springville Arts Park",
+    address: "620 South 1350 East, Springville, UT 84663",
+    date: 'August 4, 2017',
+    day: 4,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '7:30pm',
+    age: 'All Ages',
+    name: 'The Annual Springville World Folkfest',
+    interest: ['Cooking / Baking'],
+    description: "The Springville World Folkfest will bring the color and excitement of traditional folk dance and music from around the world to Springville. This annual production of folk music and energetic dance by musicians and dancers from many lands has grown to become the largest festival of folk dance and music in the United States.",
+    url: "http://www.worldfolkfest.dreamhosters.com/"
+    )
+
+Activity.create(
+    location: "Springville Arts Park",
+    address: "620 South 1350 East, Springville, UT 84663",
+    date: 'August 5, 2017',
+    day: 5,
+    month: 'August',
+    year: 2017,
+    cost: 'Free',
+    time: '7:30pm',
+    age: 'All Ages',
+    name: 'The Annual Springville World Folkfest',
+    interest: ['Cooking / Baking'],
+    description: "The Springville World Folkfest will bring the color and excitement of traditional folk dance and music from around the world to Springville. This annual production of folk music and energetic dance by musicians and dancers from many lands has grown to become the largest festival of folk dance and music in the United States.",
+    url: "http://www.worldfolkfest.dreamhosters.com/"
+    )
 
 
 
