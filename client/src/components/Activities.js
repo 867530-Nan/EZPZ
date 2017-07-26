@@ -20,6 +20,8 @@ class Activities extends React.Component {
     this.props.dispatch(addActivity(id));
     let activeIndex = this.state.activeIndex;
     activeIndex++;
+    debugger;
+    this.state.visible[activeIndex].pop
     this.setState({ activeIndex });
   }
 
