@@ -41,7 +41,7 @@ class Activities extends React.Component {
     this.setState({ visible: activities });
   }
 
-  tick =() => {
+  tick = () => {
     let activeIndex = this.state.activeIndex;
     // console.log(this.state.activeIndex, this.state.visible.length)
     if (activeIndex == this.state.visible.length - 1){
@@ -72,7 +72,7 @@ class Activities extends React.Component {
     const dayPickerProps = {
       todayButton: 'Go to Today',
       disabledDays: {
-        daysOfWeek: [0, 6],
+        daysOfWeek: [],
       },
       enableOutsideDays: true,
       modifiers: {

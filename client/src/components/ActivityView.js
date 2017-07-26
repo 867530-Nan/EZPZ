@@ -6,6 +6,8 @@ import '../styles/activityview.css';
 
 //add address to table
 
+
+
 const ActivityView = ({ activity = {} }) => (
   <Container className="activityView">
     <div className="singleActivity">
@@ -29,6 +31,10 @@ const ActivityView = ({ activity = {} }) => (
           <Table.Cell>{activity.location}</Table.Cell>
         </Table.Row>
         <Table.Row>
+          <Table.Cell>Address</Table.Cell>
+          <Table.Cell>{activity.address}</Table.Cell>
+        </Table.Row>
+        <Table.Row>
           <Table.Cell>Is the Activity Indoors?</Table.Cell>
           <Table.Cell>No</Table.Cell>
         </Table.Row>
@@ -37,12 +43,12 @@ const ActivityView = ({ activity = {} }) => (
           <Table.Cell>{activity.description}</Table.Cell>
         </Table.Row>
         <Table.Row>
-          <Table.Cell>Webpage</Table.Cell>
-          <Table.Cell><a href="{activity.url}">{activity.url}</a></Table.Cell>
-        </Table.Row>
-        <Table.Row>
           <Table.Cell>Cost</Table.Cell>
           <Table.Cell>${activity.cost}</Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.Cell>Webpage</Table.Cell>
+          <Table.Cell><a href="{activity.url}">{activity.url}</a></Table.Cell>
         </Table.Row>
       </Table.Body>
     </Table>

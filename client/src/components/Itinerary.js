@@ -15,6 +15,13 @@ class Itinerary extends React.Component {
   state = { visible: [], selectedDay: undefined, isDisabled: false, }
 
   //Save User_activities to redux store with componentWillMount
+  componentWillMount() {
+    this.props.dispatch(getSavedActivities(this.setActivities))
+  }
+
+  setActivities = (userActivities) => {
+    this.setState({ visible: userActivities });
+  }
 
   showActivities = () => {
     return this.state.visible.map( (activity, i) =>
@@ -61,7 +68,7 @@ class Itinerary extends React.Component {
     const dayPickerProps = {
       todayButton: 'Go to Today',
       disabledDays: {
-        daysOfWeek: [0, 6],
+        daysOfWeek: [],
       },
       enableOutsideDays: true,
       modifiers: {

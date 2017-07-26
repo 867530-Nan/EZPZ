@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import matthew from '../photodump/matthew.jpg';
 import addy from '../photodump/addy.JPG';
 import stockton from '../photodump/stockton.JPG';
+import tate from '../photodump/Tate.jpg';
 import '../styles/contact.css';
 
 class Contact extends Component {
@@ -40,7 +41,7 @@ class Contact extends Component {
                   The Deep Thinker.
                 </Card.Meta>
                 <Card.Description>
-                  Addy is the glue to the EZPZ family. He's also a father. He's probably glue to that family as well. 
+                  Addy is the glue to the EZPZ family. He's also a father. He's probably glue to that family as well.
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -56,6 +57,21 @@ class Contact extends Component {
                 </Card.Meta>
                 <Card.Description>
                   #1 in the hearts of EZPZ families everywhere, and #12 on the roster of Utah Jazz Fans everywhere.
+                </Card.Description>
+              </Card.Content>
+            </Card>
+            <Card className='cards'>
+              <Image src={ tate } className='photo' />
+              <Card.Content>
+                <Card.Header>
+                  Tate
+                </Card.Header>
+                <Divider />
+                <Card.Meta>
+                  He is a potato
+                </Card.Meta>
+                <Card.Description>
+                  Tater is our perfect side dish of a developer. He adds a bit of flavor that helps the main course seem extra delicious!
                 </Card.Description>
               </Card.Content>
             </Card>
