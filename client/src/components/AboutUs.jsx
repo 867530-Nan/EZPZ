@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Divider, Grid, Card, Icon, Image } from 'semantic-ui-react'
+import { Divider, Grid, Card, Icon, Image, Header } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import '../styles/about.css'
 import numberOne from '../photodump/parent-profile.png'
@@ -12,12 +12,12 @@ class AboutUs extends Component {
     return(
 <div>
 			<div className="topLine">
-	      <div as='h1' textAlign='center' className="qvq">Quality > Quantity</div>
-			  <div as="h3" className="how">How you spend time together is what matter most</div>
+	      <Header as='h1' textAlign='center' className="qvq">Quality > Quantity</Header>
+			  <Header as="h3" className="how">How you spend time together is what matter most</Header>
       </div>
 	      <div className="swimming"></div>
 			    <div as='h3' textAlign='center' className="together">
-		      	EZPZ grants easy access to community events for the whole family 
+		      	EZPZ grants easy access to community events for the whole family
 			    </div>
 			   <div className="instructions">
 			    <Card>

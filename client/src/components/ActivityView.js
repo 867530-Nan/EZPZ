@@ -4,6 +4,8 @@ import { Divider, Header, Image, Container, Table, Button } from 'semantic-ui-re
 import { Link } from 'react-router-dom';
 import '../styles/activityview.css';
 
+//add address to table
+
 const ActivityView = ({ activity = {} }) => (
   <Container className="activityView">
     <div className="singleActivity">

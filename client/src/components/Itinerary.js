@@ -14,6 +14,8 @@ const DAY_FORMAT = 'DD/MM/YYYY';
 class Itinerary extends React.Component {
   state = { visible: [], selectedDay: undefined, isDisabled: false, }
 
+  //Save User_activities to redux store with componentWillMount
+
   showActivities = () => {
     return this.state.visible.map( (activity, i) =>
       <Accordion>
@@ -73,9 +75,9 @@ class Itinerary extends React.Component {
       return(
         <div className="itineraryDate">
           <div className="dateSelect">
-            <h1 className="activity-header" textAlign="center" basic color="teal">
+            <Header as='h1' className="activity-header" textAlign="center" color="teal">
               Look Up an Itinerary:
-            </h1>
+            </Header>
             <div className="calendar">
               <DayPickerInput
                 value={formattedDay}
@@ -94,9 +96,9 @@ class Itinerary extends React.Component {
         <div className="">
 
           <div className="singleAct-date">
-              <div as="h1" className="singleAct-header" textAlign="center" basic color="teal">
+              <Header as="h1" className="singleAct-header" textAlign="center" basic color="teal">
                 Itinerary Selecter:
-              </div>
+              </Header>
               <DayPickerInput
                   value={formattedDay}
                   onDayChange={this.handleDayChange}

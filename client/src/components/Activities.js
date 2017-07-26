@@ -63,6 +63,7 @@ class Activities extends React.Component {
   }
 
   render() {
+    //make it so dropdown menu is not behind the table
     const { selectedDay, isDisabled } = this.state;
     const formattedDay = selectedDay
       ? moment(selectedDay).format(DAY_FORMAT)
