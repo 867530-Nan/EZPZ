@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { connect } from 'react-redux'
 import { Accordion, Label, Message, Icon } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
@@ -32,5 +33,22 @@ const panels = ( {userActivities = []} ) => {
 const ItineraryView = () => (
   <Accordion panels={panels} />
 )
+=======
+import { Header, Grid, Container } from 'semantic-ui-react';
+import { connect } from 'react-redux'
+
+class ItineraryView extends React.Component {
+
+  render() {
+    return (
+      <Container>
+        <Grid column={16}>
+         
+        </Grid>
+      </Container>
+    )
+  }
+}
+>>>>>>> redux state populated with user_activity
 
 export default connect()(ItineraryView);
