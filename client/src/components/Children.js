@@ -56,12 +56,12 @@ class Children extends Component {
 ]
 
     return(
-      
-        <div >
+
+        <div>
           <StepRegisterChildren className="register-child"/>
-        
+
           <Divider />
-          <Segment basic className='regBackground'>
+
           <Header className='create-profile' color="orange" as='h1' icon textAlign='center'>
               <Icon name='child' />
               Child Information
@@ -97,7 +97,16 @@ class Children extends Component {
               </Form.Field>
               <Divider hidden vertical />
               <Label pointing="below" color="teal">Select Your Child's Interest:</Label>
-              <Dropdown label="Please Select Your Child's Interests" placeholder='Interests' onChange={(e,data) => this.setState({ realInterest: data.value})} fluid multiple selection options={options} />
+              <Dropdown
+                label="Please Select Your Child\'s Interests"
+                placeholder='Interests'
+                onChange={(e,data) =>
+                  this.setState({ realInterest: data.value})}
+                  fluid
+                  multiple
+                  selection
+                  options={options}
+              />
             <Segment basic textAlign='center'>
             <Button
               inverted
@@ -110,7 +119,7 @@ class Children extends Component {
             </Segment>
           </Form>
           </Container>
-        </Segment>
+
       </div>
     );
   }

@@ -18,30 +18,50 @@ class Home extends Component {
 
   render() {
     const { visible, email, password } = this.state
-    return ( 
+    return (
       <div>
         <div className="top-photo">
-          <Header as='h1' textAlign='center' className='homeHeader'>&#123; <span className="e">E</span>Z | <span className="p">P</span>Z &#125;</Header>
-          <Header as='h1' textAlign='center' className='home-duo'>Empowering Parenting by Eliminating Planning</Header>
+          <Header
+            as='h1'
+            textAlign='center'
+            className='homeHeader'
+          >
+            &#123; <span className="e">E</span>Z | <span className="p">P</span>Z &#125;
+          </Header>
+          <Header
+            as='h1'
+            textAlign='center'
+            className='home-duo'
+          >
+            Empowering Parenting by Eliminating Planning
+          </Header>
           <div className="title-about">
-            <h3 className="title-about-words">Strenghtening Families Through New Adventures and Energizing Play</h3>
-          </div> 
+            <h3 className="title-about-words">
+              Strenghtening Families Through New Adventures and Energizing Play
+            </h3>
+          </div>
         </div>
           <Grid divided columns={2} className="three-part-words">
             <Grid.Row>
               <Grid.Column textAlign='center' centered className="duo-grid duo-first">
                 <div className="single">
                   <Icon name="calendar" size="huge"/>
-                  <h5 className="duo-words">See What Family Friendly Activities are Happening in Your Community</h5>
+                  <h5 className="duo-words">
+                    See What Family Friendly Activities are Happening in Your Community
+                  </h5>
                 </div>
               </Grid.Column>
 
-             
+
 
               <Grid.Column textAlign='center' centered className="duo-grid duo-second">
                 <div className="single">
                   <Icon name="child" size="huge"/>
-                  <h5 className="duo-words">Select Availability, Browse Activities, and Beign Spending Time with Your Family</h5> 
+                  <h5
+                    className="duo-words"
+                  >
+                    Select Availability, Browse Activities, and Beign Spending Time with Your Family
+                  </h5>
                 </div>
               </Grid.Column>
             </Grid.Row>
@@ -56,6 +76,3 @@ const mapStateToProps = (state) => {
 }
 
 export default withRouter(connect(mapStateToProps)(Home));
-        
-         
-          

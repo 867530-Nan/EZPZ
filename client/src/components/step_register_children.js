@@ -1,5 +1,5 @@
 import React from 'react'
-import { Step } from 'semantic-ui-react'
+import { Step, Container } from 'semantic-ui-react'
 
 // const steps = [
 //   { completed: false, title: 'Register Parent', description: 'Input Parent Information' },
