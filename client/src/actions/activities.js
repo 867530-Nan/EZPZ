@@ -7,7 +7,7 @@ export const getActivities = (cb) => {
     axios.get('/api/activities')
     .then( res => {
       cb(res.data);
-      dispatch({ type: 'ACTIVITIES', activities: res.data })
+      dispatch({ type: 'ACTIVITIES', activities: res.data, headers: res.headers })
     })
   }
 }

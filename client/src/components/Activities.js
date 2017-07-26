@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Segment, Button, Divider, Label, Container, Grid, Card, Dropdown } from 'semantic-ui-react'
+import { Header, Segment, Button, Divider, Label, Container, Grid, Card, Dropdown, Modal } from 'semantic-ui-react'
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getActivities, addActivity } from '../actions/activities';
@@ -105,6 +105,24 @@ class Activities extends React.Component {
       return(
         <div className="actMod">
 
+        <div className="singleAct-date">
+        <Header as="h1" className="singleAct-header" textAlign="center" basic color="teal">
+          Select a New Date:
+        </Header>
+        <Modal trigger={<Button>Show Date</Button>}>
+          <Modal.Header>Select a Date</Modal.Header>
+            <Modal.Content>
+              <DayPickerInput
+                value={formattedDay}
+                onDayChange={this.handleDayChange}
+                format={DAY_FORMAT}
+                placeholder={`E.g. ${moment().locale('en').format(DAY_FORMAT)}`}
+                dayPickerProps={dayPickerProps}
+                className = "singleAct-picker"
+              />
+            </Modal.Content>
+          </Modal>
+        </div>
 
           <div className="actInfo">
             <Grid columns={16}>
@@ -131,19 +149,6 @@ class Activities extends React.Component {
           </div>
 
             <Divider />
-            <div className="singleAct-date">
-              <div as="h1" className="singleAct-header" textAlign="center" basic color="teal">
-                Select a New Date:
-              </div>
-              <DayPickerInput
-                  value={formattedDay}
-                  onDayChange={this.handleDayChange}
-                  format={DAY_FORMAT}
-                  placeholder={`E.g. ${moment().locale('en').format(DAY_FORMAT)}`}
-                  dayPickerProps={dayPickerProps}
-                  className = "singleAct-picker"
-                />
-            </div>
 
         </div>
       )

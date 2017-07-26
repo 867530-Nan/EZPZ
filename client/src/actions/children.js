@@ -7,7 +7,8 @@ export const addChild = (childInput, history, user_id) => {
   	let { id } = getState().user;
     axios.post(`/api/user/${id}/children`, child)
       .then( res => {
-      	dispatch({ type: 'ADD_CHILD', children: res.data }) 
+        const { data: children, headers } = res;
+      	dispatch({ type: 'ADD_CHILD', children, headers  })
 	      history.push('/initial-login');
     	})
   }
@@ -18,7 +19,7 @@ export const getChild = (user_id, history) => {
     let { id } = getState().user;
     axios.get(`/api/user/${id}/children`)
     .then( res => {
-      dispatch({ type: 'GET_CHILD', children: res.data })
+      dispatch({ type: 'GET_CHILD', children: res.data, headers: res.headers  })
     })
   }
 }
