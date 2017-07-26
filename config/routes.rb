@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :api do
     resources :user
     post '/user/:user_id/children', to: 'children#create'
+    get '/user/:user_id/children', to: 'children#index'
     post '/user/photos', to: 'photos#create'
     resources :children
     get 'location', to: 'location#show'

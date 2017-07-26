@@ -294,6 +294,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street, Ogden, UT 84401',
+    date: "August 4, 2017"
     day: 4,
     month: 'August',
     year: 2017,

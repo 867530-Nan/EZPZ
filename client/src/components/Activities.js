@@ -19,10 +19,9 @@ class Activities extends React.Component {
   addActivity = (id) => {
     this.props.dispatch(addActivity(id));
     let activeIndex = this.state.activeIndex;
-    activeIndex++;
-    debugger;
-    this.state.visible[activeIndex].pop
-    this.setState({ activeIndex });
+    let newVisible = this.state.visible.splice(activeIndex, 1)
+    let visible = this.state.visible
+    this.setState({ visible, activeIndex });
   }
 
   handleDayChange = (selectedDay, modifiers) => {

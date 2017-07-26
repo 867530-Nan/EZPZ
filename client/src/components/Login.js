@@ -17,7 +17,7 @@ class Login extends Component {
     const { dispatch, history } = this.props;
     const { email, password } = this.state;
 
-    dispatch(handleLogin(email, password, history));
+    dispatch(handleLogin(email, password, history))
   }
 
   render() {

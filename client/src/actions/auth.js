@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { setFlash } from '../actions/flash';
-import { addChild } from './children';
+import { addChild, getChild } from './children';
 
 export const registerUser = (auth, history, child) => {
   const {
@@ -49,6 +49,7 @@ export const handleLogin = (email, password, history) => {
       .then( res => {
         let { data: { data: user }, headers } = res
         dispatch({ type: 'LOGIN', user, headers });
+        dispatch(getChild(user.id, history));
         history.push('/activities');
       })
       .catch( error => {

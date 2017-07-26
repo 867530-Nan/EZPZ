@@ -7,6 +7,10 @@ imageb: url('../photodump/ezpz.jpg')
   padding: 2px;
 }
 
+.ui.animated.button .hidden.content{
+	margin-top: -.8em !important;
+}
+
 .nav-logged-out {
 	display: flex;
 	justify-content: space-between;
