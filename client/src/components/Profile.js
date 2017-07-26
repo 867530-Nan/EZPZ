@@ -17,42 +17,27 @@ class Profile extends Component {
 
     const images = this.props.user.image_url.map( image => {
       return(
+        <Segment>
         <Image src={image} fluid />
+        </Segment>
       )
     })
 
     return(
-      <div className='bigBox'>
-        <Header as='h1' textAlign='center'>
-        Welcome To Your Profile!
-        </Header>
-          <Container className='profContainer'>
-            <Segment compact className='avatar'>
-              <Image src={avatar} />
-              <Divider />
-              <div className='username'>
-                Your Name Here
-              </div>
-            </Segment>
-            <Segment className='child'>
-              Content Here!
-            </Segment>
-            <div>
-              <Dropzone
-                onDrop={ this.onDrop }
-                style={{ width: '100%', height: '100px', border: '1px dashed black'}}
-              >
-                <Header as='h4'>Try dropping some files or clicking here to upload!</Header>
-              </Dropzone>
-              <Segment basic>
-                <Header as='h2'>Family Photos!</Header>
-                <Divider />
-                <Segment className='photos'>
-                  { images }
-                </Segment>
-              </Segment>
-            </div>
-          </Container>
+      <div>
+        <Dropzone
+          onDrop={ this.onDrop }
+          style={{ width: '100%', height: '100px', border: '1px dashed black'}}
+        >
+          <Header as='h4'>Try dropping some files or clicking here to upload!</Header>
+        </Dropzone>
+        <Segment basic>
+          <Header as='h2'>Family Photos!</Header>
+          <Divider />
+          <Segment.Group horizontal compact className='photos'>
+            { images }
+          </Segment.Group>
+        </Segment>
       </div>
     );
   }
