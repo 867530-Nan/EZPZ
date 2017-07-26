@@ -141,7 +141,7 @@ class Itinerary extends React.Component {
 
   handleDayChange = (selectedDay, modifiers) => {
     let monthParse = moment(selectedDay).format("MMMM DD YYYY")
-    let visible = this.props.activities.filter( a =>
+    let visible = this.props.user_activities.filter( a =>
       moment(`${a.month} ${a.day} ${a.year}`).format("MMMM DD YYYY") === monthParse
     )
     this.setState({ visible, activeIndex: 0 });
