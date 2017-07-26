@@ -23,8 +23,7 @@ class Profile extends Component {
 
   render() {
 
-    const { children, name } = this.props.user;
-    const { age } = this.props.children;
+    // const { name, children } = this.props.user;
 
     const images = this.props.user.image_url.map( image => {
       return(
@@ -48,8 +47,8 @@ class Profile extends Component {
     return(
       <div>
         <Container>
-          <Header as='h1'>Welcome To Your Profile, {name}!</Header>
-          <Header as='h1'>Your Childs Age:</Header>
+          <Header as='h1'>Welcome To Your Profile, { this.props.user.name }!</Header>
+          <Header as='h1'>Your Childs Age: {this.props.children.age}</Header>
           <Dropzone
             onDrop={ this.onDrop }
             style={{ width: '100%', height: '100px', border: '1px dashed black'}}
