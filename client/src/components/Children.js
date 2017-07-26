@@ -18,7 +18,6 @@ class Children extends Component {
     dispatch(registerUser(user, history, this.state));
   }
 
-
   handleChange = (e) => {
     const id = e.target.id;
     const value = e.target.value;

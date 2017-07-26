@@ -15,7 +15,7 @@ class NavBar extends Component {
     if(user.id) {
       return(
         <div className="nav-logged-in">
-          <img className="logo" src={Logo}></img>
+          <a  href="/home"><img className="logo" src={Logo}></img></a>
         <div>
           <Menu.Menu stackable >  
               <Link to='/profile'>
@@ -62,16 +62,16 @@ class NavBar extends Component {
               
             <Button className='logout-nav-button' inverted color='green' animated='fade' compact
               onClick={() => dispatch(handleLogout(history))} >
-            <Button.Content visible>
-              Log Out
-            </Button.Content>
-            <Button.Content hidden>
-              <Icon inverted color='white' name='right arrow' size='medium' />
-            </Button.Content>
-              </Button>   
+              <Button.Content visible>
+                Log Out
+              </Button.Content>
+              <Button.Content hidden>
+                <Icon inverted color='white' name='right arrow' size='medium' />
+              </Button.Content>
+            </Button>   
           </Menu.Menu>
           </div>
-        <img className="logo" src={Logo}></img>  
+        <a  href="/home"><img className="logo" src={Logo}></img></a>
         </div>
       );
     } else {
@@ -101,7 +101,7 @@ class NavBar extends Component {
             </Link>
           </Menu.Menu>
         </div>
-        <img className="logo" src={ Logo }></img>
+        <a href="/"><img className="logo" src={ Logo }></img></a>
         <div>
           <Menu.Menu>
             <Link to='/register'>

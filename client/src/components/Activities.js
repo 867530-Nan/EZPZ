@@ -121,7 +121,7 @@ class Activities extends React.Component {
               </Button>
             </div>
             <Link to='/itinerary'>
-            <Button fluid color="violet" to="/itinerary">Visit Itinerary for all Activities</Button>
+              <Button fluid color="violet" to="/itinerary">Visit Itinerary for all Activities</Button>
             </Link>
           </div>
 

@@ -3,6 +3,7 @@ import axios from 'axios'
 export const addChild = (childInput, history, user_id) => {
   const { age, realInterest} = childInput
   const child = { age, realInterest }
+  debugger;
   return (dispatch, getState) => {
   	let { id } = getState().user;
     axios.post(`/api/user/${id}/children`, child)
