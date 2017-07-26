@@ -34,18 +34,11 @@ class App extends Component {
             <Route exact path='/initial-login' component={LoginFirst} />
             <Route exact path='/register' component={Register} />
             <Route exact path='/contact' component={Contact} />
-<<<<<<< HEAD
             <Route exact path='/itinerary' component={Itinerary} />
             <Route exact path='/activities' component={Activities} />
             <Route exact path='/activity' component={ActivityView} />
             <Route exact path='/profile' component={Profile} />
             <Route exact path='/home' component={Home} />
-=======
-            <ProtectedRoute exact path='/itinerary' component={Itinerary} />
-            <ProtectedRoute exact path='/activities' component={Activities} />
-            <ProtectedRoute exact path='/activity' component={ActivityView} />
-            <ProtectedRoute exact path='/profile' component={Profile} />
->>>>>>> added protected routes and itinerary
             <Route component={NoMatch} />
           </Switch>
         </FetchUser>

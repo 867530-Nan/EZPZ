@@ -1044,7 +1044,6 @@ Activity.create(
     description: '',
     url: 'http://www.sjc.utah.gov/event/terrific-tuesday-cookie-decorating/?instance_id=262'
     )
-<<<<<<< HEAD
 
 Activity.create(
     location: 'Towne Center Drive',
@@ -2551,8 +2550,3 @@ Activity.create(
     description: "The Springville World Folkfest will bring the color and excitement of traditional folk dance and music from around the world to Springville. This annual production of folk music and energetic dance by musicians and dancers from many lands has grown to become the largest festival of folk dance and music in the United States.",
     url: "http://www.worldfolkfest.dreamhosters.com/"
     )
-
-
-
-=======
->>>>>>> added protected routes and itinerary

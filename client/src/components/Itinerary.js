@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import { Header, Grid, Container, Divider, Accordion, Message, Label, Icon } from 'semantic-ui-react'
 import { getSavedActivities } from '../actions/itinerary'
 import { connect } from 'react-redux'
@@ -26,16 +25,16 @@ class Itinerary extends React.Component {
           <div className="listInfo">
           Suitable for Ages: {activity.age}
           </div>
-          <div className="listInfo"> 
+          <div className="listInfo">
           This event cost: ${activity.cost}
           </div>
-          <div className="listInfo"> 
+          <div className="listInfo">
           Located at: {activity.address}
           </div>
-          <div className="listInfo"> 
+          <div className="listInfo">
           {activity.description}
           </div>
-          <div className="listInfo"> 
+          <div className="listInfo">
           Visit the Event Website: {activity.url}
           </div>
         </Accordion.Content>
@@ -83,7 +82,7 @@ class Itinerary extends React.Component {
                 placeholder="Select Date for Itinerary..."
                 dayPickerProps={dayPickerProps}
                 className = "day-picker"
-              /> 
+              />
             </div>
           </div>
         </div>
@@ -103,105 +102,23 @@ class Itinerary extends React.Component {
                   placeholder="What Day's Activities are you looking for?"
                   dayPickerProps={dayPickerProps}
                   className = "singleAct-picker"
-                /> 
+                />
             </div>
-          
+
           <Divider />
 
-          <div className=""> 
+          <div className="">
                     { this.showActivities() }
           </div>
         </div>
       )
   }
 
-=======
-import { Header, Grid, Container } from 'semantic-ui-react';
-import { getSavedActivities } from '../actions/itinerary'
-import { connect } from 'react-redux'
-import ItineraryView from './ItineraryView'
-import DayPicker from 'react-day-picker';
-import 'react-day-picker/lib/style.css';
-import moment from 'moment';
-import DayPickerInput from 'react-day-picker/DayPickerInput'
-
-const DAY_FORMAT = 'DD/MM/YYYY';
-
-class Itinerary extends React.Component {
-  state = { month: '', activeIndex: null, visible: [], selectedDay: undefined, isDisabled: false, }
-
-
-  componentWillMount() {
-    this.props.dispatch(getSavedActivities(this.setActivities));
-  }
-
-  setActivities = (activities) => {
-    this.setState({ visible: activities });
-  }
-
-  handleDayChange = (selectedDay, modifiers) => {
-    let monthParse = moment(selectedDay).format("MMMM DD YYYY")
-    let visible = this.props.user_activities.filter( a =>
-      moment(`${a.month} ${a.day} ${a.year}`).format("MMMM DD YYYY") === monthParse
-    )
-    this.setState({ visible, activeIndex: 0 });
-  };
-
-  setActivities = (activities) => {
-    this.setState({ visible: activities });
-  }
-
-  render() {
-    const { selectedDay, isDisabled } = this.state;
-    const formattedDay = selectedDay
-
-    const dayPickerProps = {
-      todayButton: 'Go to Today',
-      disabledDays: {
-        daysOfWeek: [0, 6],
-      },
-      enableOutsideDays: true,
-      modifiers: {
-        monday: { daysOfWeek: [1] },
-      },
-    };
-    console.log(this.state)
-    return (
-      <Container>
-        <Header as='h3' textAlign='center'>Itinerary</Header>
-          <Grid column={16}>
-            <Grid.Row>
-              { this.showActivities }
-            </Grid.Row>
-          </Grid>
-
-          <div>
-          <DayPickerInput
-              value={formattedDay}
-              onDayChange={this.handleDayChange}
-              format={DAY_FORMAT}
-              placeholder={`E.g. ${moment().locale('en').format(DAY_FORMAT)}`}
-              dayPickerProps={dayPickerProps}
-              className = "singleAct-picker"
-            />
-        </div>
-        </Container>
-
-
-
-    )
-  }
-
->>>>>>> redux state populated with user_activity
 }
 
+const mapStateToProps = (state) => {
+  const userActivities = state.userActs
+  return { userActivities }
+}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 export default connect(mapStateToProps)(Itinerary);
-=======
-export default connect(mapStateToProps)(Itinerary);
->>>>>>> redux state populated with user_activity
-=======
-export default connect()(Itinerary);
->>>>>>> added protected routes and itinerary
