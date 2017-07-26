@@ -62,10 +62,11 @@ class Children extends Component {
 
           <Divider />
 
-          <Header className='create-profile' color="orange" as='h1' icon textAlign='center'>
-              <Icon name='child' />
-              Child Information
-            </Header>
+          <div className='childReg'>
+            <Icon name='child' />
+              <span className="childInfoTitle">Enter Child Information</span>
+              <span className="childInfoNote">More Children can be added in the Profile Page</span>
+          </div>
           <Container>
           <Form onSubmit={this.handleSubmit}>
               <Label pointing='below' color="blue">What's Your Child's Age:</Label>

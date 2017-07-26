@@ -11,6 +11,10 @@ imageb: url('../photodump/ezpz.jpg')
 	margin-top: -.8em !important;
 }
 
+.ui.fade.animated.button .hidden.content {
+	margin-top: -.5em !important;
+}
+
 .nav-logged-out {
 	display: flex;
 	justify-content: space-between;
@@ -38,9 +42,9 @@ imageb: url('../photodump/ezpz.jpg')
 }
 
 .home-nav-button:hover {
-font-family: 'BioRhyme', sans-serif !important;
-color: snow !important;
-border: 2px solid snow !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
 }
 
 .profile-nav-button{
@@ -102,13 +106,13 @@ border: 2px solid snow !important;
 }
 
 .activities-nav-button:hover{
-background: #00B4FD !important;
-background-image: linear-gradient(-223deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 94%) !important;
-border: 6px solid #FFFFFF !important;
-font-family: 'BioRhyme', sans-serif !important;
-color: snow !important;
-border: 2px solid snow !important;
-font-size: 18px !important;
+	background: #00B4FD !important;
+	background-image: linear-gradient(-223deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 94%) !important;
+	border: 6px solid #FFFFFF !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
 }
 
 .contact-nav-button{
@@ -137,13 +141,13 @@ font-size: 18px !important;
 }
 
 .about-us-nav-button:hover{
-background-image: linear-gradient(-180deg, #F4FF00 0%, #F76B1C 100%) !important;
-border: 6px solid #FBF3F3 !important;
+	background-image: linear-gradient(-180deg, #F4FF00 0%, #F76B1C 100%) !important;
+	border: 6px solid #FBF3F3 !important;
 
-font-family: 'BioRhyme', sans-serif !important;
-color: snow !important;
-border: 2px solid snow !important;
-font-size: 18px !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
 }
 
 .register-nav-button{
@@ -172,12 +176,12 @@ font-size: 18px !important;
 }
 
 .login-nav-button:hover{
-background: #00F86B !important;
-background-image: linear-gradient(-180deg, #A3FF00 0%, #429321 100%) !important;
-border: 6px solid #FFFFFF !important;
-font-family: 'BioRhyme', sans-serif !important;
-color: snow !important;
-border: 2px solid snow !important;
-font-size: 18px !important;
+	background: #00F86B !important;
+	background-image: linear-gradient(-180deg, #A3FF00 0%, #429321 100%) !important;
+	border: 6px solid #FFFFFF !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
 }
 

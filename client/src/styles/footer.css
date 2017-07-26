@@ -1,1 +1,46 @@
-footer.css
+.entireFooter {
+	height: 160px;
+	/*background: url('../photodump/water-text.jpg')
+                   top center repeat-x;
+	width: 100%;*/
+}
+
+.socialButtons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	margin: auto auto;
+}
+
+.buttbutt {
+	margin: 0 20px !important;
+	font-size: 1.2em !important;
+}
+
+.navCopy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttLinks {
+	margin: 0 20px !important;
+	font-family: 'BioRhyme', cursive;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.slogan {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	font-family: 'BioRhyme', cursive;
+	font-weight: 300;
+	height: 70px;
+}
+
+a.buttNav{
+	color: orange !important;
+}

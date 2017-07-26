@@ -2,3 +2,25 @@
 	display: flex !important;
 	justify-content: center;
 }
+
+.childReg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	line-height: 3em;
+	margin: 20px;
+}
+
+.childInfoTitle{
+	font-size: 40px;
+	font-family: 'BioRhyme', cursive;
+	font-weight: 300;
+}
+
+.childInfoNote {
+	font-size: 24px;
+	font-family: 'BioRhyme', cursive;
+	font-weight: 300;
+}

@@ -17,6 +17,7 @@ import Contact from './Contact';
 import ActivityView from './ActivityView'
 import Children from './Children';
 import LoginFirst from './LoginFirst';
+import Footer from './Footer'
 
 
 
@@ -43,6 +44,7 @@ class App extends Component {
             <Route component={NoMatch} />
           </Switch>
         </FetchUser>
+        <Footer />
       </div>
     );
   }
