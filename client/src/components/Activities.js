@@ -1,8 +1,5 @@
 import React from 'react'
 import { Header, Segment, Button, Divider, Label, Container, Grid, Card, Dropdown } from 'semantic-ui-react'
-// import DatePicker from 'react-datepicker';
-// import moment from 'moment';
-// import 'react-datepicker/dist/react-datepicker.css';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getActivities, addActivity } from '../actions/activities';
