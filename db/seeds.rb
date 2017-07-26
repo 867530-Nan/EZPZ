@@ -18,6 +18,9 @@ end
   Activity.create(
     name: 'Trolls - Movie in the Park',
     date: 'August 4, 2017',
+    month: 'August',
+    day: 4,
+    year: 2017,
     time: '9:00 PM',
     description: 'Movie will begin at dusk. The movie will be Trolls. Bring your lawn chairs & blankets!! Concessions will be available.',
     location: 'Centennial Park',
@@ -25,7 +28,6 @@ end
     cost: 'Free',
     inside: false,
     age: 'all ages',
-    month: 'August',
     url: nil
 
   )
@@ -35,13 +37,15 @@ end
   Activity.create(
     name: 'WorldStage Free Concert ft. World Travelers',
     date: 'August 7, 2017',
+    month: 'August',
+    day: 4,
+    year: 2017,
     time: '7:30 PM',
     description:'Doors open at 7PM; concert begins at 7:30 PM. Every summer since 2005 the Utah Cultural Celebration Center has presented the WorldStage! Summer Concert Series – an outdoor musical and cultural experience for the whole family, all summer long. The 2017 series presents a vibrant and exciting cross section of entertainment, featuring classical, jazz, rock, international folk, and country music! Concerts are Monday nights, July 10 through August 14, 2017 (no concert July 24). Doors/gates open at 7:00 p.m. with performances starting at 7:30 p.m. Presented in part by West Valley City, Salt Lake County Zoo, Arts, and Parks, Utah Division of Arts and Museums, and Century Link.',
     location: 'Utah Cultural Celebration Center',
     address:'1355 West 3100 South West Valley City, UT 84119',
     inside: false,
     cost: 'Free',
-    month: 'August',
     age: 'All Ages',
     url: nil
   )
@@ -51,13 +55,15 @@ end
   Activity.create(
     name: '#ThursdayLeague Food Trucks at Fairbourne Station',
     date: 'August 10, 2017',
+    month: 'August',
+    day: 4,
+    year: 2017,
     time: '5:00 PM - 9:00 PM',
     description:
     'Join The Food Truck League every Thursday from 5 - 9 PM at Fairbourne Station for #ThursdayLeague #FoodatFairbourne! Schedule is subject to change and cancellations may not be announced or reflected on West Valley City website or via email. Check https://www.facebook.com/thefoodtruckleague for specific dates and times.',
     location: 'Fairbourne Station',
     address: '2810 West 3590 South West Valley City, UT 84119',
     url: 'https://www.facebook.com/thefoodtruckleague',
-    month: 'August',
     cost: 'No Cost',
     inside: false,
     age: 'All Ages'
@@ -68,16 +74,15 @@ end
   Activity.create(
     name: 'Bicycle Safety Rodeo',
     date: 'August 14, 2017',
-    time:
-    '4:30 PM - 6:30 PM',
-    location:
-    'Family Fitness Center',
-    address:
-    '5415 West 3100 South
+    month: 'August',
+    day: 4,
+    year: 2017,
+    time: '4:30 PM - 6:30 PM',
+    location: 'Family Fitness Center',
+    address:'5415 West 3100 South
     West Valley City, UT 84120',
     description: 'Bike Safety Rodeos are designed to help educate riders about riding bicycles. These rodeos are a great benefit to children to learn about and practice safe riding practices. We encourage and invite participation in our Bike Rodeos and enjoy conducting them for the kids. The focus of the Bike Safety Rodeo program is to increase rider safety and awareness for bicyclists. As such children must already have basic bicycle riding skills. As an essential requirement to participate we ask that children be old enough to ride a bicycle without training wheels. Please understand, safety is our number one concern. If children aren’t able to ride unassisted they may be asked to not participate. Please download this participation waiver form. Every child must have one completed prior to participation in the rodeo. We look forward to seeing you at our events!',
     cost: 'No Cost',
-    month: 'August',
     inside: false,
     url: 'http://www.wvc-ut.gov/1609/Bicycle-Safety-Rodeo',
     age: 'All Ages'
@@ -88,13 +93,14 @@ end
   Activity.create(
     name: 'WorldStage Free Concert ft. Artie Hemphill & The Iron Horse Band',
     date: 'August 14, 2017',
+    month: 'August',
+    day: 4,
+    year: 2017,
     time: '7:30 PM',
-    description:
-    'Doors open at 7PM; concert begins at 7:30 PM. Every summer since 2005 the Utah Cultural Celebration Center has presented the WorldStage! Summer Concert Series – an outdoor musical and cultural experience for the whole family, all summer long. The 2017 series presents a vibrant and exciting cross section of entertainment, featuring classical, jazz, rock, international folk, and country music! Concerts are Monday nights, July 10 through August 14, 2017 (no concert July 24). Doors/gates open at 7:00 p.m. with performances starting at 7:30 p.m. Presented in part by West Valley City, Salt Lake County Zoo, Arts, and Parks, Utah Division of Arts and Museums, and Century Link.',
+    description: 'Doors open at 7PM; concert begins at 7:30 PM. Every summer since 2005 the Utah Cultural Celebration Center has presented the WorldStage! Summer Concert Series – an outdoor musical and cultural experience for the whole family, all summer long. The 2017 series presents a vibrant and exciting cross section of entertainment, featuring classical, jazz, rock, international folk, and country music! Concerts are Monday nights, July 10 through August 14, 2017 (no concert July 24). Doors/gates open at 7:00 p.m. with performances starting at 7:30 p.m. Presented in part by West Valley City, Salt Lake County Zoo, Arts, and Parks, Utah Division of Arts and Museums, and Century Link.',
     location: 'Utah Cultural Celebration Center',
     address:'1355 West 3100 South West Valley City, UT 84119',
     cost: 'Free',
-    month: 'August',
     inside: false,
     url: nil
 
@@ -106,6 +112,8 @@ end
     name: '#ThursdayLeague Food Trucks at Fairbourne Station',
     date: 'August 17, 2017',
     month: 'August',
+    day: 4,
+    year: 2017,
     time: '5:00 PM - 9:00 PM',
     description:
     'Join The Food Truck League every Thursday from 5 - 9 PM at Fairbourne Station for #ThursdayLeague #FoodatFairbourne! Schedule is subject to change and cancellations may not be announced or reflected on West Valley City website or via email. Check https://www.facebook.com/thefoodtruckleague for specific dates and times.',
@@ -124,6 +132,8 @@ end
     name: 'National Night Out: Community Heroes Celebration',
     date: 'August 17, 2017',
     month: 'August',
+    day: 4,
+    year: 2017,
     time: '5:00 PM - 8:00 PM',
     location: 'Fairbourne Station Promenade',
     address:'2810 West 3590 South West Valley City, UT 84119',
@@ -140,6 +150,8 @@ end
     name: 'Summer at the Station Free Outdoor Concert ft. The Otter Creek Duo',
     date: 'August 17, 2017',
     month: 'August',
+    day: 4,
+    year: 2017,
     time: '6:30 PM',
     description:
       'In conjunction with National Night Out: Community Heroes Celebration. Come out and enjoy the Folk hits of The Otter Creek Duo! Bring your lawn chairs and blankets.',
@@ -157,6 +169,8 @@ end
     name: 'Wasatch International Food Festival',
     date: 'August 18, 2017',
     month: 'August',
+    day: 4,
+    year: 2017,
     time: '5:00 PM - 10:00 PM',
     description:
       'On August 18th and 19th, the Utah Cultural Celebration Center is hosting the second annual Wasatch International Food Festival at our facility in West Valley City. From the hip, gastronomic scenes of downtown Salt Lake City and Park City to the traditional ethnic offerings of the West Side\'s diverse community, the Wasatch is home to some of the greatest and most diverse food in the region. The Wasatch International Food Festival celebrates haute cuisine, street food, and everything in between. We want to dish up these rich and diverse menus with you, with a side of music and fun. ',
@@ -174,6 +188,8 @@ end
     name: 'Wasatch International Food Festival',
     date: 'August 19, 2017',
     month: 'August',
+    day: 4,
+    year: 2017,
     time: '12:00 PM - 8:00 PM',
     description:
       'On August 18th and 19th, the Utah Cultural Celebration Center is hosting the second annual Wasatch International Food Festival at our facility in West Valley City. From the hip, gastronomic scenes of downtown Salt Lake City and Park City to the traditional ethnic offerings of the West Side\'s diverse community, the Wasatch is home to some of the greatest and most diverse food in the region. The Wasatch International Food Festival celebrates haute cuisine, street food, and everything in between. We want to dish up these rich and diverse menus with you, with a side of music and fun. ',
@@ -191,6 +207,8 @@ end
     name: '#ThursdayLeague Food Trucks at Fairbourne Station',
     date: 'August 24, 2017',
     month: 'August',
+    day: 4,
+    year: 2017,
     time: '5:00 PM - 9:00 PM',
     description:
       'Join The Food Truck League every Thursday from 5 - 9 PM at Fairbourne Station for #ThursdayLeague #FoodatFairbourne! Schedule is subject to change and cancellations may not be announced or reflected on West Valley City website or via email. Check https://www.facebook.com/thefoodtruckleague for specific dates and times.',
@@ -208,6 +226,8 @@ end
     name: '#ThursdayLeague Food Trucks at Fairbourne Station',
     date: 'August 31, 2017',
     month: 'August',
+    day: 4,
+    year: 2017,
     time: '5:00 PM - 9:00 PM',
     description:
       'Join The Food Truck League every Thursday from 5 - 9 PM at Fairbourne Station for #ThursdayLeague #FoodatFairbourne! Schedule is subject to change and cancellations may not be announced or reflected on West Valley City website or via email. Check https://www.facebook.com/thefoodtruckleague for specific dates and times.',
@@ -965,7 +985,7 @@ Activity.create(
     location: 'Ampthitheater Park',
     address: '9400 South 1300 East, Sandy, Utah 84094',
     date: 'August 19, 2017',
-    day: 19, 
+    day: 19,
     month: 'August',
     year: 2017,
     cost: 'Free',
@@ -1024,6 +1044,7 @@ Activity.create(
     description: '',
     url: 'http://www.sjc.utah.gov/event/terrific-tuesday-cookie-decorating/?instance_id=262'
     )
+<<<<<<< HEAD
 
 Activity.create(
     location: 'Towne Center Drive',
@@ -2533,3 +2554,5 @@ Activity.create(
 
 
 
+=======
+>>>>>>> added protected routes and itinerary

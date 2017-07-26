@@ -25,7 +25,9 @@ class Activities extends React.Component {
 
   handleDayChange = (selectedDay, modifiers) => {
     let monthParse = moment(selectedDay).format("MMMM DD YYYY")
-    let visible = this.props.activities.filter( a => moment(`${a.month} ${a.day} ${a.year}`).format("MMMM DD YYYY") === monthParse)
+    let visible = this.props.activities.filter( a =>
+        moment(`${a.month} ${a.day} ${a.year}`).format("MMMM DD YYYY") === monthParse
+      )
     this.setState({ visible, activeIndex: 0 });
   };
 
@@ -92,7 +94,7 @@ class Activities extends React.Component {
                 placeholder={`E.g. ${moment().locale('en').format(DAY_FORMAT)}`}
                 dayPickerProps={dayPickerProps}
                 className = "day-picker"
-              /> 
+              />
             </div>
           </div>
         </div>
@@ -100,9 +102,9 @@ class Activities extends React.Component {
     else
       return(
         <div className="actMod">
-          
-            
-          <div className="actInfo"> 
+
+
+          <div className="actInfo">
             <Grid columns={16}>
               <Grid.Row>
                 <ActivityView activity={this.state.visible[this.state.activeIndex]} />
@@ -134,9 +136,9 @@ class Activities extends React.Component {
                   placeholder={`E.g. ${moment().locale('en').format(DAY_FORMAT)}`}
                   dayPickerProps={dayPickerProps}
                   className = "singleAct-picker"
-                /> 
+                />
             </div>
-          
+
         </div>
       )
   }

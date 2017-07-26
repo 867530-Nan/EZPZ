@@ -38,6 +38,10 @@ const ActivityView = ({ activity = {} }) => (
           <Table.Cell>Webpage</Table.Cell>
           <Table.Cell><a href="{activity.url}">{activity.url}</a></Table.Cell>
         </Table.Row>
+        <Table.Row>
+          <Table.Cell>Cost</Table.Cell>
+          <Table.Cell>${activity.cost}</Table.Cell>
+        </Table.Row>
       </Table.Body>
     </Table>
   </Container>

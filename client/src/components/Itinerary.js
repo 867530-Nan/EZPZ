@@ -120,9 +120,16 @@ import { Header, Grid, Container } from 'semantic-ui-react';
 import { getSavedActivities } from '../actions/itinerary'
 import { connect } from 'react-redux'
 import ItineraryView from './ItineraryView'
+import DayPicker from 'react-day-picker';
+import 'react-day-picker/lib/style.css';
+import moment from 'moment';
+import DayPickerInput from 'react-day-picker/DayPickerInput'
+
+const DAY_FORMAT = 'DD/MM/YYYY';
 
 class Itinerary extends React.Component {
-  state = { visible: [] }
+  state = { month: '', activeIndex: null, visible: [], selectedDay: undefined, isDisabled: false, }
+
 
   componentWillMount() {
     this.props.dispatch(getSavedActivities(this.setActivities));
@@ -132,17 +139,33 @@ class Itinerary extends React.Component {
     this.setState({ visible: activities });
   }
 
-  showActivities = () => {
-    return this.props.userActs.map( activity =>
-      <Container>
-            <p>{activity.name}</p>
-      </Container>
-
+  handleDayChange = (selectedDay, modifiers) => {
+    let monthParse = moment(selectedDay).format("MMMM DD YYYY")
+    let visible = this.props.activities.filter( a =>
+      moment(`${a.month} ${a.day} ${a.year}`).format("MMMM DD YYYY") === monthParse
     )
+    this.setState({ visible, activeIndex: 0 });
+  };
+
+  setActivities = (activities) => {
+    this.setState({ visible: activities });
   }
 
   render() {
-    console.log(this.props)
+    const { selectedDay, isDisabled } = this.state;
+    const formattedDay = selectedDay
+
+    const dayPickerProps = {
+      todayButton: 'Go to Today',
+      disabledDays: {
+        daysOfWeek: [0, 6],
+      },
+      enableOutsideDays: true,
+      modifiers: {
+        monday: { daysOfWeek: [1] },
+      },
+    };
+    console.log(this.state)
     return (
       <Container>
         <Header as='h3' textAlign='center'>Itinerary</Header>
@@ -151,6 +174,17 @@ class Itinerary extends React.Component {
               { this.showActivities }
             </Grid.Row>
           </Grid>
+
+          <div>
+          <DayPickerInput
+              value={formattedDay}
+              onDayChange={this.handleDayChange}
+              format={DAY_FORMAT}
+              placeholder={`E.g. ${moment().locale('en').format(DAY_FORMAT)}`}
+              dayPickerProps={dayPickerProps}
+              className = "singleAct-picker"
+            />
+        </div>
         </Container>
 
 
@@ -161,13 +195,13 @@ class Itinerary extends React.Component {
 >>>>>>> redux state populated with user_activity
 }
 
-const mapStateToProps = (state) => {
-  const userActivities = state.userActs
-  return { userActivities }
-}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 export default connect(mapStateToProps)(Itinerary);
 =======
 export default connect(mapStateToProps)(Itinerary);
 >>>>>>> redux state populated with user_activity
+=======
+export default connect()(Itinerary);
+>>>>>>> added protected routes and itinerary
