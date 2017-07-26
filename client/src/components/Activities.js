@@ -83,9 +83,9 @@ class Activities extends React.Component {
       return(
         <div className="dateMod">
           <div className="dateSelect">
-            <h1 className="activity-header" textAlign="center" basic color="teal">
+            <Header as='h1' className="activity-header" textAlign='center'>
               Select Activity Date:
-            </h1>
+            </Header>
             <div className="calendar">
               <DayPickerInput
                 value={formattedDay}
@@ -115,7 +115,11 @@ class Activities extends React.Component {
               <Button attached='bottom' color="orange" onClick={this.tick} >
                 Show Next Activity
               </Button>
-              <Button attached='bottom' color="green" onClick={() => this.addActivity(this.state.visible[activeIndex].id)}>
+              <Button
+                attached='bottom'
+                color="green"
+                onClick={() => this.addActivity(this.state.visible[activeIndex].id)}
+                >
                 Add to Itinerary
               </Button>
             </div>

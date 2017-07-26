@@ -17,7 +17,7 @@ class NavBar extends Component {
         <div className="nav-logged-in">
           <a  href="/home"><img className="logo" src={Logo}></img></a>
         <div>
-          <Menu.Menu stackable >  
+          <Menu.Menu stackable='true' >
               <Link to='/profile'>
                   <Button className='profile-nav-button' inverted color='orange' animated='fade' compact>
                   <Button.Content visible>
@@ -58,8 +58,8 @@ class NavBar extends Component {
                   </Button.Content>
                 </Button>
               </Link>
-             
-              
+
+
             <Button className='logout-nav-button' inverted color='green' animated='fade' compact
               onClick={() => dispatch(handleLogout(history))} >
               <Button.Content visible>
@@ -68,7 +68,7 @@ class NavBar extends Component {
               <Button.Content hidden>
                 <Icon inverted color='white' name='right arrow' size='medium' />
               </Button.Content>
-            </Button>   
+            </Button>
           </Menu.Menu>
           </div>
         <a  href="/home"><img className="logo" src={Logo}></img></a>
@@ -85,7 +85,7 @@ class NavBar extends Component {
                     About
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted color='white' name='user circle' size='medium' />
+                    <Icon inverted name='user circle' size='large' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -95,7 +95,7 @@ class NavBar extends Component {
                     Contact
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted color='white' name='talk outline' size='medium' />
+                    <Icon inverted name='talk outline' size='large' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -110,7 +110,7 @@ class NavBar extends Component {
                     Register
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted color='white' name='drivers license' size='medium' />
+                    <Icon inverted name='drivers license' size='large' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -120,7 +120,7 @@ class NavBar extends Component {
                     Login
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted color='white' name='pointing up' size='medium' />
+                    <Icon inverted name='pointing up' size='large' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -130,7 +130,7 @@ class NavBar extends Component {
       );
     }
   }
-  
+
   render() {
     return (
       <div className='mainNavbar'>
@@ -143,7 +143,7 @@ class NavBar extends Component {
   }
 }
 
-  
+
 
 
 
@@ -152,5 +152,3 @@ const mapStateToProps = (state) => {
 }
 
 export default withRouter(connect(mapStateToProps)(NavBar));
-
-

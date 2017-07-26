@@ -19,7 +19,7 @@ class Itinerary extends React.Component {
       <Accordion>
           <Accordion.Title>
             <Icon name='dropdown' />
-            Activity {i}: {activity.name} - {activity.time}
+            Activity {i+1}: {activity.name} - {activity.time}
           </Accordion.Title>
         <Accordion.Content>
           <div className="listInfo">
@@ -44,7 +44,9 @@ class Itinerary extends React.Component {
 
   handleDayChange = (selectedDay, modifiers) => {
     let timeParse = moment(selectedDay).format("MMMM DD YYYY")
-    let visible = this.props.userActivities.filter( a => moment(`${a.month} ${a.day} ${a.year}`).format("MMMM DD YYYY") === timeParse)
+    let visible = this.props.userActivities.filter( a =>
+        moment(`${a.month} ${a.day} ${a.year}`).format("MMMM DD YYYY") === timeParse
+      )
     this.setState({ visible });
   }
 
