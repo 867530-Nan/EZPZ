@@ -1,44 +1,22 @@
-.nameHere {
-  text-align: center;
-}
-  .top-photo {
-  background: url('../photodump/foggy-family.jpg') bottom no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 700px;
-}
-
-.profContainer {
-  padding-left: 100px !important;
-  padding-right: 100px !important;
-  display: inline-flex !important;
-  flex-direction: row !important;
-}
-
-.avatar {
-  padding-left: 50px;
-}
-
-.bigBox {
-  border: 1px solid grey;
-  border-radius: 7px;
-  box-shadow: 0 5px 0 0 grey;
-  height: 600px;
-}
-
-.child {
-  height: 225px !important;
-  width: 100% !important;
-}
-
-.username {
-  text-align: center !important;
-}
 .actualPhoto {
   max-width: 200px !important;
-  height: 200px !important;
+  text-align: center !important;
 }
 
 .photos {
-  max-height: 200px !important;
+  max-height: auto !important;
+}
+
+.photoMod {
+  width: auto !important;
+}
+
+.enlarge {
+  background-color: blue !important;
+  margin-top: 25px !important;
+  width: 100% !important;
+}
+
+.litPhoto {
+  height: 150px;
 }

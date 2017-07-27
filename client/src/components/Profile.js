@@ -67,16 +67,10 @@ class Profile extends Component {
     const images = this.props.user.image_url.map( image => {
       return(
         <Segment basic className='actualPhoto'>
-          <Image src={image} fluid />
-          <Modal trigger={<Button>Enlarge Picture</Button>}>
-          <Modal.Header>Your Picture</Modal.Header>
+          <Image className='litPhoto' src={image} fluid />
+            <Modal className='photoMod' trigger={<Button className='enlarge' inverted>Enlarge Picture</Button>}>
             <Modal.Content image>
               <Image src={image} size='large' />
-              <Modal.Description>
-                <Header>Default Profile Image</Header>
-                <p>We have found the following gravatar image associated with your e-mail address.</p>
-                <p>Is it okay to use this photo?</p>
-              </Modal.Description>
             </Modal.Content>
           </Modal>
         </Segment>
