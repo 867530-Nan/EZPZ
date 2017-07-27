@@ -44,11 +44,8 @@ class NavBar extends Component {
                   Activities
                   </Button.Content>
                 <Button.Content hidden>
-<<<<<<< HEAD
                     <Icon inverted color='white' name='bath' size='medium' />
-=======
                     <Icon inverted name='up arrow' size='large' />
->>>>>>> updates
                 </Button.Content>
               </Button>
             </Link>
@@ -58,11 +55,8 @@ class NavBar extends Component {
                   Itinerary
                   </Button.Content>
                 <Button.Content hidden>
-<<<<<<< HEAD
                   <Icon inverted color='white' name='driver license outline' size='medium' />
-=======
                   <Icon inverted name='map outline' size='large' />
->>>>>>> updates
                 </Button.Content>
               </Button>
             </Link>
@@ -82,11 +76,8 @@ class NavBar extends Component {
                 Log Out
               </Button.Content>
               <Button.Content hidden>
-<<<<<<< HEAD
                 <Icon inverted color='white' name='ambulance' size='medium' />
-=======
                 <Icon inverted name='right arrow' size='large' />
->>>>>>> updates
               </Button.Content>
             </Button>
           </Menu.Menu>
