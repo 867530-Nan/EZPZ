@@ -1,5 +1,5 @@
 .entireFooter {
-	height: 200px;
+	height: 190px;
 	background: linear-gradient(
 	      rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)), url('../photodump/water-text.jpg')
                    top center repeat-x;
@@ -23,7 +23,6 @@
 	color: green;
 	display: flex;
 	justify-content: center;
-	padding-bottom: 20px;
 }
 
 .ui.button:nth-child(3) {
@@ -35,6 +34,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 20px;
 }
 
 .buttLinks {

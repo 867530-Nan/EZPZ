@@ -17,7 +17,7 @@ class NavBar extends Component {
         <div className="nav-logged-in">
           <a  href="/home"><img className="logo" src={Logo}></img></a>
         <div>
-          <Menu.Menu stackable='true' >
+          <Menu.Menu stackable='true' fixed="top">
             <Link to='/profile'>
                 <Button className='profile-nav-button' inverted color='orange' animated='fade' compact>
                 <Button.Content visible>
