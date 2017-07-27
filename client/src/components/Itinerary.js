@@ -25,28 +25,28 @@ class Itinerary extends React.Component {
 
   showActivities = () => {
     return this.state.visible.map( (activity, i) =>
-      <Accordion>
-          <Accordion.Title>
+      <Accordion className='activityList' key={activity.id}>
+          <Accordion.Title as='h1'>
             <Icon name='dropdown' />
             Activity {i+1}: {activity.name} - {activity.time}
           </Accordion.Title>
-        <Accordion.Content>
-          <div className="listInfo">
-          Suitable for Ages: {activity.age}
-          </div>
-          <div className="listInfo">
-          This event cost: ${activity.cost}
-          </div>
-          <div className="listInfo">
-          Located at: {activity.address}
-          </div>
-          <div className="listInfo">
-          {activity.description}
-          </div>
-          <div className="listInfo">
-          Visit the Event Website: {activity.url}
-          </div>
-        </Accordion.Content>
+            <Accordion.Content>
+              <div className="listInfo">
+              Suitable for Ages: {activity.age}
+              </div>
+              <div className="listInfo">
+              This event cost: ${activity.cost}
+              </div>
+              <div className="listInfo">
+              Located at: {activity.address}
+              </div>
+              <div className="listInfo">
+              {activity.description}
+              </div>
+              <div className="listInfo">
+              Visit the Event Website: {activity.url}
+              </div>
+            </Accordion.Content>
       </Accordion>
     )
   }
@@ -94,6 +94,9 @@ class Itinerary extends React.Component {
                 className = "day-picker"
               />
             </div>
+            <Header as='h1'>
+              You do not have any activities for this day planned!
+            </Header>
           </div>
         </div>
         )
@@ -117,9 +120,9 @@ class Itinerary extends React.Component {
 
           <Divider />
 
-          <div className="">
+          <Header>
                     { this.showActivities() }
-          </div>
+          </Header>
         </div>
       )
   }
