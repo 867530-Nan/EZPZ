@@ -8,9 +8,9 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 50px;
+	height: 100px;
 	line-height: 3em;
-	margin: 20px;
+	margin: 40px;
 }
 
 .childInfoTitle{
@@ -23,4 +23,9 @@
 	font-size: 24px;
 	font-family: 'BioRhyme', cursive;
 	font-weight: 300;
+}
+
+.smileyFace {
+	margin-top: 70px !important;
+	font-size: 5em !important;
 }

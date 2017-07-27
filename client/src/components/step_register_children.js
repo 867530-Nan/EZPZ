@@ -24,7 +24,7 @@ const StepRegisterChildren = () => (
         </Step.Content>
       </Step>
 
-      <Step title='User Login' description='Begin Family Time' />
+      <Step title='EZPZ OverView' description='Take a look under the hood' />
     </Step.Group>
   </div>
 )

@@ -26,8 +26,8 @@ const StepRegisterChildren = () => (
 
       <Step active>
         <Step.Content>
-          <Step.Title>User Login</Step.Title>
-          <Step.Description>Begin Family Time</Step.Description>
+          <Step.Title>EZPZ OverView</Step.Title>
+          <Step.Description>Take a look under the hood</Step.Description>
         </Step.Content>
       </Step>
 

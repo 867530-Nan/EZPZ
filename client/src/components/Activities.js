@@ -106,6 +106,7 @@ class Activities extends React.Component {
         <div className="actMod">
 
         <div className="singleAct-date">
+        
         <Header as="h1" className="singleAct-header" textAlign="center" basic color="violet">
           Select a New Date:
         </Header>
@@ -122,6 +123,7 @@ class Activities extends React.Component {
               />
             </Modal.Content>
           </Modal>
+
         </div>
 
           <div className="actInfo">
@@ -147,8 +149,6 @@ class Activities extends React.Component {
               <Button fluid color="violet" to="/itinerary">Visit Itinerary for all Activities</Button>
             </Link>
           </div>
-
-            <Divider />
 
         </div>
       )

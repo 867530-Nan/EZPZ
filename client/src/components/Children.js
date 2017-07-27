@@ -29,7 +29,7 @@ class Children extends Component {
   render() {
     const { age } = this.state;
     const options = [
-  { key: 'reading', text: 'Reading', value: 'reading' },
+  { key: 'Reading', text: 'Reading', value: 'Reading' },
   { key: 'Sports / Athletics', text: 'Sports / Athletics', value: 'Sports / Athletics' },
   { key: 'Animals', text: 'Animals', value: 'Animals' },
   { key: 'Drawing', text: 'Drawing', value: 'Drawing' },
@@ -63,7 +63,7 @@ class Children extends Component {
           <Divider />
 
           <div className='childReg'>
-            <Icon name='child' />
+              <Icon name='smile' className="smileyFace" color="orange" size="large" />
               <span className="childInfoTitle">Enter Child Information</span>
               <span className="childInfoNote">More Children can be added in the Profile Page</span>
           </div>

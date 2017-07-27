@@ -19,7 +19,8 @@ const StepRegisterParent = () => (
 
       <Step title='Child Information' description='Simply Enter Age and Interests' />
 
-      <Step title='User Login' description='Begin Family Time' />
+      <Step title='EZPZ OverView' description='Take a look under the hood' />
+
     </Step.Group>
   </div>
 )
