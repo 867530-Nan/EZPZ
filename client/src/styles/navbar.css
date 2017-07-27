@@ -134,16 +134,14 @@ imageb: url('../photodump/ezpz.jpg')
 }
 
 .about-us-nav-button{
-	border-color: #F76B1C !important;
 	font-family: 'BioRhyme', sans-serif !important;
 	font-size: 18px !important;
 	letter-spacing: 1.22px !important;
 }
 
 .about-us-nav-button:hover{
-	background-image: linear-gradient(-180deg, #F4FF00 0%, #F76B1C 100%) !important;
-	border: 6px solid #FBF3F3 !important;
-
+	background-image: radial-gradient(93% 58%, #F696FB 1%, #F389FA 18%, #E95DF6 76%) !important;
+	border: 6px solid #FFFFFF !important;
 	font-family: 'BioRhyme', sans-serif !important;
 	color: snow !important;
 	border: 2px solid snow !important;

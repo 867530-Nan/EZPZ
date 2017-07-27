@@ -44,7 +44,7 @@ class NavBar extends Component {
                   Activities
                   </Button.Content>
                 <Button.Content hidden>
-                    <Icon inverted color='white' name='up arrow' size='medium' />
+                    <Icon inverted color='white' name='bath' size='medium' />
                 </Button.Content>
               </Button>
             </Link>
@@ -54,17 +54,17 @@ class NavBar extends Component {
                   Itinerary
                   </Button.Content>
                 <Button.Content hidden>
-                  <Icon inverted color='white' name='map outline' size='medium' />
+                  <Icon inverted color='white' name='driver license outline' size='medium' />
                 </Button.Content>
               </Button>
             </Link>
             <Link to='/aboutus'>
-                <Button className='activities-nav-button' inverted color='pink' animated='fade' compact>
+                <Button className='about-us-nav-button' inverted color='pink' animated='fade' compact>
                   <Button.Content visible>
                     About
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted name='user circle' size='large' />
+                    <Icon inverted name='hand spock' size='medium' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -74,7 +74,7 @@ class NavBar extends Component {
                 Log Out
               </Button.Content>
               <Button.Content hidden>
-                <Icon inverted color='white' name='right arrow' size='medium' />
+                <Icon inverted color='white' name='ambulance' size='medium' />
               </Button.Content>
             </Button>
           </Menu.Menu>
@@ -93,7 +93,7 @@ class NavBar extends Component {
                     About
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted name='user circle' size='large' />
+                    <Icon inverted name='user circle' size='medium' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -103,7 +103,7 @@ class NavBar extends Component {
                     Contact
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted name='talk outline' size='large' />
+                    <Icon inverted name='talk outline' size='medium' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -118,7 +118,7 @@ class NavBar extends Component {
                     Register
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted name='drivers license' size='large' />
+                    <Icon inverted name='drivers license' size='medium' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -128,7 +128,7 @@ class NavBar extends Component {
                     Login
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted name='pointing up' size='large' />
+                    <Icon inverted name='pointing up' size='medium' />
                   </Button.Content>
                 </Button>
             </Link>
