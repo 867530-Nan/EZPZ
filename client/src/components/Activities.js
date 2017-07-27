@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Segment, Button, Divider, Label, Container, Grid, Card, Dropdown, Modal } from 'semantic-ui-react'
+import { Header, Button, Divider, Grid, Modal } from 'semantic-ui-react'
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getActivities, addActivity } from '../actions/activities';
@@ -43,7 +43,7 @@ class Activities extends React.Component {
   tick = () => {
     let activeIndex = this.state.activeIndex;
     // console.log(this.state.activeIndex, this.state.visible.length)
-    if (activeIndex == this.state.visible.length - 1){
+    if (activeIndex === this.state.visible.length - 1){
       activeIndex = 0
     } else {
       activeIndex++;
@@ -79,7 +79,7 @@ class Activities extends React.Component {
       },
     };
 
-    let { month, activeIndex } = this.state;
+    let { activeIndex } = this.state;
 
     if (activeIndex == null)
       return(

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Divider, Grid, Card, Icon, Image, Header, Segment, Table } from 'semantic-ui-react'
+import { Header, Segment, Table } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import '../styles/about.css'
 import numberOne from '../photodump/parent-profile.png'
