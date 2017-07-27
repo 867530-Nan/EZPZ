@@ -88,12 +88,12 @@ class NavBar extends Component {
         <div>
           <Menu.Menu>
             <Link to='/aboutus'>
-                <Button className='about-us-nav-button' inverted color='orange' animated='fade' compact>
+                <Button className='about-us-nav-button' inverted color='pink' animated='fade' compact>
                   <Button.Content visible>
                     About
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted name='user circle' size='medium' />
+                    <Icon inverted name='hand spock' size='medium' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -128,7 +128,7 @@ class NavBar extends Component {
                     Login
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted name='pointing up' size='medium' />
+                    <Icon inverted name='ambulance' size='medium' />
                   </Button.Content>
                 </Button>
             </Link>
