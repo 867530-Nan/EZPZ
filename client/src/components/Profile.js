@@ -70,7 +70,7 @@ class Profile extends Component {
           <Image className='litPhoto' src={image} fluid />
             <Modal className='photoMod' trigger={<Button className='enlarge' inverted>Enlarge Picture</Button>}>
             <Modal.Content image>
-              <Image src={image} size='large' />
+              <Image className='bigPic' src={image} />
             </Modal.Content>
           </Modal>
         </Segment>
