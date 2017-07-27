@@ -38,7 +38,6 @@ class App extends Component {
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/itinerary' component={Itinerary} />
             <Route exact path='/activities' component={Activities} />
-            <Route exact path='/activity' component={ActivityView} />
             <Route exact path='/profile' component={Profile} />
             <Route exact path='/home' component={Home} />
             <Route component={NoMatch} />

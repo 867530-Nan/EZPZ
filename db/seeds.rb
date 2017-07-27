@@ -243,10 +243,12 @@ end
 1.times do
 Activity.create(
     location: 'Ogden Ampitheater',
+    address: '343 E 25th Street, Ogden, UT 84401',
     date: 'July 24, 2017',
     day: 24,
     month: 'July',
     year: 2017,
+    cost: 'Free',
     time: '7:00pm',
     age: 'All Ages',
     name: 'Monday Night Movies - High Noon',
@@ -294,7 +296,7 @@ end
 Activity.create(
     location: 'Ogden Amphitheater',
     address: '343 E 25th Street, Ogden, UT 84401',
-    date: "August 4, 2017"
+    date: "August 4, 2017",
     day: 4,
     month: 'August',
     year: 2017,

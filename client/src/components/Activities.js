@@ -106,10 +106,10 @@ class Activities extends React.Component {
         <div className="actMod">
 
         <div className="singleAct-date">
-        <Header as="h1" className="singleAct-header" textAlign="center" basic color="teal">
+        <Header as="h1" className="singleAct-header" textAlign="center" basic color="violet">
           Select a New Date:
         </Header>
-        <Modal trigger={<Button>Show Date</Button>}>
+        <Modal trigger={<Button color='violet'>Show Calendar</Button>}>
           <Modal.Header>Select a Date</Modal.Header>
             <Modal.Content>
               <DayPickerInput
