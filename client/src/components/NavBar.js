@@ -18,48 +18,56 @@ class NavBar extends Component {
           <a  href="/home"><img className="logo" src={Logo}></img></a>
         <div>
           <Menu.Menu stackable='true' >
-              <Link to='/profile'>
-                  <Button className='profile-nav-button' inverted color='orange' animated='fade' compact>
+            <Link to='/profile'>
+                <Button className='profile-nav-button' inverted color='orange' animated='fade' compact>
+                <Button.Content visible>
+                  Profile
+                  </Button.Content>
+                <Button.Content hidden>
+                  <Icon inverted color='white' name='user circle' size='medium' />
+                </Button.Content>
+              </Button>
+            </Link>
+            <Link to='/contact'>
+              <Button className='contact-nav-button' inverted color='violet' animated='fade' compact>
+                <Button.Content visible>
+                  Contact
+                  </Button.Content>
+                <Button.Content hidden>
+                  <Icon inverted color='white' name='talk outline' size='medium' />
+                </Button.Content>
+              </Button>
+            </Link>
+            <Link to='/activities'>
+              <Button className='activities-nav-button' inverted color='blue' animated='fade' compact>
+                <Button.Content visible>
+                  Activities
+                  </Button.Content>
+                <Button.Content hidden>
+                    <Icon inverted color='white' name='up arrow' size='medium' />
+                </Button.Content>
+              </Button>
+            </Link>
+            <Link to='/itinerary'>
+              <Button className='itinerary-nav-button' inverted color='red' animated='fade' compact>
+                <Button.Content visible>
+                  Itinerary
+                  </Button.Content>
+                <Button.Content hidden>
+                  <Icon inverted color='white' name='map outline' size='medium' />
+                </Button.Content>
+              </Button>
+            </Link>
+            <Link to='/aboutus'>
+                <Button className='activities-nav-button' inverted color='pink' animated='fade' compact>
                   <Button.Content visible>
-                    Profile
+                    About
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted color='white' name='user circle' size='medium' />
+                    <Icon inverted name='user circle' size='large' />
                   </Button.Content>
                 </Button>
-              </Link>
-              <Link to='/contact'>
-                <Button className='contact-nav-button' inverted color='violet' animated='fade' compact>
-                  <Button.Content visible>
-                    Contact
-                    </Button.Content>
-                  <Button.Content hidden>
-                    <Icon inverted color='white' name='talk outline' size='medium' />
-                  </Button.Content>
-                </Button>
-              </Link>
-              <Link to='/activities'>
-                <Button className='activities-nav-button' inverted color='blue' animated='fade' compact>
-                  <Button.Content visible>
-                    Activities
-                    </Button.Content>
-                  <Button.Content hidden>
-                      <Icon inverted color='white' name='up arrow' size='medium' />
-                  </Button.Content>
-                </Button>
-              </Link>
-              <Link to='/itinerary'>
-                <Button className='itinerary-nav-button' inverted color='red' animated='fade' compact>
-                  <Button.Content visible>
-                    Itinerary
-                    </Button.Content>
-                  <Button.Content hidden>
-                    <Icon inverted color='white' name='map outline' size='medium' />
-                  </Button.Content>
-                </Button>
-              </Link>
-
-
+            </Link>
             <Button className='logout-nav-button' inverted color='green' animated='fade' compact
               onClick={() => dispatch(handleLogout(history))} >
               <Button.Content visible>

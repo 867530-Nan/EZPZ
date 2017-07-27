@@ -1,8 +1,9 @@
 .entireFooter {
-	height: 160px;
-	/*background: url('../photodump/water-text.jpg')
+	height: 200px;
+	background: linear-gradient(
+	      rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)), url('../photodump/water-text.jpg')
                    top center repeat-x;
-	width: 100%;*/
+	width: 100%;
 }
 
 .socialButtons {
@@ -16,6 +17,18 @@
 .buttbutt {
 	margin: 0 20px !important;
 	font-size: 1.2em !important;
+}
+
+.bottomMailTo {
+	color: green;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+
+.ui.button:nth-child(3) {
+ 	background-color: green !important;
+ 	color: white !important;
 }
 
 .navCopy {

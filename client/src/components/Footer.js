@@ -10,25 +10,27 @@ class Footer extends Component {
 <div>
 			<div className="entireFooter">
 				<div className="socialButtons">
-			    <Button className="buttbutt" circular color='facebook' icon='facebook' href="https://www.facebook.com/UnitedWay/"/>
-			    <Button className="buttbutt" circular color='twitter' icon='twitter' href="https://twitter.com/BBBSA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" />
-			    <Button className="buttbutt" circular color='linkedin' icon='linkedin' href="https://www.linkedin.com/in/artflater"/>
-			    <Button className="buttbutt" circular color='google plus' icon='google plus' href="https://plus.google.com/communities/103578411667896012518" />
+			    <Button className="buttbutt" target="_blank" circular color='facebook' icon='facebook' href="https://www.facebook.com/UnitedWay/"/>
+			    <Button className="buttbutt" target="_blank" circular color='twitter' icon='twitter' href="https://twitter.com/BBBSA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" />
+			    <Button className="buttbutt" target="_blank" circular icon='github' href="https://github.com/kevinspaceyfrankunderwood/EZPZ"/>
+			    <Button className="buttbutt" target="_blank" circular color='linkedin' icon='linkedin' href="https://www.linkedin.com/in/artflater"/>
+			    <Button className="buttbutt" target="_blank" circular color='google plus' icon='google plus' href="https://plus.google.com/communities/103578411667896012518" />
 			  </div>
 
 			  <div className="navCopy">
-			  	<div className="buttLinks" as="h3"><a className="buttNav" href="/">Home</a></div>
+			  	<div className="buttLinks" as="h3"><a target="_blank" className="buttNav" href="/">Home</a></div>
 			  	<span>|</span>
-			  	<div className="buttLinks" as="h3"><a className="buttNav" href="/aboutus">About</a></div>
+			  	<div className="buttLinks" as="h3"><a target="_blank" className="buttNav" href="/aboutus">About</a></div>
 			  	<span>|</span>
-			  	<div className="buttLinks" as="h3"><a className="buttNav" href="/contact">Contact</a></div>
+			  	<div className="buttLinks" as="h3"><a target="_blank" className="buttNav" href="/contact">Contact</a></div>
 			  	<span>|</span>
-			  	<div className="buttLinks" as="h3"><a className="buttNav" href="http://lifewithmunchers.com/">Blog</a></div>
+			  	<div className="buttLinks" as="h3"><a target="_blank" className="buttNav" href="https://encouragingparenting.wordpress.com/">Blog</a></div>
 			  	<span>|</span>
-			  	<div className="buttLinks" as="h3"><a className="buttNav" href="http://www.goldmansachs.com/careers/">Careers</a></div>
+			  	<div className="buttLinks" as="h3"><a target="_blank" className="buttNav" href="http://www.goldmansachs.com/careers/">Careers</a></div>
 			  </div>
 
-				<div as="h5" className="slogan">Encouraging Parenting, Eliminating Planning: EZPZ</div>
+				<div as="h5" className="slogan">Encouraging Parenting &nbsp; :: &nbsp; Eliminating Planning &nbsp; :: &nbsp; EZPZ</div>
+				<div as="h5"><a className="bottomMailTo" href="mailto:community.ezpz@gmail.com" target="_top">We'd love to hear from You - Feedback, Comments, Testimonials</a></div>
 			</div>
 </div>
     );

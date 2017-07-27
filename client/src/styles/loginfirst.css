@@ -9,6 +9,42 @@
 	color: orange !important;
 }
 
+.interface {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	margin-top: 50px;
+}
+
+.trioCards {
+	height: 410px;
+  width: 400px;
+}
+
+.bottomHalf {
+	display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ui.card:first-child {
+	margin-top: 10px !important;
+}
+
+.interWords {
+	font-size: 28px;
+	font-weight: 400;
+	font-family: 'BioRhyme', cursive;
+}
+
+.instructions {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
 .ui.left.aligned.header{
 	text-align: center !important;
 }

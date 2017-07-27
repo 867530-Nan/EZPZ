@@ -15,7 +15,7 @@ class Contact extends Component {
             The Team!
           </Header>
         <div className="name-cards">
-            <Card className='cards'>
+            <Card className='teamCards'>
               <Image src={ matthew } className='photo' />
               <Card.Content>
                 <Card.Header>
@@ -30,7 +30,7 @@ class Contact extends Component {
                 </Card.Description>
               </Card.Content>
             </Card>
-            <Card className='cards'>
+            <Card className='teamCards'>
               <Image src={ addy } className='photo' />
               <Card.Content>
                 <Card.Header>
@@ -45,7 +45,7 @@ class Contact extends Component {
                 </Card.Description>
               </Card.Content>
             </Card>
-            <Card className='cards'>
+            <Card className='teamCards'>
               <Image src={ stockton } className='photo' />
               <Card.Content>
                 <Card.Header>
@@ -60,7 +60,7 @@ class Contact extends Component {
                 </Card.Description>
               </Card.Content>
             </Card>
-            <Card className='cards'>
+            <Card className='teamCards'>
               <Image src={ tate } className='photo' />
               <Card.Content>
                 <Card.Header>
