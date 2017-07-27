@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Icon, Button } from 'semantic-ui-react'
+import { Menu, Icon, Button, Container } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { handleLogout } from '../actions/auth';
@@ -15,8 +15,8 @@ class NavBar extends Component {
     if(user.id) {
       return(
         <div className="nav-logged-in">
-          <a  href="/home"><img className="logo" src={Logo}></img></a>
-        <div>
+            <a href="/home"><img className="logo" src={Logo}></img></a>
+          <div>  
           <Menu.Menu>
             <Link to='/profile'>
                 <Button className='profile-nav-button' inverted color='orange' animated='fade' compact>
@@ -54,7 +54,7 @@ class NavBar extends Component {
                   Itinerary
                   </Button.Content>
                 <Button.Content hidden>
-                  <Icon inverted className='driver license outline' />
+                  <Icon inverted className='theme isle' />
                 </Button.Content>
               </Button>
             </Link>
@@ -68,18 +68,29 @@ class NavBar extends Component {
                   </Button.Content>
                 </Button>
             </Link>
-            <Button className='logout-nav-button' inverted color='green' animated='fade' compact
-              onClick={() => dispatch(handleLogout(history))} >
-              <Button.Content visible>
-                Log Out
-              </Button.Content>
-              <Button.Content hidden>
-                <Icon inverted name='ambulance' />
-              </Button.Content>
-            </Button>
-          </Menu.Menu>
-          </div>
-        <a  href="/home"><img className="logo" src={Logo}></img></a>
+           
+              </Menu.Menu>
+            
+            </div>  
+
+            <div>
+              <Menu.Menu >
+                <Button
+                  className='logout-nav-button'
+                  inverted
+                  color='green'
+                  animated='fade'
+                  compact
+                  onClick={() => dispatch(handleLogout(history))} >
+                    <Button.Content visible>
+                      Log Out
+                    </Button.Content>
+                    <Button.Content hidden>
+                      <Icon inverted name='ambulance' />
+                    </Button.Content>
+                </Button>
+              </Menu.Menu> 
+            </div>    
         </div>
       );
     } else {

@@ -69,6 +69,9 @@ imageb: url('../photodump/ezpz.jpg')
 	font-family: 'BioRhyme', sans-serif !important;
 	font-size: 18px !important;
 	letter-spacing: 1.22px !important;
+	display: flex;
+	justify-content: space-around;
+	
 }
 
 .logout-nav-button:hover{
