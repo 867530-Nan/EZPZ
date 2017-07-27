@@ -24,7 +24,7 @@ class NavBar extends Component {
                   Profile
                   </Button.Content>
                 <Button.Content hidden>
-                  <Icon inverted name='user circle' size='large' />
+                  <Icon inverted name='user circle' />
                 </Button.Content>
               </Button>
             </Link>
@@ -34,7 +34,7 @@ class NavBar extends Component {
                   Contact
                   </Button.Content>
                 <Button.Content hidden>
-                  <Icon inverted name='talk outline' size='large' />
+                  <Icon inverted name='talk outline' />
                 </Button.Content>
               </Button>
             </Link>
@@ -44,7 +44,7 @@ class NavBar extends Component {
                   Activities
                   </Button.Content>
                 <Button.Content hidden>
-                    <Icon inverted name='bath' size='large' />
+                    <Icon inverted name='bath' />
                 </Button.Content>
               </Button>
             </Link>
@@ -54,7 +54,7 @@ class NavBar extends Component {
                   Itinerary
                   </Button.Content>
                 <Button.Content hidden>
-                  <Icon inverted className='driver license outline' size='large' />
+                  <Icon inverted className='driver license outline' />
                 </Button.Content>
               </Button>
             </Link>
@@ -64,7 +64,7 @@ class NavBar extends Component {
                     About
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted name='hand spock' size='large' />
+                    <Icon inverted name='hand spock' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -74,7 +74,7 @@ class NavBar extends Component {
                 Log Out
               </Button.Content>
               <Button.Content hidden>
-                <Icon inverted name='ambulance' size='large' />
+                <Icon inverted name='ambulance' />
               </Button.Content>
             </Button>
           </Menu.Menu>
@@ -93,7 +93,7 @@ class NavBar extends Component {
                     About
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted name='hand spock' size='large' />
+                    <Icon inverted name='hand spock' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -103,7 +103,7 @@ class NavBar extends Component {
                     Contact
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted name='talk outline' size='large' />
+                    <Icon inverted name='talk outline' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -118,7 +118,7 @@ class NavBar extends Component {
                     Register
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted name='drivers license' size='large' />
+                    <Icon inverted name='drivers license' />
                   </Button.Content>
                 </Button>
             </Link>
@@ -128,7 +128,7 @@ class NavBar extends Component {
                     Login
                     </Button.Content>
                   <Button.Content hidden>
-                    <Icon inverted name='ambulance' size='large' />
+                    <Icon inverted name='ambulance' />
                   </Button.Content>
                 </Button>
             </Link>
