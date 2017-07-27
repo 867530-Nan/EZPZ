@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Divider, Grid, Card, Icon, Image, Button } from 'semantic-ui-react'
+import { Image, Button } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import '../styles/footer.css'
 
@@ -23,7 +23,7 @@ class Footer extends Component {
 			  </div>
 
 				<div as="h5" className="slogan">Encouraging Parenting &nbsp; :: &nbsp; Eliminating Planning &nbsp; :: &nbsp; EZPZ</div>
-				
+
 				<div as="h5"><a className="bottomMailTo" href="mailto:community.ezpz@gmail.com" target="_top">We'd love to hear from You - Feedback, Comments, Testimonials</a></div>
 
 				<div className="socialButtons">
@@ -33,7 +33,7 @@ class Footer extends Component {
 			    <Button className="buttbutt" target="_blank" circular color='linkedin' icon='linkedin' href="https://www.linkedin.com/in/artflater"/>
 			    <Button className="buttbutt" target="_blank" circular color='google plus' icon='google plus' href="https://plus.google.com/communities/103578411667896012518" />
 			  </div>
-			  
+
 			</div>
 </div>
     );

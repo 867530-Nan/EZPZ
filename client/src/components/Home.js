@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Sidebar, Segment, Button, Menu, Image, Icon, Header, Form, Divider, Container, Grid } from 'semantic-ui-react';
-import { Link } from 'react-router-dom'
+import { Icon, Header, Grid } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { handleLogin, handleLogout } from '../actions/auth';
 import { withRouter } from 'react-router-dom';

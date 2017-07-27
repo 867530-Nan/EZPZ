@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Icon, Button, Item, Segment, Image } from 'semantic-ui-react'
+import { Menu, Icon, Button } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { handleLogout } from '../actions/auth';
@@ -17,14 +17,14 @@ class NavBar extends Component {
         <div className="nav-logged-in">
           <a  href="/home"><img className="logo" src={Logo}></img></a>
         <div>
-          <Menu.Menu stackable='true' fixed="top">
+          <Menu.Menu>
             <Link to='/profile'>
                 <Button className='profile-nav-button' inverted color='orange' animated='fade' compact>
                 <Button.Content visible>
                   Profile
                   </Button.Content>
                 <Button.Content hidden>
-                  <Icon inverted color='white' name='user circle' size='medium' />
+                  <Icon inverted name='user circle' size='large' />
                 </Button.Content>
               </Button>
             </Link>
@@ -34,7 +34,7 @@ class NavBar extends Component {
                   Contact
                   </Button.Content>
                 <Button.Content hidden>
-                  <Icon inverted color='white' name='talk outline' size='medium' />
+                  <Icon inverted name='talk outline' size='large' />
                 </Button.Content>
               </Button>
             </Link>
@@ -44,7 +44,7 @@ class NavBar extends Component {
                   Activities
                   </Button.Content>
                 <Button.Content hidden>
-                    <Icon inverted color='white' name='up arrow' size='medium' />
+                    <Icon inverted name='up arrow' size='large' />
                 </Button.Content>
               </Button>
             </Link>
@@ -54,7 +54,7 @@ class NavBar extends Component {
                   Itinerary
                   </Button.Content>
                 <Button.Content hidden>
-                  <Icon inverted color='white' name='map outline' size='medium' />
+                  <Icon inverted name='map outline' size='large' />
                 </Button.Content>
               </Button>
             </Link>
@@ -74,7 +74,7 @@ class NavBar extends Component {
                 Log Out
               </Button.Content>
               <Button.Content hidden>
-                <Icon inverted color='white' name='right arrow' size='medium' />
+                <Icon inverted name='right arrow' size='large' />
               </Button.Content>
             </Button>
           </Menu.Menu>

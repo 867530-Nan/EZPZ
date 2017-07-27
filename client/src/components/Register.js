@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Header, Form, Button, Segment, Container, Divider, Icon } from 'semantic-ui-react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 import '../styles/registration.css';
 import StepRegisterParent from './step_register_parent';
 
@@ -39,7 +38,7 @@ class Register extends Component {
             nickname, zipcode } = this.state;
 
     return(
-      
+
         <div >
           <StepRegisterParent className="register-parent"/>
           <Segment basic className='regBackground'>

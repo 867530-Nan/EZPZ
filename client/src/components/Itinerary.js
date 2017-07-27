@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Grid, Container, Divider, Accordion, Message, Label, Icon } from 'semantic-ui-react'
+import { Header, Divider, Accordion, Icon } from 'semantic-ui-react'
 import { getSavedActivities } from '../actions/itinerary'
 import { connect } from 'react-redux'
 import DayPicker from 'react-day-picker'
@@ -75,7 +75,7 @@ class Itinerary extends React.Component {
       },
     };
 
-    let { month, activeIndex } = this.state;
+    let { activeIndex } = this.state;
 
     if (this.state.visible.length < 1)
       return(
