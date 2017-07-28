@@ -1,8 +1,9 @@
 import React from 'react'
-import { Header, Button, Divider, Grid, Modal } from 'semantic-ui-react'
+import { Header, Button, Divider, Grid, Modal, Segment } from 'semantic-ui-react'
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getActivities, addActivity } from '../actions/activities';
+import { getChild } from '../actions/children';
 import ActivityView from './ActivityView';
 import '../styles/activities.css';
 import DayPicker from 'react-day-picker';
@@ -21,6 +22,11 @@ class Activities extends React.Component {
     let activeIndex = this.state.activeIndex;
     let newVisible = this.state.visible.splice(activeIndex, 1)
     let visible = this.state.visible
+    if (activeIndex === this.state.visible.length - 1){
+      activeIndex = null
+    } else {
+      activeIndex++;
+    }
     this.setState({ visible, activeIndex });
   }
 
@@ -47,6 +53,10 @@ class Activities extends React.Component {
 
   componentWillMount() {
     this.props.dispatch(getActivities(this.setActivities));
+  }
+
+  componentDidMount() {
+    this.props.dispatch(getChild());
   }
 
   setActivities = (activities) => {
@@ -80,7 +90,6 @@ class Activities extends React.Component {
     const formattedDay = selectedDay
       ? moment(selectedDay).format(DAY_FORMAT)
       : '';
-
     const dayPickerProps = {
       todayButton: 'Go to Today',
       disabledDays: {
@@ -92,7 +101,7 @@ class Activities extends React.Component {
       },
     };
 
-    let { activeIndex } = this.state;
+    let { activeIndex, visible } = this.state;
 
     if (activeIndex == null)
       return(
@@ -111,6 +120,11 @@ class Activities extends React.Component {
                 className = "day-picker"
               />
             </div>
+            <Segment basic>
+              <Header as='h2'>
+                No activities
+              </Header>
+            </Segment>
           </div>
         </div>
         )
@@ -120,7 +134,7 @@ class Activities extends React.Component {
 
         <div className="singleAct-date">
 
-        <Header as="h1" className="singleAct-header" textAlign="center" basic color="violet">
+        <Header as="h1" className="singleAct-header" textAlign="center" color="violet">
           Select a New Date:
         </Header>
         <Modal trigger={<Button color='violet'>Show Calendar</Button>}>
