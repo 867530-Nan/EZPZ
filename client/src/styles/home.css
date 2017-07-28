@@ -1,0 +1,122 @@
+
+.loginButton {
+  display: inline-block;
+  cursor: pointer, hand;
+  background-color: #96E8EA;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 17px !important;
+}
+
+.e {
+  color: black;
+}
+
+.p {
+  color: black;
+}
+
+.sidebarnav {
+  background-color: #00FA9A !important;
+}
+
+.homeHeader {
+  padding-top: 20px !important;
+  font-size: 60px !important;
+  font-family: 'BioRhyme', sans-serif !important;
+  font-weight: 200 !important;
+  color: gray !important;
+}
+
+.home-duo {
+  font-size: 45px !important;
+  font-family: 'BioRhyme', sans-serif !important;
+  font-weight: 200 !important;
+  color: gray !important;
+}
+
+.top-photo {
+  background: url('../photodump/foggy-family.jpg')
+                   bottom no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 700px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+.title-words {
+  font-size: 50px;
+  font-weight: 300;
+  width: 100%;
+}
+
+.title-about{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+ }
+
+ .title-about-words {
+  font-family: 'BioRhyme' !important;
+  font-weight: 300 !important;
+  font-size: 28px !important;
+  color: black !important;
+ }
+
+ .duo-grid{
+  height: 300px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center;
+  padding: 0 50px !important;
+ }
+
+ .duo-words{
+  font-size: 24px !important;
+  font-family: Helvetica, sans-serif !important;
+  font-weight: 300;
+  color: #F2EEEE !important;
+ }
+
+.icon.child{
+  color: white !important;
+}
+
+.icon.calendar{
+  color: white !important;
+}
+
+ .row {
+  padding: 0 !important;
+ }
+
+.duo-first {
+  background-color: #FF891C;
+ }
+
+ .duo-second {
+  background-color: #3BC954;
+ }
+
+ .ui.divided.two.column.grid.three-part-words{
+  margin: 0 !important;
+ }
+
+ .single {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+ }
+
+ .icon.child {
+  height: 1em !important;
+  width: 1.18em !important;
+ }

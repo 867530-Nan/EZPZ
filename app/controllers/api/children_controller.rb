@@ -6,8 +6,10 @@ class Api::ChildrenController < ApplicationController
   end
 
   def create
-    child = current_user.children.new(child_params)
-    if children.save
+    @user = User.find(params[:user_id])
+    
+    child = @user.children.new(child_params)
+    if child.save
       render json: child
     else
       render json: { errors: child.errors.full_messages }, status: :bad_request
@@ -32,6 +34,6 @@ class Api::ChildrenController < ApplicationController
     end
 
     def child_params
-      params.require(:child).permit(:name, :age, :interest)
+      params.require(:child).permit(:age, realInterest: [])
     end
 end

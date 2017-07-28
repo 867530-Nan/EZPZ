@@ -1,0 +1,26 @@
+.ui.header:first-child{
+	margin-top: 0 !important;
+}
+
+.activity-view {
+	font-size: 1.5rem !important;
+}
+
+.activity-title {
+	font-size: 2rem !important;
+}
+
+.singleActivity {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.ui.table {
+	margin: 0 !important;
+}
+
+.activityView {
+	margin-top: 50px;
+	z-index: 0;
+}

@@ -1,0 +1,33 @@
+.actualPhoto {
+  max-width: 200px !important;
+  text-align: center !important;
+}
+
+.photos {
+  max-height: auto !important;
+}
+
+.photoMod {
+  width: auto !important;
+}
+
+.enlarge {
+  background-color: blue !important;
+  margin-top: 25px !important;
+  width: 100% !important;
+}
+
+.litPhoto {
+  height: 150px;
+}
+
+.bigPic {
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+.info {
+  max-width: 600px !important;
+}

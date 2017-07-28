@@ -1,0 +1,72 @@
+.entireFooter {
+	height: 220px;
+	background: linear-gradient(
+	      rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)), url('../photodump/water-text.jpg')
+                   top center repeat-x;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.socialButtons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	margin: auto auto;
+}
+
+.buttbutt {
+	margin: 0 20px !important;
+	font-size: 1.2em !important;
+}
+
+.bottomMailTo {
+	color: green;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.ui.button:nth-child(3) {
+ 	background-color: green !important;
+ 	color: white !important;
+}
+
+.navCopy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.buttLinks {
+	margin: 0 20px !important;
+	font-family: 'BioRhyme', cursive;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.slogan {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	font-family: 'BioRhyme', cursive;
+	font-weight: 300;
+	height: 50px;
+	margin-top: 10px;
+}
+
+.sloganTwo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	font-family: 'BioRhyme', cursive;
+	font-weight: 300;
+	height: 50px;
+}
+
+a.buttNav{
+	color: orange !important;
+}

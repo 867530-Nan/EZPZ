@@ -1,0 +1,23 @@
+.teamCards {
+  height: 410px !important;
+  width: 225px !important;
+  font-family: 'BioRhyme' !important;
+}
+
+.photo {
+  height: 215px !important;
+}
+
+.row {
+  flex: row;
+}
+
+.name-cards {
+	display: flex !important;
+  justify-content: space-around !important;
+  font-family: 'BioRhyme' !important;
+}
+
+.contactTeam {
+  font-family: 'BioRhyme' !important;
+}

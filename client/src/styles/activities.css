@@ -1,0 +1,83 @@
+.ui.grid{
+	margin: 0 !important;
+}
+
+.activity-header{
+	font-size: 3rem !important;
+	padding-top: 30px !important;
+}
+
+.calendar {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	height: 100px !important;
+}
+
+.dateMod {
+	background: linear-gradient(
+	      rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('../photodump/tug-of-war.jpg')
+                   top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 150px;
+  text-align: center;
+  height: 700px;
+}
+
+.dateSelect{
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 550px;
+	border-radius: 20px;
+	margin: 0 auto;
+}
+
+.day-picker {
+	display: inline-flex !important;
+	width: 100% !important;
+	justify-content: center !important;
+	align-self: center !important;
+  width: 500px !important;
+  height: 50px;
+  border-radius: 10px;
+  padding: 0 30px;
+}
+
+.actMod {
+	background: linear-gradient(
+	      rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('../photodump/tug-of-war.jpg')
+                   top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  height: 660px;
+}
+
+.actInfo {
+	background-color: rgba(255, 255, 255, 0.4);
+	margin-bottom: 40px;
+}
+
+.singleAct {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.singleAct-date {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+}
+
+.singleAct-header {
+	font-size: 3rem !important;
+}
+
+.singleAct-picker {
+  width: 500px !important;
+  height: 50px;
+  border-radius: 10px;
+  padding: 0 30px;
+}

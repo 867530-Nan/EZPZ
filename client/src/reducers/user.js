@@ -4,6 +4,10 @@ const user = (state = {}, action ) => {
       return { ...action.user }
     case 'LOGOUT':
       return {}
+    case 'REGISTER':
+    	return { ...action.user }
+    case 'UPDATE_USER_PHOTO':
+      return { ...action.user }
     default:
       return state;
   }

@@ -16,14 +16,19 @@ ActiveRecord::Schema.define(version: 20170705230427) do
   enable_extension "plpgsql"
 
   create_table "activities", force: :cascade do |t|
-    t.date "date"
+    t.string "month"
+    t.integer "day"
+    t.integer "year"
+    t.string "date"
     t.string "url"
-    t.datetime "time"
+    t.string "time"
     t.string "name"
+    t.float "cost"
     t.text "description"
     t.boolean "inside", default: false
-    t.integer "age"
+    t.string "age"
     t.string "location"
+    t.string "address"
     t.string "interest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -32,7 +37,7 @@ ActiveRecord::Schema.define(version: 20170705230427) do
   create_table "children", force: :cascade do |t|
     t.integer "age"
     t.string "name"
-    t.string "interest"
+    t.string "realInterest", default: [], array: true
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -74,12 +79,13 @@ ActiveRecord::Schema.define(version: 20170705230427) do
     t.string "unconfirmed_email"
     t.string "name"
     t.string "nickname"
-    t.string "image"
+    t.string "avatar"
     t.string "email"
     t.integer "zipcode"
     t.string "street_address"
     t.string "city"
     t.string "state"
+    t.string "image_url", default: [], array: true
     t.json "tokens"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

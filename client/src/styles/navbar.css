@@ -1,0 +1,187 @@
+<link href="https://fonts.googleapis.com/css?family=BioRhyme:200,300" rel="stylesheet">
+.navbar-logo{
+imageb: url('../photodump/ezpz.jpg')
+}
+
+.mainNavbar {
+  padding: 2px;
+}
+
+.ui.animated.button .hidden.content{
+	margin-top: -.8em !important;
+}
+
+.ui.fade.animated.button .hidden.content {
+	margin-top: -.5em !important;
+}
+
+.nav-logged-out {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;	
+}
+
+.nav-logged-in {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.ui.secondary.pointing.menu {
+	border-bottom: 0 !important;
+}
+
+.logo {
+	height: 40px;
+}
+
+.home-nav-button{
+	font-family: 'BioRhyme', sans-serif !important;
+	color: #FF7F00 !important;
+	border: 2px solid #FF7F00 !important;
+}
+
+.home-nav-button:hover {
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+}
+
+.profile-nav-button{
+	border-color: #FF7100 !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
+	letter-spacing: 1.22px !important;
+}
+
+.profile-nav-button:hover{
+	background: #FF7100 !important;
+	background-image: linear-gradient(-222deg, #FAD961 0%, #F77623 73%, #F77623 73%, #F76B1C 97%) !important;
+	border: 6px solid #FFFFFF !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
+}
+
+.logout-nav-button{
+	border-color: #00F86B !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
+	letter-spacing: 1.22px !important;
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.logout-nav-button:hover{
+	background: #00F86B !important;
+	background-image: linear-gradient(-180deg, #A3FF00 0%, #429321 100%) !important;
+	border: 6px solid #FFFFFF !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
+}
+
+.itinerary-nav-button{
+	border-color: #e52d27 !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
+	letter-spacing: 1.22px !important;
+}
+
+.itinerary-nav-button:hover{
+	background-image: linear-gradient(-134deg, #e52d27 0%, #b31217 100%) !important;
+	border: 6px solid #FFFFFF !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
+}
+
+.activities-nav-button{
+	border-color: #00B4FD !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
+	letter-spacing: 1.22px !important;
+}
+
+.activities-nav-button:hover{
+	background: #00B4FD !important;
+	background-image: linear-gradient(-223deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 94%) !important;
+	border: 6px solid #FFFFFF !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
+}
+
+.contact-nav-button{
+	border-color: #5F0987 !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
+	letter-spacing: 1.22px !important;
+}
+
+.contact-nav-button:hover{
+	background-image: linear-gradient(-180deg, #A291FB 0%, #7A6DBD 100%) !important;
+	background-image: radial-gradient(75% -431%, invalid gradient) !important;
+	border: 1px solid #A291FB !important;
+
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
+}
+
+.about-us-nav-button{
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
+	letter-spacing: 1.22px !important;
+}
+
+.about-us-nav-button:hover{
+	background-image: radial-gradient(93% 58%, #F696FB 1%, #F389FA 18%, #E95DF6 76%) !important;
+	border: 6px solid #FFFFFF !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
+}
+
+.register-nav-button{
+	border-color: #00B4FD !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
+	letter-spacing: 1.22px !important;
+}
+
+.register-nav-button:hover {
+	background: #00B4FD !important;
+	background-image: linear-gradient(-223deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 94%) !important;
+	border: 6px solid #FFFFFF !important;
+	box-shadow: 0 13px 15px 2px rgba(0, 0, 0, 0.95) !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
+}
+
+.login-nav-button{
+	border-color: #A3FF00 !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	font-size: 18px !important;
+	letter-spacing: 1.22px !important;
+}
+
+.login-nav-button:hover{
+	background: #00F86B !important;
+	background-image: linear-gradient(-180deg, #A3FF00 0%, #429321 100%) !important;
+	border: 6px solid #FFFFFF !important;
+	font-family: 'BioRhyme', sans-serif !important;
+	color: snow !important;
+	border: 2px solid snow !important;
+	font-size: 18px !important;
+}
+

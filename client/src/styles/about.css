@@ -1,0 +1,86 @@
+
+.topAbout { 
+	height: 650px !important;
+}
+
+.topLine {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 175px;
+}
+
+.qvq {
+	font-size: 4em !important;
+	font-family: 'BioRhyme', cursive !important;
+	font-weight: 300 !important;
+	text-align: center !important;
+	margin: 15px 0 25px 0 !important;	
+}
+
+.how {
+	font-size: 2.3em !important;
+	font-family: 'BioRhyme' !important;
+	font-weight: 400 !important;
+}
+
+.topDuo {
+	height: 200px;
+}
+
+.swimming {
+	background: linear-gradient(
+	      rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('../photodump/swimming.jpeg')
+                  top no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 250px;
+}
+
+.together {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 75px;
+}
+
+.firstTogether{
+	font-size: 2em;
+	font-family: 'BioRhyme';
+	font-weight: 300;
+}
+
+.secondTogether{
+	font-size: 1.5em;
+	font-family: 'BioRhyme';
+	font-weight: 300;
+}
+
+.instructions {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.researchRows {
+	padding: 0 20px;
+}
+
+.photo {
+	height: 300px !important;
+}
+
+.ui.card {
+	margin-top: 0 0 !important;
+}
+
+.concert {
+	background: linear-gradient(
+	      rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('../photodump/family-concert-1.jpg')
+                  bottom no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 250px;
+}
