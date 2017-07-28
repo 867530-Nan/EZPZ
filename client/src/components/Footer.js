@@ -22,7 +22,8 @@ class Footer extends Component {
 			  	<div className="buttLinks" as="h3"><a target="_blank" className="buttNav" href="http://www.goldmansachs.com/careers/">Careers</a></div>
 			  </div>
 
-				<div as="h5" className="slogan">Encouraging Parenting &nbsp; :: &nbsp; Eliminating Planning &nbsp; :: &nbsp; EZPZ</div>
+				<div as="h5" className="slogan">Encouraging Parenting &nbsp; :: &nbsp; Eliminating Planning &nbsp;</div>
+				<div className="sloganTwo">&#123; EZPZ &#125; </div>
 
 				<div as="h5"><a className="bottomMailTo" href="mailto:community.ezpz@gmail.com" target="_top">We'd love to hear from You - Feedback, Comments, Testimonials</a></div>
 

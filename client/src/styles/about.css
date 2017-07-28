@@ -43,7 +43,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100px;
+	height: 75px;
 }
 
 .firstTogether{
@@ -82,5 +82,5 @@
                   bottom no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 300px;
+  height: 250px;
 }

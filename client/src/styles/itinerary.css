@@ -4,13 +4,13 @@
 
 .itineraryDate {
 	background: linear-gradient(
-	      rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('../photodump/watercolor.jpg')
+	      rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('../photodump/mom-kid.jpeg')
               top center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding-top: 150px;
   text-align: center;
-  height: 700px;
+  height: 630px;
 }
 
 .itineraryList {
@@ -23,6 +23,27 @@
 	font-family: 'BioRhyme', cursive;
 }
 
+.itinInfo{
+  font-family: 'Zilla Slab', serif;
+  padding: 10px 0;
+}
+
 .listHeader {
 	font-family: 'BioRhyme', cursive;
+}
+.dropAccord{
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.itineraryAct{
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(
+        rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('../photodump/mom-kid.jpeg')
+              top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  height: 630px;
 }

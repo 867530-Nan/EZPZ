@@ -13,7 +13,7 @@ class AboutUs extends Component {
 <div>
 			<div className="topLine">
 	      <Header as='h1' textAlign='center' className="qvq">Quality > Quantity</Header>
-			  <Header as="h3" className="how">How you spend time together is what matter most</Header>
+			  <Header as="h3" className="how">How you spend time together is what matters most</Header>
       </div>
       <div className="swimming"></div>
 		    <div className="together">

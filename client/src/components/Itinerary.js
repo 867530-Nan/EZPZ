@@ -38,20 +38,20 @@ class Itinerary extends React.Component {
             <Icon name='dropdown' />
             Activity {i+1}: {activity.name} - {activity.time}
           </Accordion.Title>
-            <Accordion.Content as='h3'>
-              <div className="listInfo">
+            <Accordion.Content className="dropAccord">
+              <div className="itinInfo">
               Suitable for Ages: {activity.age}
               </div>
-              <div className="listInfo">
+              <div className="itinInfo">
               This event cost: ${activity.cost}
               </div>
-              <div className="listInfo">
+              <div className="itinInfo">
               Located at: {activity.address}
               </div>
-              <div className="listInfo">
+              <div className="itinInfo">
               {activity.description}
               </div>
-              <div className="listInfo">
+              <div className="itinInfo">
               Visit the Event Website: {activity.url}
               </div>
             </Accordion.Content>
@@ -110,6 +110,7 @@ class Itinerary extends React.Component {
         )
     else
       return(
+<<<<<<< HEAD
         <div className="">
 
           <div className="singleAct-date">
@@ -138,6 +139,27 @@ class Itinerary extends React.Component {
             </Header>
         </div>  
         </div>
+=======
+          <div className="itineraryAct">
+            <Header as="h1" className="itineraryHead" textAlign="center" basic color="teal">
+              Itinerary Selecter:
+            </Header>
+            <DayPickerInput
+                value={formattedDay}
+                onDayChange={this.handleDayChange}
+                format={DAY_FORMAT}
+                placeholder="What Day's Activities are you looking for?"
+                dayPickerProps={dayPickerProps}
+                className = "singleAct-picker"
+              />
+
+            <Divider />
+
+            <Header>
+                      { this.showActivities() }
+            </Header>
+          </div>
+>>>>>>> minor
       )
   }
 
