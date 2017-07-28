@@ -21,3 +21,7 @@
 .contactTeam {
   font-family: 'BioRhyme' !important;
 }
+
+.ui.card.teamCards {
+  margin-top: 10px !important;
+}
