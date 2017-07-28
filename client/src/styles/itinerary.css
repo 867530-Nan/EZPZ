@@ -47,3 +47,11 @@
   text-align: center;
   height: 630px;
 }
+
+.selectDay{
+  font-size: 35px !important;
+  display: inline-flex;
+}
+.ui.segment.selectDay {
+  padding: 0;
+}

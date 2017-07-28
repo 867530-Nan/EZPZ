@@ -7,7 +7,6 @@ import 'react-day-picker/lib/style.css'
 import moment from 'moment'
 import DayPickerInput from 'react-day-picker/DayPickerInput'
 import '../styles/itinerary.css'
-import styled from 'styled-components'
 
 const DAY_FORMAT = 'DD/MM/YYYY';
 
@@ -34,7 +33,7 @@ class Itinerary extends React.Component {
   showActivities = () => {
     return this.state.visible.map( (activity, i) =>
       <Accordion className='activityList' key={activity.id}>
-          <Accordion.Title as='h1'>
+          <Accordion.Title as='h2'>
             <Icon name='dropdown' />
             Activity {i+1}: {activity.name} - {activity.time}
           </Accordion.Title>
@@ -110,13 +109,10 @@ class Itinerary extends React.Component {
         )
     else
       return(
-<<<<<<< HEAD
-        <div className="">
-
-          <div className="singleAct-date">
-              <Header className="singleAct-header" textAlign="center" color="teal">
-                Date Selector:
-              </Header>
+          <div className="itineraryAct">
+            <Header as="h1" className="itineraryHead" textAlign="center" basic color="teal">
+              Itinerary Selecter:
+            </Header>
               <DayPickerInput
                   value={formattedDay}
                   onDayChange={this.handleDayChange}
@@ -125,41 +121,17 @@ class Itinerary extends React.Component {
                   dayPickerProps={dayPickerProps}
                   className = "singleAct-picker"
                 />
-            </div>
-
-          <Divider />
-        <div className='itineraryList'>
-          <div>
-            <Segment basic size='huge' textAlign='center'>
-                Itinerary for: {this.selectedDay()}
-            </Segment>
-          </div>
-          <Header as='h1'>
-                    { this.showActivities() }
-            </Header>
-        </div>  
-        </div>
-=======
-          <div className="itineraryAct">
-            <Header as="h1" className="itineraryHead" textAlign="center" basic color="teal">
-              Itinerary Selecter:
-            </Header>
-            <DayPickerInput
-                value={formattedDay}
-                onDayChange={this.handleDayChange}
-                format={DAY_FORMAT}
-                placeholder="What Day's Activities are you looking for?"
-                dayPickerProps={dayPickerProps}
-                className = "singleAct-picker"
-              />
 
             <Divider />
-
-            <Header>
-                      { this.showActivities() }
-            </Header>
-          </div>
->>>>>>> minor
+              <div>
+                <Segment className="selectDay" basic as="h1" size='large' textAlign='center'>
+                    Itinerary for: &nbsp;{this.selectedDay()}
+                </Segment>
+              </div>
+              <Header as='h3'>
+                { this.showActivities() }
+              </Header>
+            </div>  
       )
   }
 
