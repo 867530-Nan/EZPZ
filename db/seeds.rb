@@ -639,7 +639,7 @@ Activity.create(
     time: '8:30',
     age: 'All Ages',
     name: 'Movie - Close Encounters of the Third Kind',
-    interest: ['Creative Arts', 'Being Imaginative'],
+    interest: ['Movies', 'Being Imaginative', 'Acting'],
     description: "The Gallivan Center is thrilled to present the FREE 2017 Monday Night Movies series. This year's theme: A Summer of Spielberg! July 3: Jurassic Park July 10: Jaws July 17: Raiders of the Lost Ark July 31: Close Encounters of the Third Kind Movies start at dusk. Low back chairs, blankets, pillows and food are allowed. And don't forget about the Gallivan Center's concessions stand offering all kinds of munchies and drinks as well! Sponsorship packages available!",
     url: 'http://www.thegallivancenter.com/calendar'
     )
@@ -655,7 +655,7 @@ Activity.create(
     time: '12:00pm',
     age: 'All Ages',
     name: 'Lunch Bunch Concert Series',
-    interest: [9, 10],
+    interest: ['Learning an Instrument', 'Listening to Music', 'Creative Arts'],
     description: 'Outdoor Concert Series for All Ages',
     url: 'http://www.thegallivancenter.com/calendar'
     )
@@ -671,7 +671,7 @@ Activity.create(
     time: '8:00-10:00pm',
     age: 'All Ages',
     name: 'Night on Broadway',
-    interest: [9, 10],
+    interest: ['Being Imaginative', 'Acting'],
     description: 'Night on Broadway – Featuring Michael Chipman & Melinda Kirigin-Voss',
     url: 'http://excellenceconcerts.org/'
     )
@@ -687,7 +687,7 @@ Activity.create(
     time: '7:30-10:00pm',
     age: 'All Ages',
     name: 'David Halliday & The Jazz Vespers Quartet',
-    interest: [9, 10],
+    interest: ['Learning an Instrument', 'Listening to Music', 'Creative Arts'],
     description: 'Night on Broadway – Featuring Michael Chipman & Melinda Kirigin-Voss',
     url: 'http://excellenceconcerts.org/'
     )
@@ -703,7 +703,7 @@ Activity.create(
     time: '8:00-10:00pm',
     age: 'All Ages',
     name: 'Free Concert - Excellence in the Community - JOE MUSCOLINO BAND',
-    interest: [9, 10],
+    interest: ['Learning an Instrument', 'Listening to Music', 'Creative Arts'],
     description: '',
     url: 'http://excellenceconcerts.org/'
     )
@@ -719,7 +719,7 @@ Activity.create(
     time: '7:00pm',
     age: 'All Ages',
     name: 'Night Star Jazz Orchestra',
-    interest: [9, 10],
+    interest: ['Learning an Instrument', 'Listening to Music', 'Creative Arts'],
     description: 'Dance lessons start at 7:00, Music starts at 7:30, Free!',
     url: 'http://excellenceconcerts.org/',
     )
@@ -735,7 +735,7 @@ Activity.create(
     time: '8:00 - 10:30pm',
     age: 'All Ages',
     name: 'Philip Kuehn Orchestra',
-    interest: [9, 10],
+    interest: ['Learning an Instrument', 'Listening to Music', 'Creative Arts'],
     description: 'Free Outdoor Concert!',
     url: 'http://excellenceconcerts.org/'
     )
@@ -751,7 +751,7 @@ Activity.create(
     time: '8:30 - 10:00pm',
     age: 'All Ages',
     name: 'Island Time II',
-    interest: [9, 10],
+    interest: ['Learning an Instrument', 'Listening to Music', 'Creative Arts'],
     description: 'Free Outdoor Concert!',
     url: 'http://excellenceconcerts.org/'
     )
@@ -767,7 +767,7 @@ Activity.create(
     time: '8:00pm',
     age: 'All Ages',
     name: 'Night Star Jazz Orchestra',
-    interest: [9, 10],
+    interest: ['Learning an Instrument', 'Listening to Music', 'Creative Arts'],
     description: 'Free Outdoor Concert!',
     url: 'http://excellenceconcerts.org/'
     )
@@ -783,7 +783,7 @@ Activity.create(
     time: '7:30 - 10:30pm',
     age: 'All Ages',
     name: 'Changing Lanes Experience',
-    interest: [9, 10],
+    interest: ['Learning an Instrument', 'Listening to Music', 'Creative Arts'],
     description: 'Free, Live Music',
     url: 'http://excellenceconcerts.org/'
     )
@@ -799,7 +799,7 @@ Activity.create(
     time: '8:00 - 10:00pm',
     age: 'All Ages',
     name: ' Fly Me To The Moon',
-    interest: [9, 10],
+    interest: ['Learning an Instrument', 'Listening to Music', 'Creative Arts'],
     description: 'Free, Live Music',
     url: 'http://excellenceconcerts.org/'
     )
@@ -815,7 +815,7 @@ Activity.create(
     time: '8:00 - 10:00pm',
     age: 'All Ages',
     name: ' Fly Me To The Moon',
-    interest: [9, 10],
+    interest: ['Learning an Instrument', 'Listening to Music', 'Creative Arts'],
     description: 'Free, Live Music',
     url: 'http://excellenceconcerts.org/'
     )
@@ -831,7 +831,7 @@ Activity.create(
     time: '7:30 - 10:00pm',
     age: 'All Ages',
     name: 'Movies in the Park - Hercules',
-    interest: [9, 10],
+    interest: ['Movies', 'Creative Arts', 'Acting'],
     description: 'Hercules at Highpoint Park',
     url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/970/746'
     )
@@ -847,7 +847,7 @@ Activity.create(
     time: '7:30 - 10:00pm',
     age: 'All Ages',
     name: 'Movies in the Park - Zootopia',
-    interest: [9, 10],
+    interest: ['Movies', 'Creative Arts', 'Acting'],
     description: 'Zootopia at Highpoint Park',
     url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/972/746'
     )
@@ -863,7 +863,7 @@ Activity.create(
     time: '8:00 - 10:00pm',
     age: 'All Ages',
     name: 'Beauty and the Beast - A Musical',
-    interest: ['Creative Arts'],
+    interest: ['Creative Arts', 'Acting', 'Listening to Music', 'Being Imaginative'],
     description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
     url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
     )
@@ -879,7 +879,7 @@ Activity.create(
     time: '8:00 - 10:00pm',
     age: 'All Ages',
     name: 'Beauty and the Beast - A Musical',
-    interest: ['Creative Arts'],
+    interest: ['Creative Arts', 'Acting', 'Listening to Music', 'Being Imaginative'],
     description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
     url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
     )
@@ -895,7 +895,7 @@ Activity.create(
     time: '8:00 - 10:00pm',
     age: 'All Ages',
     name: 'Beauty and the Beast - A Musical',
-    interest: ['Creative Arts'],
+    interest: ['Creative Arts', 'Acting', 'Listening to Music', 'Being Imaginative'],
     description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
     url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
     )
@@ -911,7 +911,7 @@ Activity.create(
     time: '8:00 - 10:00pm',
     age: 'All Ages',
     name: 'Beauty and the Beast - A Musical',
-    interest: ['Creative Arts'],
+    interest: ['Creative Arts', 'Acting', 'Listening to Music', 'Being Imaginative'],
     description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
     url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
     )
@@ -927,7 +927,7 @@ Activity.create(
     time: '8:00 - 10:00pm',
     age: 'All Ages',
     name: 'Beauty and the Beast - A Musical',
-    interest: ['Creative Arts'],
+    interest: ['Creative Arts', 'Acting', 'Listening to Music', 'Being Imaginative'],
     description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
     url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
     )
@@ -943,7 +943,7 @@ Activity.create(
     time: '8:00 - 10:00pm',
     age: 'All Ages',
     name: 'Beauty and the Beast - A Musical',
-    interest: ['Creative Arts'],
+    interest: ['Creative Arts', 'Acting', 'Listening to Music', 'Being Imaginative'],
     description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
     url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746',
     )
@@ -959,7 +959,7 @@ Activity.create(
     time: '8:00 - 10:00pm',
     age: 'All Ages',
     name: 'Beauty and the Beast - A Musical',
-    interest: ['Creative Arts'],
+    interest: ['Creative Arts', 'Acting', 'Listening to Music', 'Being Imaginative'],
     description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
     url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
     )
@@ -975,7 +975,7 @@ Activity.create(
     time: '8:00 - 10:00pm',
     age: 'All Ages',
     name: 'Beauty and the Beast - A Musical',
-    interest: ['Creative Arts'],
+    interest: ['Creative Arts', 'Acting', 'Listening to Music', 'Being Imaginative'],
     description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
     url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
     )
@@ -991,7 +991,7 @@ Activity.create(
     time: '8:00 - 10:00pm',
     age: 'All Ages',
     name: 'Beauty and the Beast - A Musical',
-    interest: ['Creative Arts'],
+    interest: ['Creative Arts', 'Acting', 'Listening to Music', 'Being Imaginative'],
     description: 'A tale as Old as Time - One of the best selling Arts guild musicals of all time. Be sure to get your tickets early to this magical experience.',
     url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/912/746'
     )
@@ -1007,7 +1007,7 @@ Activity.create(
     time: '8:00 - 10:00pm',
     age: 'All Ages',
     name: 'International Folk Festival - FREE!',
-    interest: [9, 10],
+    interest: ['Creative Arts', 'Listening to Music', 'Learning an Instrument'],
     description: 'Free Events, no tickets required',
     url: 'http://sandy.utah.gov/Home/Components/Calendar/Event/956/746'
     )
@@ -1023,7 +1023,7 @@ Activity.create(
     time: '7:00am - 12:30pm',
     age: 'All Ages',
     name: '2017 Chalk Art Contest',
-    interest: [1, 4, 6, 'Being Imaginative'],
+    interest: ['Drawing', 'Coloring', 'Building Things', 'Creative Arts' 'Being Imaginative'],
     description: '',
     url: 'http://www.sjc.utah.gov/event/2017-chalk-art-contest/?instance_id=181'
     )
@@ -1039,7 +1039,7 @@ Activity.create(
     time: '8:00pm - 11:00pm',
     age: 'All Ages',
     name: 'Sights & Sounds of Summer Movie - Fantastic Beasts and Where to Find Them',
-    interest: [7, 6, 6],
+    interest: ['Movies', 'Acting', 'Creative Arts'],
     description: 'Movies in the Park',
     url: 'http://www.sjc.utah.gov/event/sights-sounds-of-summer-movie-fantastic-beasts/?instance_id=220'
     )
@@ -1055,7 +1055,7 @@ Activity.create(
     time: '10:00 - 11:00am',
     age: 'All Ages',
     name: 'Terrific Tuesday - August Cookie Decorating',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Coloring', 'Cooking / Baking', 'Plants / Gardening'],
     description: '',
     url: 'http://www.sjc.utah.gov/event/terrific-tuesday-cookie-decorating/?instance_id=262'
     )
@@ -1071,7 +1071,7 @@ Activity.create(
     time: '8:00am - 2:00pm',
     age: 'All Ages',
     name: 'Farmers Market',
-    interest: [11],
+    interest: ['Cooking / Baking', 'Plants / Gardening', 'Having a Conversation'],
     description: "Today's Event: Farmers Market 9 year Anniversary. Utah Growers, Make the Connection from Farm to Table",
     url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
     )
@@ -1087,7 +1087,7 @@ Activity.create(
     time: '8:00am - 2:00pm',
     age: 'All Ages',
     name: 'Farmers Market',
-    interest: [11],
+    interest: ['Cooking / Baking', 'Plants / Gardening', 'Having a Conversation'],
     description: "Today's Event: Face Painting. Utah Growers, Make the Connection from Farm to Table",
     url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
     )
@@ -1103,7 +1103,7 @@ Activity.create(
     time: '8:00am - 2:00pm',
     age: 'All Ages',
     name: 'Farmers Market',
-    interest: [11],
+    interest: ['Cooking / Baking', 'Plants / Gardening', 'Having a Conversation'],
     description: "Today's Event: Library Activities. Utah Growers, Make the Connection from Farm to Table",
     url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
     )
@@ -1119,7 +1119,7 @@ Activity.create(
     time: '8:00am - 2:00pm',
     age: 'All Ages',
     name: 'Farmers Market',
-    interest: [11],
+    interest: ['Cooking / Baking', 'Plants / Gardening', 'Having a Conversation'],
     description: "Today's Event: Arts and Crafts at the Market. Utah Growers, Make the Connection from Farm to Table",
     url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
     )
@@ -1135,7 +1135,7 @@ Activity.create(
     time: '8:00am - 2:00pm',
     age: 'All Ages',
     name: 'Farmers Market',
-    interest: [11],
+    interest: ['Cooking / Baking', 'Plants / Gardening', 'Having a Conversation'],
     description: "Today's Event: DJ and Trivia. Utah Growers, Make the Connection from Farm to Table",
     url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
     )
@@ -1151,7 +1151,7 @@ Activity.create(
     time: '8:00am - 2:00pm',
     age: 'All Ages',
     name: 'Farmers Market',
-    interest: [11],
+    interest: ['Cooking / Baking', 'Plants / Gardening', 'Having a Conversation'],
     description: "Today's Event: Selfie Day. Utah Growers, Make the Connection from Farm to Table",
     url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
     )
@@ -1167,7 +1167,7 @@ Activity.create(
     time: '8:00am - 2:00pm',
     age: 'All Ages',
     name: 'Farmers Market',
-    interest: [11],
+    interest: ['Cooking / Baking', 'Plants / Gardening', 'Having a Conversation'],
     description: "Today's Event: National Poh-Day Day. Utah Growers, Make the Connection from Farm to Table",
     url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
     )
@@ -1183,7 +1183,7 @@ Activity.create(
     time: '8:00am - 2:00pm',
     age: 'All Ages',
     name: 'Farmers Market',
-    interest: [11],
+    interest: ['Cooking / Baking', 'Plants / Gardening', 'Having a Conversation'],
     description: "Today's Event: Sample Day (Try new items). Utah Growers, Make the Connection from Farm to Table",
     url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
     )
@@ -1199,7 +1199,7 @@ Activity.create(
     time: '8:00am - 2:00pm',
     age: 'All Ages',
     name: 'Farmers Market',
-    interest: [11],
+    interest: ['Cooking / Baking', 'Plants / Gardening', 'Having a Conversation'],
     description: "Today's Event: Quilt Show. Utah Growers, Make the Connection from Farm to Table",
     url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
     )
@@ -1215,7 +1215,7 @@ Activity.create(
     time: '8:00am - 2:00pm',
     age: 'All Ages',
     name: 'Farmers Market',
-    interest: [11],
+    interest: ['Cooking / Baking', 'Plants / Gardening', 'Having a Conversation'],
     description: "Today's Event: DJ and Trivia. Utah Growers, Make the Connection from Farm to Table",
     url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
     )
@@ -1231,7 +1231,7 @@ Activity.create(
     time: '8:00am - 2:00pm',
     age: 'All Ages',
     name: 'Farmers Market',
-    interest: [11],
+    interest: ['Cooking / Baking', 'Plants / Gardening', 'Having a Conversation'],
     description: "Today's Event: Cookie Decorating. Utah Growers, Make the Connection from Farm to Table",
     url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
     )
@@ -1247,7 +1247,7 @@ Activity.create(
     time: '8:00am - 2:00pm',
     age: 'All Ages',
     name: 'Farmers Market',
-    interest: [11],
+    interest: ['Cooking / Baking', 'Plants / Gardening', 'Having a Conversation'],
     description: "Today's Event: Pumpkin Party. Utah Growers, Make the Connection from Farm to Table",
     url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
     )
@@ -1263,7 +1263,7 @@ Activity.create(
     time: '8:00am - 2:00pm',
     age: 'All Ages',
     name: 'Farmers Market',
-    interest: [11],
+    interest: ['Cooking / Baking', 'Plants / Gardening', 'Having a Conversation'],
     description: "Today's Event: Chocolate Day. Utah Growers, Make the Connection from Farm to Table",
     url: 'http://www.sjc.utah.gov/event/farmers-market-towne-center-drive/?instance_id=265'
     )
@@ -1279,7 +1279,7 @@ Activity.create(
     time: '6:00pm - 8:00pm',
     age: 'All Ages',
     name: 'Mommy & Me',
-    interest: [11],
+    interest: ['Having a Conversation'],
     description: "Craft & Cupcakes for Mommy's & Sons, and Mommy's & Daughters",
     url: 'http://www.sjc.utah.gov/event/terrific-tuesday-mommy-me/?instance_id=264'
     )
@@ -1295,7 +1295,7 @@ Activity.create(
     time: '12:00pm - 2:00pm',
     age: 'All Ages',
     name: 'Lunch Concert Series',
-    interest: [11],
+    interest: ['Learning an Instrument', 'Listening to Music', 'Creative Arts'],
     description: "Time Cruisers, Oldies",
     url: 'http://murray.utah.gov/Calendar.aspx?EID=1343&month=7&year=2017&day=25&calType=0'
     )
@@ -1311,7 +1311,7 @@ Activity.create(
     time: '12:00pm - 2:00pm',
     age: 'All Ages',
     name: 'Lunch Concert Series',
-    interest: [11],
+    interest: ['Learning an Instrument', 'Listening to Music', 'Creative Arts'],
     description: "New Hot 5, Oldies",
     url: 'http://murray.utah.gov/Calendar.aspx?EID=1344&month=8&year=2017&day=25&calType=0'
     )
@@ -1327,7 +1327,7 @@ Activity.create(
     time: '2:00pm - 4:00pm',
     age: 'All Ages',
     name: 'Children Matinee Series',
-    interest: [11],
+    interest: ['Acting', 'Creative Arts', 'Being Imaginative'],
     description: "Storytelling with Rachel and Janine",
     url: 'http://murray.utah.gov/Calendar.aspx?EID=1352&month=7&year=2017&day=25&calType=0'
     )
@@ -1343,7 +1343,7 @@ Activity.create(
     time: '8:00pm - 10:00pm',
     age: 'All Ages',
     name: 'The Music Man',
-    interest: [11],
+    interest: ['Acting', 'Creative Arts', 'Being Imaginative'],
     description: "The Music Man, Presented by special arrangement with MTI",
     url: 'http://murray.utah.gov/Calendar.aspx?EID=1330&month=7&year=2017&day=25&calType=0'
     )
@@ -1359,7 +1359,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1375,7 +1375,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1391,7 +1391,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1407,7 +1407,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1423,7 +1423,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1439,7 +1439,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1455,7 +1455,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1471,7 +1471,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1487,7 +1487,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1503,7 +1503,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1519,7 +1519,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1535,7 +1535,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1551,7 +1551,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1567,7 +1567,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1583,7 +1583,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1599,7 +1599,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1615,7 +1615,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1631,7 +1631,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1647,7 +1647,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1663,7 +1663,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1679,7 +1679,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1695,7 +1695,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1711,7 +1711,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1727,7 +1727,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1743,7 +1743,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1759,7 +1759,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1775,7 +1775,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1791,7 +1791,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1807,7 +1807,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1823,7 +1823,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1839,7 +1839,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1855,7 +1855,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1871,7 +1871,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1888,7 +1888,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1904,7 +1904,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1920,7 +1920,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1936,7 +1936,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1952,7 +1952,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1968,7 +1968,7 @@ Activity.create(
     time: '10:00am - 6:00pm',
     age: 'All Ages',
     name: 'Murray Outdoor Swimming Pool',
-    interest: [11],
+    interest: ['Sports / Athletics'],
     description: "Fun in the Sun",
     url: 'http://murray.utah.gov/846/Hours-of-Operation'
     )
@@ -1985,7 +1985,7 @@ Activity.create(
     time: '8:00pm - 10:00pm',
     age: 'All Ages',
     name: 'Carousel - Live Music',
-    interest: [11],
+    interest: ['Listening to Music', 'Learning an Instrument', 'Creative Arts'],
     description: "Carousel - Presented by special arrangement with Rodgers and Hammerstein",
     url: 'http://murray.utah.gov/Calendar.aspx?EID=1332&month=8&year=2017&day=25&calType=0'
     )
@@ -2001,7 +2001,7 @@ Activity.create(
     time: '8:00pm - 10:00pm',
     age: 'All Ages',
     name: 'Carousel - Live Music',
-    interest: [11],
+    interest: ['Listening to Music', 'Learning an Instrument', 'Creative Arts'],
     description: "Carousel - Presented by special arrangement with Rodgers and Hammerstein",
     url: 'http://murray.utah.gov/Calendar.aspx?EID=1332&month=8&year=2017&day=25&calType=0'
     )
@@ -2017,7 +2017,7 @@ Activity.create(
     time: '8:00pm - 10:00pm',
     age: 'All Ages',
     name: 'Carousel - Live Music',
-    interest: [11],
+    interest: ['Listening to Music', 'Learning an Instrument', 'Creative Arts'],
     description: "Carousel - Presented by special arrangement with Rodgers and Hammerstein",
     url: 'http://murray.utah.gov/Calendar.aspx?EID=1332&month=8&year=2017&day=25&calType=0'
     )
@@ -2033,7 +2033,7 @@ Activity.create(
     time: '8:00pm - 10:00pm',
     age: 'All Ages',
     name: 'Carousel - Live Music',
-    interest: [11],
+    interest: ['Listening to Music', 'Learning an Instrument', 'Creative Arts'],
     description: "Carousel - Presented by special arrangement with Rodgers and Hammerstein",
     url: 'http://murray.utah.gov/Calendar.aspx?EID=1332&month=8&year=2017&day=25&calType=0'
     )
@@ -2049,7 +2049,7 @@ Activity.create(
     time: '8:00pm - 10:00pm',
     age: 'All Ages',
     name: 'Carousel - Live Music',
-    interest: [11],
+    interest: ['Listening to Music', 'Learning an Instrument', 'Creative Arts'],
     description: "Carousel - Presented by special arrangement with Rodgers and Hammerstein",
     url: 'http://murray.utah.gov/Calendar.aspx?EID=1332&month=8&year=2017&day=25&calType=0'
     )
@@ -2065,7 +2065,7 @@ Activity.create(
     time: '8:00pm - 10:00pm',
     age: 'All Ages',
     name: 'Carousel - Live Music',
-    interest: [11],
+    interest: ['Listening to Music', 'Learning an Instrument', 'Creative Arts'],
     description: "Carousel - Presented by special arrangement with Rodgers and Hammerstein",
     url: 'http://murray.utah.gov/Calendar.aspx?EID=1332&month=8&year=2017&day=25&calType=0'
     )
@@ -2081,7 +2081,7 @@ Activity.create(
     time: '8:00pm - 10:00pm',
     age: 'All Ages',
     name: 'Family Night Series',
-    interest: [11],
+    interest: ['Listening to Music', 'Learning an Instrument', 'Creative Arts'],
     description: "Live Music, David Sharp - Celtic",
     url: 'http://murray.utah.gov/Calendar.aspx?EID=1356&month=8&year=2017&day=25&calType=0'
     )
@@ -2097,7 +2097,7 @@ Activity.create(
     time: '8:00pm - 10:00pm',
     age: 'All Ages',
     name: 'Family Night Series',
-    interest: [11],
+    interest: ['Listening to Music', 'Learning an Instrument', 'Creative Arts'],
     description: "Cityjazz Big Band with Debra Bonner and the Unity Gospel Choir",
     url: 'http://murray.utah.gov/Calendar.aspx?EID=1356&month=8&year=2017&day=25&calType=0'
     )
@@ -2113,7 +2113,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2129,7 +2129,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2145,7 +2145,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2161,7 +2161,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2177,7 +2177,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2193,7 +2193,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2209,7 +2209,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2225,7 +2225,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2241,7 +2241,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2257,7 +2257,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2273,7 +2273,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2289,7 +2289,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2305,7 +2305,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2321,7 +2321,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2337,7 +2337,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2353,7 +2353,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2369,7 +2369,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2385,7 +2385,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2401,7 +2401,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2417,7 +2417,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2433,7 +2433,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2449,7 +2449,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2465,7 +2465,7 @@ Activity.create(
     time: '11:00am - 5:00pm',
     age: 'All Ages',
     name: 'Art of Our Century Exhibit',
-    interest: [11],
+    interest: ['Creative Arts', 'Drawing', 'Being Imaginative', 'Coloring'],
     description: "The 2017 Art of OUR CENTURY show calls for art relating to ideas of “movement” in all forms. Art movements, kinetic or social sculpture, video, physical fluidity, interactive design, and emotional instigators are just some examples of relevant entries. Showing alongside these works from the western region of the United States is spotlight artist Marcus Vincent. Vincent’s recent body of non-objective works are concerned with ideas around experiential color interaction, emotional relationships to musical harmony, and Zen gesture; improvisation is paramount. ",
     url: 'https://www.utahvalley.com/event/art-of-our-century-exhibit/21804/'
     )
@@ -2481,7 +2481,7 @@ Activity.create(
     time: '7:30pm',
     age: 'All Ages',
     name: 'The Annual Springville World Folkfest',
-    interest: [11],
+    interest: ['Creative Arts', 'Being Imaginative', 'Listening to Music', 'Learning an Instrument'],
     description: "The Springville World Folkfest will bring the color and excitement of traditional folk dance and music from around the world to Springville. This annual production of folk music and energetic dance by musicians and dancers from many lands has grown to become the largest festival of folk dance and music in the United States.",
     url: 'http://www.worldfolkfest.dreamhosters.com/'
     )
@@ -2497,7 +2497,7 @@ Activity.create(
     time: '7:30pm',
     age: 'All Ages',
     name: 'The Annual Springville World Folkfest',
-    interest: [11],
+    interest: ['Creative Arts', 'Being Imaginative', 'Listening to Music', 'Learning an Instrument'],
     description: "The Springville World Folkfest will bring the color and excitement of traditional folk dance and music from around the world to Springville. This annual production of folk music and energetic dance by musicians and dancers from many lands has grown to become the largest festival of folk dance and music in the United States.",
     url: "http://www.worldfolkfest.dreamhosters.com/"
     )
@@ -2513,7 +2513,7 @@ Activity.create(
     time: '7:30pm',
     age: 'All Ages',
     name: 'The Annual Springville World Folkfest',
-    interest: [11],
+    interest: ['Creative Arts', 'Being Imaginative', 'Listening to Music', 'Learning an Instrument'],
     description: "The Springville World Folkfest will bring the color and excitement of traditional folk dance and music from around the world to Springville. This annual production of folk music and energetic dance by musicians and dancers from many lands has grown to become the largest festival of folk dance and music in the United States.",
     url: "http://www.worldfolkfest.dreamhosters.com/"
     )
@@ -2529,7 +2529,7 @@ Activity.create(
     time: '7:30pm',
     age: 'All Ages',
     name: 'The Annual Springville World Folkfest',
-    interest: [11],
+    interest: ['Creative Arts', 'Being Imaginative', 'Listening to Music', 'Learning an Instrument'],
     description: "The Springville World Folkfest will bring the color and excitement of traditional folk dance and music from around the world to Springville. This annual production of folk music and energetic dance by musicians and dancers from many lands has grown to become the largest festival of folk dance and music in the United States.",
     url: "http://www.worldfolkfest.dreamhosters.com/"
     )
@@ -2545,7 +2545,7 @@ Activity.create(
     time: '7:30pm',
     age: 'All Ages',
     name: 'The Annual Springville World Folkfest',
-    interest: [11],
+    interest: ['Creative Arts', 'Being Imaginative', 'Listening to Music', 'Learning an Instrument'],
     description: "The Springville World Folkfest will bring the color and excitement of traditional folk dance and music from around the world to Springville. This annual production of folk music and energetic dance by musicians and dancers from many lands has grown to become the largest festival of folk dance and music in the United States.",
     url: "http://www.worldfolkfest.dreamhosters.com/"
     )
@@ -2561,7 +2561,7 @@ Activity.create(
     time: '7:30pm',
     age: 'All Ages',
     name: 'The Annual Springville World Folkfest',
-    interest: [11],
+    interest: ['Creative Arts', 'Being Imaginative', 'Listening to Music', 'Learning an Instrument'],
     description: "The Springville World Folkfest will bring the color and excitement of traditional folk dance and music from around the world to Springville. This annual production of folk music and energetic dance by musicians and dancers from many lands has grown to become the largest festival of folk dance and music in the United States.",
     url: "http://www.worldfolkfest.dreamhosters.com/"
     )

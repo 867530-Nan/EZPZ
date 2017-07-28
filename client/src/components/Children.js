@@ -39,7 +39,7 @@ class Children extends Component {
   { key: 'Acting', text: 'Acting', value: 'Acting' },
   { key: 'Listening to Music', text: 'Listening to Music', value: 'Listening to Music' },
   { key: 'Learning an Instrument', text: 'Learning an Instrument', value: 'Learning an Instrument' },
-  { key: 'Playing with Siblings', text: 'Playing with Siblings', value: 'Playing with Siblings' },
+  { key: 'Cooking / Baking', text: 'Cooking / Baking', value: 'Cooking / Baking' },
   { key: 'Being Alone', text: 'Being Alone', value: 'Being Alone' },
   { key: 'Having a Conversation', text: 'Having a Conversation', value: 'Having a Conversation' },
   { key: 'Family / Friend Gatherings', text: 'Family / Friend Gatherings', value: 'Family / Friend Gatherings' },
@@ -51,7 +51,7 @@ class Children extends Component {
   { key: 'Making Noise', text: 'Making Noise', value: 'Making Noise' },
   { key: 'Race Cars', text: 'Race Cars', value: 'Race Cars' },
   { key: 'Science Experiments', text: 'Science Experiments', value: 'Science Experiments' },
-  { key: 'Paper Airplanes', text: 'Paper Airplanes', value: 'Paper Airplanes' },
+  { key: 'Movies', text: 'Movies', value: 'Movies' },
   { key: 'Sloth Wrestling', text: 'Sloth Wrestling', value: 'Sloth Wrestling' },
 ]
 
