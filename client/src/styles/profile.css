@@ -27,3 +27,7 @@
   min-width: 400px;
   min-height: 400px;
 }
+
+.info {
+  max-width: 600px !important;
+}

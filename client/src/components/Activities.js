@@ -29,6 +29,20 @@ class Activities extends React.Component {
     let visible = this.props.activities.filter( a =>
         moment(`${a.month} ${a.day} ${a.year}`).format("MMMM DD YYYY") === monthParse
       )
+    visible = visible.map( activity => {
+      return { ...activity, interest: JSON.parse(activity.interest) };
+    })
+    visible = visible.filter( activity => {
+      let show = false;
+      this.props.children.forEach( child => {
+        child.realInterest.forEach( interest => {
+          if(activity.interest.includes(interest))
+            show = true;
+        });
+      });
+      return show;
+    });
+    debugger;
     this.setState({ visible, activeIndex: 0 });
   };
 
@@ -106,7 +120,7 @@ class Activities extends React.Component {
         <div className="actMod">
 
         <div className="singleAct-date">
-        
+
         <Header as="h1" className="singleAct-header" textAlign="center" basic color="violet">
           Select a New Date:
         </Header>
@@ -157,7 +171,12 @@ class Activities extends React.Component {
 
 const mapStateToProps = (state) => {
   const months = [...new Set(state.activities.map( a => a.month ))]
-  return { activities: state.activities, months, selectedDay: state.selectedDay }
+  return {
+    activities: state.activities,
+    months,
+    selectedDay: state.selectedDay,
+    children: state.children,
+  }
 }
 
 export default connect(mapStateToProps)(Activities);

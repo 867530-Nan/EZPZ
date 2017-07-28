@@ -64,6 +64,24 @@ class Profile extends Component {
       )
     })
 
+    const parent =
+        <Segment compact>
+          <Card>
+            <Card.Content>
+              <Card.Header>
+                Parent: {this.props.user.name}
+              </Card.Header>
+              <Card.Description>
+                Email: {this.props.user.email}
+              </Card.Description>
+              <Divider />
+              <Card.Description>
+                ZipCode: {this.props.user.zipcode}
+              </Card.Description>
+            </Card.Content>
+          </Card>
+        </Segment>
+
     const images = this.props.user.image_url.map( image => {
       return(
         <Segment basic className='actualPhoto'>
@@ -81,7 +99,8 @@ class Profile extends Component {
       <div>
         <Container>
           <Header as='h1'>Welcome To Your Profile, { this.props.user.name }!</Header>
-            <Segment.Group horizontal compact>
+            <Segment.Group horizontal compact className='info'>
+              {parent}
               {child}
             </Segment.Group>
           <Dropzone
