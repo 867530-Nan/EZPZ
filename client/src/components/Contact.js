@@ -11,11 +11,12 @@ class Contact extends Component {
   render() {
     return(
       <div>
-          <Header as='h1' textAlign='center'>
+        <Divider />
+          <Header className='contactTeam' as='h1' textAlign='center'>
             The Team!
           </Header>
         <div className="name-cards">
-            <Card className='teamCards'>
+            <Card color='violet' className='teamCards'>
               <Image src={ matthew } className='photo' />
               <Card.Content>
                 <Card.Header>
@@ -30,7 +31,7 @@ class Contact extends Component {
                 </Card.Description>
               </Card.Content>
             </Card>
-            <Card className='teamCards'>
+            <Card color='violet' className='teamCards'>
               <Image src={ addy } className='photo' />
               <Card.Content>
                 <Card.Header>
@@ -45,7 +46,7 @@ class Contact extends Component {
                 </Card.Description>
               </Card.Content>
             </Card>
-            <Card className='teamCards'>
+            <Card color='violet' className='teamCards'>
               <Image src={ stockton } className='photo' />
               <Card.Content>
                 <Card.Header>
@@ -60,7 +61,7 @@ class Contact extends Component {
                 </Card.Description>
               </Card.Content>
             </Card>
-            <Card className='teamCards'>
+            <Card color='violet' className= 'teamCards' >
               <Image src={ tate } className='photo' />
               <Card.Content>
                 <Card.Header>
