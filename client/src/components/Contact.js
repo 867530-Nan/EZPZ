@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Segment, Card, Image, Container, Divider } from 'semantic-ui-react';
+import { Header, Segment, Card, Image, Container, Divider, Grid } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import matthew from '../photodump/matthew.jpg';
 import addy from '../photodump/addy.JPG';
@@ -16,7 +16,9 @@ class Contact extends Component {
             The Team!
           </Header>
         <div className="name-cards">
-            <Card color='violet' className='teamCards'>
+        <Grid doubling stackable columns={4}>
+          <Grid.Column>
+            <Card color='orange' className='teamCards'>
               <Image src={ matthew } className='photo' />
               <Card.Content>
                 <Card.Header>
@@ -30,8 +32,10 @@ class Contact extends Component {
                   Matthew is a model of the perfect human being. He has glorious locks, but has a strange interest in sloth wrestling.
                 </Card.Description>
               </Card.Content>
-            </Card>
-            <Card color='violet' className='teamCards'>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>  
+            <Card color='teal' className='teamCards'>
               <Image src={ addy } className='photo' />
               <Card.Content>
                 <Card.Header>
@@ -45,8 +49,10 @@ class Contact extends Component {
                   Addy is the glue to the EZPZ family. He's also a father. He's probably glue to that family as well.
                 </Card.Description>
               </Card.Content>
-            </Card>
-            <Card color='violet' className='teamCards'>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>  
+            <Card color='green' className='teamCards'>
               <Image src={ stockton } className='photo' />
               <Card.Content>
                 <Card.Header>
@@ -60,7 +66,9 @@ class Contact extends Component {
                   #1 in the hearts of EZPZ families everywhere, and #12 on the roster of Utah Jazz Fans everywhere.
                 </Card.Description>
               </Card.Content>
-            </Card>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>  
             <Card color='violet' className= 'teamCards' >
               <Image src={ tate } className='photo' />
               <Card.Content>
@@ -75,7 +83,9 @@ class Contact extends Component {
                   Tater is our perfect side dish of a developer. He adds a bit of flavor that helps the main course seem extra delicious!
                 </Card.Description>
               </Card.Content>
-            </Card>
+              </Card>
+            </Grid.Column>
+          </Grid>  
         </div>
       </div>
     );

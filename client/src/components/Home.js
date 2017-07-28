@@ -40,7 +40,7 @@ class Home extends Component {
             </h3>
           </div>
         </div>
-          <Grid divided columns={2} className="three-part-words">
+          <Grid divided stackable="true" columns={2} className="three-part-words">
             <Grid.Row>
               <Grid.Column textAlign='center' centered className="duo-grid duo-first">
                 <div className="single">

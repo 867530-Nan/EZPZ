@@ -84,3 +84,52 @@
   background-attachment: fixed;
   height: 250px;
 }
+
+
+@media (max-width: 992px) {
+	.firstTogether{
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 875px) {
+	.qvq {
+		font-size: 3.5em !important;
+	}
+	.how {
+		font-size: 2em !important;
+	}
+}
+
+@media (max-width: 770px) {
+	.firstTogether {
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: 750px) {
+	.qvq {
+		font-size: 3em !important;
+	}
+	.how {
+		font-size: 1.5em !important;
+	}
+}
+
+@media (max-width: 610px) {
+	.firstTogether {
+		padding: 0 10px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 580px) {
+	.qvq {
+		font-size: 2.5em !important;
+	}
+	.how {
+		font-size: 1.2em !important;
+		padding: 0 20px;
+		text-align: center;
+	}
+}
