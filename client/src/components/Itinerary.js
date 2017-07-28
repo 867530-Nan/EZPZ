@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Divider, Accordion, Icon } from 'semantic-ui-react'
+import { Header, Divider, Accordion, Icon, Segment } from 'semantic-ui-react'
 import { getSavedActivities } from '../actions/itinerary'
 import { connect } from 'react-redux'
 import DayPicker from 'react-day-picker'
@@ -7,9 +7,9 @@ import 'react-day-picker/lib/style.css'
 import moment from 'moment'
 import DayPickerInput from 'react-day-picker/DayPickerInput'
 import '../styles/itinerary.css'
+import styled from 'styled-components'
 
 const DAY_FORMAT = 'DD/MM/YYYY';
-
 
 class Itinerary extends React.Component {
   state = { visible: [], selectedDay: undefined, isDisabled: false, }
@@ -23,6 +23,14 @@ class Itinerary extends React.Component {
     this.setState({ visible: userActivities });
   }
 
+  selectedDay = () => {
+    return (
+      <div>
+        {this.state.visible[0].date}
+      </div>      
+    )      
+  }
+
   showActivities = () => {
     return this.state.visible.map( (activity, i) =>
       <Accordion className='activityList' key={activity.id}>
@@ -30,7 +38,7 @@ class Itinerary extends React.Component {
             <Icon name='dropdown' />
             Activity {i+1}: {activity.name} - {activity.time}
           </Accordion.Title>
-            <Accordion.Content>
+            <Accordion.Content as='h3'>
               <div className="listInfo">
               Suitable for Ages: {activity.age}
               </div>
@@ -60,7 +68,7 @@ class Itinerary extends React.Component {
 
   render() {
     const { selectedDay, isDisabled } = this.state;
-    const formattedDay = selectedDay
+    const formattedDay = selectedDay 
       ? moment(selectedDay).format(DAY_FORMAT)
       : '';
 
@@ -105,24 +113,30 @@ class Itinerary extends React.Component {
         <div className="">
 
           <div className="singleAct-date">
-              <Header as="h1" className="singleAct-header" textAlign="center" basic color="teal">
-                Itinerary Selecter:
+              <Header className="singleAct-header" textAlign="center" color="teal">
+                Date Selector:
               </Header>
               <DayPickerInput
                   value={formattedDay}
                   onDayChange={this.handleDayChange}
                   format={DAY_FORMAT}
-                  placeholder="What Day's Activities are you looking for?"
+                  placeholder="Choose a Day"
                   dayPickerProps={dayPickerProps}
                   className = "singleAct-picker"
                 />
             </div>
 
           <Divider />
-
-          <Header>
+        <div className='itineraryList'>
+          <div>
+            <Segment basic size='huge' textAlign='center'>
+                Itinerary for: {this.selectedDay()}
+            </Segment>
+          </div>
+          <Header as='h1'>
                     { this.showActivities() }
-          </Header>
+            </Header>
+        </div>  
         </div>
       )
   }

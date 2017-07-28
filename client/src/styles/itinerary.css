@@ -13,7 +13,13 @@
   height: 700px;
 }
 
-.activityList {
+.itineraryList {
+  	background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+  	url('../photodump/watercolor.jpg') top center no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	padding-top: 150px;
+  	height: 700px;
 	font-family: 'BioRhyme', cursive;
 }
 
