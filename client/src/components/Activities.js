@@ -20,7 +20,7 @@ class Activities extends React.Component {
   addActivity = (id) => {
     this.props.dispatch(addActivity(id));
     let activeIndex = this.state.activeIndex;
-    let newVisible = this.state.visible.splice(activeIndex, 1)
+    let newVisible = this.state.visible[activeIndex]
     let visible = this.state.visible
     if (activeIndex === this.state.visible.length - 1){
       activeIndex = null
@@ -102,6 +102,8 @@ class Activities extends React.Component {
     };
 
     let { activeIndex, visible } = this.state;
+    console.log('active index', activeIndex)
+    console.log('visible length', this.state.visible.length)
 
     if (activeIndex == null)
       return(
@@ -110,6 +112,11 @@ class Activities extends React.Component {
             <Header as='h1' className="activity-header" textAlign='center'>
               Select Activity Date:
             </Header>
+            <Segment basic>
+              <Header as='h2'>
+                No activities
+              </Header>
+            </Segment>
             <div className="calendar">
               <DayPickerInput
                 value={formattedDay}
@@ -120,11 +127,6 @@ class Activities extends React.Component {
                 className = "day-picker"
               />
             </div>
-            <Segment basic>
-              <Header as='h2'>
-                No activities
-              </Header>
-            </Segment>
           </div>
         </div>
         )
