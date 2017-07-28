@@ -42,7 +42,6 @@ class Activities extends React.Component {
       });
       return show;
     });
-    debugger;
     this.setState({ visible, activeIndex: 0 });
   };
 
