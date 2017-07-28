@@ -14,8 +14,13 @@ import { handleUpload } from '../actions/photos';
 import { connect } from 'react-redux';
 import avatar from '../photodump/avatar1.jpg';
 import '../styles/profile.css';
+import { getChild } from '../actions/children'
 
 class Profile extends Component {
+
+  componentDidMount() {
+    this.props.dispatch(getChild());
+  }
 
   onDrop = (photos) => {
     this.props.dispatch(handleUpload(photos[0]));
