@@ -89,6 +89,10 @@
   color: white !important;
 }
 
+.calendar.huge.icon, .child.huge.icon {
+  height: 1em !important;
+}
+
 .icon.calendar{
   color: white !important;
 }
@@ -120,3 +124,47 @@
   height: 1em !important;
   width: 1.18em !important;
  }
+
+
+@media (max-width: 1135px){
+  .home-duo {
+    font-size: 35px !important;
+  }
+  .title-about-words {
+    font-size: 24px !important;
+  }
+}
+
+@media (max-width: 915px) {
+  .home-duo {
+    font-size: 25px !important;
+  }
+  .title-about-words {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 834px) {
+  .top-photo {
+    background: url('../photodump/foggy-family-CROP.jpeg') bottom no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 360px;
+  }
+}
+
+@media (max-width: 678px) {
+  .home-duo {
+    font-size: 20px !important;
+  }
+  .title-about-words {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 535px) {
+  .title-about-words {
+    padding: 0 20px;
+    text-align: center;
+  }
+}
