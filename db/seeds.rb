@@ -2,19 +2,6 @@ months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Augus
 days = [*1..31]
 
 1.times do
-  User.create(
-    name: 'test',
-    nickname: 'test',
-    zipcode: 'test',
-    email: 'test@test.com',
-    password: 'password',
-    street_address: 'test',
-    city: 'test',
-    state: 'test'
-  )
-end
-
-1.times do
   Activity.create(
     name: 'Trolls - Movie in the Park',
     date: 'August 4, 2017',
