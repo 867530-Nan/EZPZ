@@ -112,11 +112,6 @@ class Activities extends React.Component {
             <Header as='h1' className="activity-header" textAlign='center'>
               Select Activity Date:
             </Header>
-            <Segment basic>
-              <Header as='h2'>
-                No activities
-              </Header>
-            </Segment>
             <div className="calendar">
               <DayPickerInput
                 value={formattedDay}
@@ -127,6 +122,9 @@ class Activities extends React.Component {
                 className = "day-picker"
               />
             </div>
+            <Header as='h2'>
+              No Activites Have Been Found! Please Select Another Date!
+            </Header>
           </div>
         </div>
         )
