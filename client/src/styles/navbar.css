@@ -3,9 +3,9 @@
 imageb: url('../photodump/ezpz.jpg')
 }
 
-.mainNavbar {
+/*.mainNavbar {
   padding: 2px;
-}
+}*/
 
 .ui.animated.button .hidden.content{
 	margin-top: -.8em !important;
@@ -18,7 +18,7 @@ imageb: url('../photodump/ezpz.jpg')
 .nav-logged-out {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;	
+	width: 100%;
 }
 
 .nav-logged-in {
@@ -71,7 +71,7 @@ imageb: url('../photodump/ezpz.jpg')
 	letter-spacing: 1.22px !important;
 	display: flex;
 	justify-content: space-around;
-	
+
 }
 
 .logout-nav-button:hover{
@@ -184,4 +184,3 @@ imageb: url('../photodump/ezpz.jpg')
 	border: 2px solid snow !important;
 	font-size: 18px !important;
 }
-

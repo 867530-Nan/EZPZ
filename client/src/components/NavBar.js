@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Icon, Button, Container } from 'semantic-ui-react'
+import { Menu, Icon, Button, Container, Segment, Grid, Dropdown, Sidebar } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { handleLogout } from '../actions/auth';
@@ -8,156 +8,272 @@ import '../styles/navbar.css'
 import Logo from '../photodump/addykinglogo.png'
 
 class NavBar extends Component {
+  state = { visible: false }
+
+  toggleVisibility = () => this.setState({ visible: !this.state.visible })
+
+
   rightNavs = () => {
     const { user, dispatch, history } = this.props;
-
+    const { visible } = this.state;
 
     if(user.id) {
       return(
-        <div className="nav-logged-in">
-            <a href="/home"><img className="logo" src={Logo}></img></a>
-          <div>  
-          <Menu.Menu>
-            <Link to='/profile'>
-                <Button className='profile-nav-button' inverted color='orange' animated='fade' compact>
-                <Button.Content visible>
-                  Profile
-                  </Button.Content>
-                <Button.Content hidden>
-                  <Icon inverted name='user circle' />
-                </Button.Content>
-              </Button>
-            </Link>
-            <Link to='/contact'>
-              <Button className='contact-nav-button' inverted color='violet' animated='fade' compact>
-                <Button.Content visible>
-                  Contact
-                  </Button.Content>
-                <Button.Content hidden>
-                  <Icon inverted name='talk outline' />
-                </Button.Content>
-              </Button>
-            </Link>
-            <Link to='/activities'>
-              <Button className='activities-nav-button' inverted color='blue' animated='fade' compact>
-                <Button.Content visible>
-                  Activities
-                  </Button.Content>
-                <Button.Content hidden>
-                    <Icon inverted name='bath' />
-                </Button.Content>
-              </Button>
-            </Link>
-            <Link to='/itinerary'>
-              <Button className='itinerary-nav-button' inverted color='red' animated='fade' compact>
-                <Button.Content visible>
-                  Itinerary
-                  </Button.Content>
-                <Button.Content hidden>
-                  <Icon inverted className='theme isle' />
-                </Button.Content>
-              </Button>
-            </Link>
-            <Link to='/aboutus'>
-                <Button className='about-us-nav-button' inverted color='pink' animated='fade' compact>
-                  <Button.Content visible>
-                    About
-                    </Button.Content>
-                  <Button.Content hidden>
-                    <Icon inverted name='hand spock' />
-                  </Button.Content>
-                </Button>
-            </Link>
-           
-              </Menu.Menu>
-            
-            </div>  
+        <Grid textAlign='center'>
+          <Grid.Row column='2'>
+            <Grid.Column only='mobile tablet' textAlign='left' width={7}>
+              <Button onClick={this.toggleVisibility} icon='content' />
+                <Sidebar
+                  as={Menu}
+                  animation='overlay'
+                  width='thin'
+                  visible={visible}
+                  icon='labeled' vertical
+                >
+                  <Link to='/profile'>
+                      <Button
+                        className='profile-nav-button'
+                        inverted
+                        color='orange'
+                        animated='fade'
+                        compact
+                        onClick={this.toggleVisibility}
+                      >
+                      <Button.Content visible>
+                        Profile
+                        </Button.Content>
+                      <Button.Content hidden>
+                        <Icon inverted name='user circle' />
+                      </Button.Content>
+                    </Button>
+                  </Link>
+                  <Link to='/contact'>
+                    <Button
+                      className='contact-nav-button'
+                      inverted color='violet'
+                      animated='fade'
+                      compact
+                      onClick={this.toggleVisibility}
+                    >
+                      <Button.Content visible>
+                        Contact
+                        </Button.Content>
+                      <Button.Content hidden>
+                        <Icon inverted name='talk outline' />
+                      </Button.Content>
+                    </Button>
+                  </Link>
+                  <Link to='/activities'>
+                    <Button
+                      className='activities-nav-button'
+                      inverted
+                      color='blue'
+                      animated='fade'
+                      compact
+                      onClick={this.toggleVisibility}
+                    >
+                      <Button.Content visible>
+                        Activities
+                        </Button.Content>
+                      <Button.Content hidden>
+                          <Icon inverted name='bath' />
+                      </Button.Content>
+                    </Button>
+                  </Link>
+                  <Link to='/itinerary'>
+                    <Button
+                      className='itinerary-nav-button'
+                      inverted
+                      color='red'
+                      animated='fade'
+                      compact
+                      onClick={this.toggleVisibility}
+                    >
+                      <Button.Content visible>
+                        Itinerary
+                        </Button.Content>
+                      <Button.Content hidden>
+                        <Icon inverted className='theme isle' />
+                      </Button.Content>
+                    </Button>
+                    </Link>
+                  <Link to='/aboutus'>
+                      <Button
+                        className='about-us-nav-button'
+                        inverted
+                        color='pink'
+                        animated='fade'
+                        compact
+                        onClick={this.toggleVisibility}
+                      >
+                        <Button.Content visible>
+                          About
+                          </Button.Content>
+                        <Button.Content hidden>
+                          <Icon inverted name='hand spock' />
+                        </Button.Content>
+                      </Button>
+                  </Link>
+                  <Button
+                    className='logout-nav-button'
+                    inverted
+                    color='green'
+                    animated='fade'
+                    compact
+                    onClick={() => dispatch(handleLogout(history))} >
+                      <Button.Content visible>
+                        Log Out
+                      </Button.Content>
+                      <Button.Content hidden>
+                        <Icon inverted name='ambulance' />
+                      </Button.Content>
+                  </Button>
+                </Sidebar>
+            </Grid.Column>
+            <Grid.Column className="nav-logged-in" only='mobile tablet' textAlign='left' width={8}>
+              <a href="/home"><img className="logo" src={Logo}></img></a>
+            </Grid.Column>
+          </Grid.Row>
 
-            <div>
-              <Menu.Menu >
-                <Button
-                  className='logout-nav-button'
-                  inverted
-                  color='green'
-                  animated='fade'
-                  compact
-                  onClick={() => dispatch(handleLogout(history))} >
+
+          <Grid.Row columns={3} only='computer'>
+            <Grid.Column className="nav-logged-in" width={3} textAlign='left'>
+                <a href="/home"><img className="logo" src={Logo}></img></a>
+            </Grid.Column>
+              <Grid.Column width={9}>
+                <Link to='/profile'>
+                    <Button className='profile-nav-button' inverted color='orange' animated='fade' compact>
                     <Button.Content visible>
-                      Log Out
-                    </Button.Content>
+                      Profile
+                      </Button.Content>
                     <Button.Content hidden>
-                      <Icon inverted name='ambulance' />
+                      <Icon inverted name='user circle' />
                     </Button.Content>
-                </Button>
-              </Menu.Menu> 
-            </div>    
-        </div>
+                  </Button>
+                </Link>
+                <Link to='/contact'>
+                  <Button className='contact-nav-button' inverted color='violet' animated='fade' compact>
+                    <Button.Content visible>
+                      Contact
+                      </Button.Content>
+                    <Button.Content hidden>
+                      <Icon inverted name='talk outline' />
+                    </Button.Content>
+                  </Button>
+                </Link>
+                <Link to='/activities'>
+                  <Button className='activities-nav-button' inverted color='blue' animated='fade' compact>
+                    <Button.Content visible>
+                      Activities
+                      </Button.Content>
+                    <Button.Content hidden>
+                        <Icon inverted name='bath' />
+                    </Button.Content>
+                  </Button>
+                </Link>
+                <Link to='/itinerary'>
+                  <Button className='itinerary-nav-button' inverted color='red' animated='fade' compact>
+                    <Button.Content visible>
+                      Itinerary
+                      </Button.Content>
+                    <Button.Content hidden>
+                      <Icon inverted className='theme isle' />
+                    </Button.Content>
+                  </Button>
+                  </Link>
+                <Link to='/aboutus'>
+                    <Button className='about-us-nav-button' inverted color='pink' animated='fade' compact>
+                      <Button.Content visible>
+                        About
+                        </Button.Content>
+                      <Button.Content hidden>
+                        <Icon inverted name='hand spock' />
+                      </Button.Content>
+                    </Button>
+                </Link>
+                </Grid.Column>
+
+                <Grid.Column textAlign='right' width={4}>
+                    <Button
+                      className='logout-nav-button'
+                      inverted
+                      color='green'
+                      animated='fade'
+                      compact
+                      onClick={() => dispatch(handleLogout(history))} >
+                        <Button.Content visible>
+                          Log Out
+                        </Button.Content>
+                        <Button.Content hidden>
+                          <Icon inverted name='ambulance' />
+                        </Button.Content>
+                    </Button>
+                </Grid.Column>
+          </Grid.Row>
+        </Grid>
       );
     } else {
       return(
-        <div className="nav-logged-out">
-        <div>
-          <Menu.Menu>
-            <Link to='/aboutus'>
-                <Button className='about-us-nav-button' inverted color='pink' animated='fade' compact>
-                  <Button.Content visible>
-                    About
-                    </Button.Content>
-                  <Button.Content hidden>
-                    <Icon inverted name='hand spock' />
-                  </Button.Content>
-                </Button>
-            </Link>
-            <Link to='/contact'>
-                <Button className='contact-nav-button' inverted color="violet" animated='fade' compact>
-                  <Button.Content visible>
-                    Contact
-                    </Button.Content>
-                  <Button.Content hidden>
-                    <Icon inverted name='talk outline' />
-                  </Button.Content>
-                </Button>
-            </Link>
-          </Menu.Menu>
-        </div>
-        <a href="/"><img className="logo" src={ Logo }></img></a>
-        <div>
-          <Menu.Menu>
-            <Link to='/register'>
-                <Button className='register-nav-button' inverted color='blue' animated='fade' compact>
-                  <Button.Content visible>
-                    Register
-                    </Button.Content>
-                  <Button.Content hidden>
-                    <Icon inverted name='drivers license' />
-                  </Button.Content>
-                </Button>
-            </Link>
-            <Link to='/login'>
-                <Button className='login-nav-button' inverted color='green' animated='fade' compact>
-                  <Button.Content visible>
-                    Login
-                    </Button.Content>
-                  <Button.Content hidden>
-                    <Icon inverted name='ambulance' />
-                  </Button.Content>
-                </Button>
-            </Link>
-          </Menu.Menu>
-        </div>
-        </div>
+        <Grid textAlign='center'>
+            <Grid.Row column={3}>
+              <Grid.Column width={5}>
+                <Link to='/aboutus'>
+                    <Button className='about-us-nav-button' inverted color='pink' animated='fade' compact>
+                      <Button.Content visible>
+                        About
+                        </Button.Content>
+                      <Button.Content hidden>
+                        <Icon inverted name='hand spock' />
+                      </Button.Content>
+                    </Button>
+                </Link>
+                <Link to='/contact'>
+                    <Button className='contact-nav-button' inverted color="violet" animated='fade' compact>
+                      <Button.Content visible>
+                        Contact
+                        </Button.Content>
+                      <Button.Content hidden>
+                        <Icon inverted name='talk outline' />
+                      </Button.Content>
+                    </Button>
+                </Link>
+              </Grid.Column>
+              <Grid.Column width={6}>
+                <a href="/"><img className="logo" src={ Logo }></img></a>
+              </Grid.Column>
+              <Grid.Column floated='right' width={5}>
+                <Link to='/register'>
+                    <Button className='register-nav-button' inverted color='blue' animated='fade' compact>
+                      <Button.Content visible>
+                        Register
+                        </Button.Content>
+                      <Button.Content hidden>
+                        <Icon inverted name='drivers license' />
+                      </Button.Content>
+                    </Button>
+                </Link>
+                <Link to='/login'>
+                    <Button className='login-nav-button' inverted color='green' animated='fade' compact>
+                      <Button.Content visible>
+                        Login
+                        </Button.Content>
+                      <Button.Content hidden>
+                        <Icon inverted name='ambulance' />
+                      </Button.Content>
+                    </Button>
+                </Link>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
       );
     }
   }
 
   render() {
     return (
-      <div className='mainNavbar'>
-        <Menu pointing secondary>
-
+      <Segment basic>
           { this.rightNavs() }
-        </Menu>
-      </div>
+      </Segment>
     )
   }
 }
