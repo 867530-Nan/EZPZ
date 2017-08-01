@@ -64,6 +64,7 @@ class Profile extends Component {
                 Interests: {interests}
               </Card.Description>
             </Card.Content>
+            <Button primary>Edit</Button>
           </Card>
         </Segment>
       )
@@ -84,6 +85,7 @@ class Profile extends Component {
                 ZipCode: {this.props.user.zipcode}
               </Card.Description>
             </Card.Content>
+            <Button primary>Edit</Button>
           </Card>
         </Segment>
 
