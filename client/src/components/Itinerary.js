@@ -111,7 +111,7 @@ class Itinerary extends React.Component {
       return(
           <div className="itineraryAct">
             <Header as="h1" className="itineraryHead" textAlign="center" basic color="teal">
-              Itinerary Selecter:
+              Itinerary Selector:
             </Header>
               <DayPickerInput
                   value={formattedDay}

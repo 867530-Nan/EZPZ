@@ -59,7 +59,7 @@ class Home extends Component {
                   <h5
                     className="duo-words"
                   >
-                    Select Availability, Browse Activities, and Beign Spending Time with Your Family
+                    Select Availability, Browse Activities, and Begin Spending Time with Your Family
                   </h5>
                 </div>
               </Grid.Column>
