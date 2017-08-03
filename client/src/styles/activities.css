@@ -37,7 +37,6 @@
 	width: 100% !important;
 	justify-content: center !important;
 	align-self: center !important;
-  width: 500px !important;
   height: 50px;
   border-radius: 10px;
   padding: 0 30px;
@@ -76,8 +75,63 @@
 }
 
 .singleAct-picker {
-  width: 500px !important;
+  width: 100% !important;
   height: 50px;
   border-radius: 10px;
   padding: 0 30px;
 }
+
+@media (max-width: 922px) {
+	.activity-title {
+		font-size: 1.7rem !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.activity-title {
+		font-size: 1.4rem !important;
+		margin: 10px 0;
+	}
+	.activityName {
+		font-size: 1.2rem !important;
+		margin: 10px 0;
+		font-weight: 700;
+	}
+	.activityView {
+		margin: 0px;
+	}
+	.icons8-Family-Two-Men, .icons8-Family-Two-Women {
+		display: none;
+	}
+	.actInfo {
+		height: 100% !important;
+		position: relative;
+	}
+	.DayPickerInput {
+		width: 40%;
+		margin: 0 auto;
+	}
+	.dateMod {
+		height: 400px;
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 575px) {
+	.dateSelect {
+		width: 90% !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.singleAct-header {
+		font-size: 2.5rem !important;
+	}
+	.activity-header{
+		font-size: 2rem !important;
+	}
+	.noActs {
+		font-size: 1.4rem !important;
+	}
+}
+

@@ -55,3 +55,34 @@
 .ui.segment.selectDay {
   padding: 0;
 }
+
+@media (max-width: 768px){
+  .itineraryDate {
+    height: 400px;
+    padding-top: 50px;
+  }
+  .noItinActs {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 600px){
+  .noItinActs {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 500px){
+  .selectDay {
+    font-size: 25px !important;
+  }
+  .noItinActs {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 450px){
+  .title {
+    font-size: 16px !important;
+  }
+}

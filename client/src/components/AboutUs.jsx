@@ -6,7 +6,7 @@ import numberOne from '../photodump/parent-profile.png'
 import numberTwo from '../photodump/select-date.png'
 import numberThree from '../photodump/single-activity.png'
 
-
+ 
 class AboutUs extends Component {
   render() {
     return(

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Divider, Accordion, Icon, Segment } from 'semantic-ui-react'
+import { Header, Divider, Accordion, Icon, Segment, Modal, Button } from 'semantic-ui-react'
 import { getSavedActivities } from '../actions/itinerary'
 import { connect } from 'react-redux'
 import DayPicker from 'react-day-picker'
@@ -84,7 +84,7 @@ class Itinerary extends React.Component {
 
     let { activeIndex } = this.state;
 
-    if (this.state.visible.length < 1)
+    if (this.state.visible.length <= 1)
       return(
         <div className="itineraryDate">
           <div className="dateSelect">
@@ -96,12 +96,12 @@ class Itinerary extends React.Component {
                 value={formattedDay}
                 onDayChange={this.handleDayChange}
                 format={DAY_FORMAT}
-                placeholder="Select Date for Itinerary..."
+                placeholder="Select Date..."
                 dayPickerProps={dayPickerProps}
                 className = "day-picker"
               />
             </div>
-            <Header as='h1'>
+            <Header as='h1' className="noItinActs">
               You do not have any activities for this day planned!
             </Header>
           </div>
@@ -110,17 +110,22 @@ class Itinerary extends React.Component {
     else
       return(
           <div className="itineraryAct">
-            <Header as="h1" className="itineraryHead" textAlign="center" basic color="teal">
+            <Header as="h1" className="singleAct-Header" textAlign="center" basic color="teal">
               Itinerary Selector:
             </Header>
-              <DayPickerInput
-                  value={formattedDay}
-                  onDayChange={this.handleDayChange}
-                  format={DAY_FORMAT}
-                  placeholder="Choose a Day"
-                  dayPickerProps={dayPickerProps}
-                  className = "singleAct-picker"
-                />
+              <Modal trigger={<Button color='teal'>Show Calendar</Button>}>
+                <Modal.Header>Select Itinerary Date</Modal.Header>
+                  <Modal.Content>
+                    <DayPickerInput
+                      value={formattedDay}
+                      onDayChange={this.handleDayChange}
+                      format={DAY_FORMAT}
+                      placeholder={`E.g. ${moment().locale('en').format(DAY_FORMAT)}`}
+                      dayPickerProps={dayPickerProps}
+                      className = "singleAct-picker"
+                    />
+                  </Modal.Content>
+                </Modal>
 
             <Divider />
               <div>

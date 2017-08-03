@@ -21,6 +21,24 @@ imageb: url('../photodump/ezpz.jpg')
 	width: 100%;
 }
 
+.ui.thin.left.sidebar { 
+	width: 250px !important;
+	background-color: gainsboro;
+ }
+
+.offClick {
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 900;
+	border: 5px solid white;
+	margin: 50px;
+	border-radius: 10px;
+	background-color: white;
+	cursor: grab;
+}
+
 .nav-logged-in {
 	display: flex;
 	justify-content: space-around;

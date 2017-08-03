@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Icon, Button, Container, Segment, Grid, Dropdown, Sidebar } from 'semantic-ui-react'
+import { Menu, Icon, Button, Segment, Grid, Sidebar } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { handleLogout } from '../actions/auth';
@@ -21,7 +21,7 @@ class NavBar extends Component {
       return(
         <Grid textAlign='center'>
           <Grid.Row column='2'>
-            <Grid.Column only='mobile tablet' textAlign='left' width={7}>
+            <Grid.Column only='mobile tablet' textAlign='left' width={6}>
               <Button onClick={this.toggleVisibility} icon='content' />
                 <Sidebar
                   as={Menu}
@@ -128,17 +128,18 @@ class NavBar extends Component {
                         <Icon inverted name='ambulance' />
                       </Button.Content>
                   </Button>
+                  <div className="offClick" onClick={this.toggleVisibility}>Close<br />Navigation</div>
                 </Sidebar>
             </Grid.Column>
-            <Grid.Column className="nav-logged-in" only='mobile tablet' textAlign='left' width={8}>
-              <a href="/home"><img className="logo" src={Logo}></img></a>
+            <Grid.Column className="nav-logged-in" only='mobile tablet' textAlign='left' width={3}>
+              <a href="/home"><img className="logo" src={Logo} alt="E Z P Z Logo"></img></a>
             </Grid.Column>
           </Grid.Row>
 
 
           <Grid.Row columns={3} only='computer'>
             <Grid.Column className="nav-logged-in" width={3} textAlign='left'>
-                <a href="/home"><img className="logo" src={Logo}></img></a>
+                <a href="/home"><img className="logo" src={Logo} alt="E Z P Z Logo"></img></a>
             </Grid.Column>
               <Grid.Column width={9}>
                 <Link to='/profile'>

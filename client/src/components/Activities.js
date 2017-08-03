@@ -122,8 +122,8 @@ class Activities extends React.Component {
                 className = "day-picker"
               />
             </div>
-            <Header as='h2'>
-              No Activites Have Been Found! Please Select Another Date!
+            <Header as='h2' className="noActs">
+              No Activites Have Been Found!<br />Please Select Another Date!
             </Header>
           </div>
         </div>
