@@ -83,3 +83,50 @@
 	background-color: #F2711C !important;
 }
 
+@media (max-width: 897px){
+	.register-login {
+		height: 1100px !important;
+	}
+	.ui.cards.stackCards {
+		justify-content: center !important;
+	}
+}
+
+@media (max-width: 768px){
+	.register-login {
+		height: 1450px !important;
+	}
+	.ui.card>.image, .ui.cards>.card>.image {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 650px) {
+	.interWords {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 540px) {
+	.interWords {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 455px) {
+	.interWords {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 443px){
+	.register-login {
+		height: 1500px !important;
+	}
+}
+
+@media (max-width: 455px) {
+	.interWords {
+		font-size: 16px;
+	}
+}

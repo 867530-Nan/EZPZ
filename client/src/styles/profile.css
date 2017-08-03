@@ -30,4 +30,5 @@
 
 .info {
   max-width: 600px !important;
+  margin: 0 auto !important;
 }

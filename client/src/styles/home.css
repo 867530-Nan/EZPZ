@@ -59,7 +59,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 100px;
  }
 
 .title-about-words {
@@ -137,6 +137,7 @@
 
 @media (max-width: 992px) {
   .top-photo{ 
+    background: url('../photodump/foggy-family992.jpeg')bottom no-repeat;
     height: 550px;  
   }
 }
@@ -174,7 +175,7 @@
 
 @media (max-width: 678px) {
   .home-duo {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
   .title-about-words {
     font-size: 14px !important;
@@ -212,7 +213,7 @@
 
 @media (max-width: 470px) {
   .home-duo {
-    padding: 0 20px;
+    padding: 0 60px !important;
   }
 }
 

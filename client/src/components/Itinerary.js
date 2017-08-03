@@ -87,7 +87,7 @@ class Itinerary extends React.Component {
     if (this.state.visible.length <= 1)
       return(
         <div className="itineraryDate">
-          <div className="dateSelect">
+          <div className="itinDateSelect">
             <Header as='h1' className="activity-header" textAlign="center" color="teal">
               Look Up an Itinerary:
             </Header>
@@ -102,11 +102,11 @@ class Itinerary extends React.Component {
               />
             </div>
             <Header as='h1' className="noItinActs">
-              You do not have any activities for this day planned!
+              You do not have any activities planned for this day!
             </Header>
           </div>
         </div>
-        )
+        ) 
     else
       return(
           <div className="itineraryAct">

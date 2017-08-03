@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Segment, Form, Button, Card, Image, Modal } from 'semantic-ui-react';
+import { Header, Segment, Form, Button, Card, Image, Modal, Grid } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { handleLogin } from '../actions/auth';
@@ -42,6 +42,7 @@ class LoginFirst extends Component {
           <span className="interWords">...Quick Overview of the EZPZ Interface...</span>
         </Segment>
           <div className="instructions" columns={16}>
+          <Card.Group stackable className="stackCards">
             <Card className="trioCards">
               <Image src={ numberOne } className="photo" />
               <Card.Content className="bottomHalf">
@@ -81,6 +82,7 @@ class LoginFirst extends Component {
                 </Card.Description>
               </Card.Content>
             </Card>
+            </Card.Group>
           </div>
         </div>
         <div>

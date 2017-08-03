@@ -217,7 +217,17 @@ class NavBar extends Component {
       return(
         <Grid textAlign='center'>
             <Grid.Row column={3}>
-              <Grid.Column width={5}>
+              <Grid.Column width={5} className="navLO917">
+              <Link to='/contact'>
+                    <Button className='contact-nav-button' inverted color="violet" animated='fade' compact>
+                      <Button.Content visible>
+                        Contact
+                        </Button.Content>
+                      <Button.Content hidden>
+                        <Icon inverted name='talk outline' />
+                      </Button.Content>
+                    </Button>
+                </Link>
                 <Link to='/aboutus'>
                     <Button className='about-us-nav-button' inverted color='pink' animated='fade' compact>
                       <Button.Content visible>
@@ -228,21 +238,11 @@ class NavBar extends Component {
                       </Button.Content>
                     </Button>
                 </Link>
-                <Link to='/contact'>
-                    <Button className='contact-nav-button' inverted color="violet" animated='fade' compact>
-                      <Button.Content visible>
-                        Contact
-                        </Button.Content>
-                      <Button.Content hidden>
-                        <Icon inverted name='talk outline' />
-                      </Button.Content>
-                    </Button>
-                </Link>
               </Grid.Column>
               <Grid.Column width={6}>
                 <a href="/"><img className="logo" src={ Logo }></img></a>
               </Grid.Column>
-              <Grid.Column floated='right' width={5}>
+              <Grid.Column floated='right' width={5} className="navLO917">
                 <Link to='/register'>
                     <Button className='register-nav-button' inverted color='blue' animated='fade' compact>
                       <Button.Content visible>
