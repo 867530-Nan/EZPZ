@@ -76,7 +76,7 @@ class NavBar extends Component {
                         Activities
                         </Button.Content>
                       <Button.Content hidden>
-                          <Icon inverted name='bath' />
+                          <Icon inverted name='flag checkered' />
                       </Button.Content>
                     </Button>
                   </Link>
@@ -168,7 +168,7 @@ class NavBar extends Component {
                       Activities
                       </Button.Content>
                     <Button.Content hidden>
-                        <Icon inverted name='bath' />
+                        <Icon inverted name='flag checkered' />
                     </Button.Content>
                   </Button>
                 </Link>

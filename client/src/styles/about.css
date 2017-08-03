@@ -108,6 +108,9 @@
 	.concert {
 	background: url('../photodump/family-concert-1CROP.jpeg') bottom no-repeat;
 	}
+	.swimming {
+		background: url('../photodump/swimmingCROP.jpeg') top no-repeat;
+	}
 }
 
 @media (max-width: 750px) {
